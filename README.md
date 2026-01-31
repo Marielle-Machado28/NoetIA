@@ -31,6 +31,13 @@ El proyecto está diseñado como un **framework modular**, enfocado en claridad,
 ---
 
 ## Estructura del proyecto
+## Modelo de Datos
+
+Vista general del modelo entidad–relación de NoetIA:
+
+![ER Diagram](assets/screenshots/noetia_erd.png)
+
+(assets/screenshots/noetia_erd.html)
 
 ```text
 src/noetia/     → lógica principal del sistema
@@ -39,11 +46,3 @@ app/            → demo en Streamlit
 sql/            → esquemas y queries SQL
 assets/         → identidad visual y recursos
 data/           → datos locales (ignorado por Git)
-
-## 🗺️ Modelo de Datos
-
-Vista general del modelo entidad–relación de NoetIA:
-
-![ER Diagram](assets/screenshots/noetia_erd.png)
-
-👉 [Ver versión interactiva (HTML)](assets/screenshots/noetia_erd.html)
