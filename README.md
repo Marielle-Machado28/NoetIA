@@ -40,3 +40,10 @@ sql/            → esquemas y queries SQL
 assets/         → identidad visual y recursos
 data/           → datos locales (ignorado por Git)
 
+## 🗺️ Modelo de Datos
+
+Vista general del modelo entidad–relación de NoetIA:
+
+![ER Diagram](assets/screenshots/noetia_erd.png)
+
+👉 [Ver versión interactiva (HTML)](assets/screenshots/noetia_erd.html)
