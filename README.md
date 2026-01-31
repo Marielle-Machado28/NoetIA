@@ -1,2 +1,42 @@
-# NoetIA
-NoetIA es un asistente inteligente orientado a la organización de información no estructurada. A partir de texto libre, aplica técnicas de procesamiento de lenguaje natural para clasificar tareas, notas e ideas en una jerarquía clara y funcional.
+<p align="center">
+  <img src="assets/logo-main.png" alt="NoetIA logo" width="420"/>
+</p>
+
+<p align="center">
+  <em>Multimodal AI framework for organizing unstructured information</em>
+</p>
+
+---
+
+## ¿Qué es NoetIA?
+
+**NoetIA** es un proyecto de ciencia de datos enfocado en la **organización inteligente de información no estructurada**, como ideas, tareas, notas y pensamientos escritos en texto libre.
+
+Su objetivo es transformar entradas caóticas (brain dumps, listas desordenadas, notas rápidas) en una **estructura clara, lógica y accionable**, apoyándose en técnicas de *Natural Language Processing (NLP)* y modelos de lenguaje.
+
+---
+
+## Idea central
+
+NoetIA parte de una premisa simple:
+
+> El caos mental muchas veces no es falta de ideas, sino falta de estructura.
+
+A partir de texto libre, el sistema busca clasificar la información dentro de una jerarquía conceptual como:
+
+**Área → Tema → Proyecto → Tarea / Nota / Cita**
+
+El proyecto está diseñado como un **framework modular**, enfocado en claridad, explicabilidad y buenas prácticas de ingeniería.
+
+---
+
+## Estructura del proyecto
+
+```text
+src/noetia/     → lógica principal del sistema
+scripts/        → scripts ejecutables (sin notebooks)
+app/            → demo en Streamlit
+sql/            → esquemas y queries SQL
+assets/         → identidad visual y recursos
+data/           → datos locales (ignorado por Git)
+
