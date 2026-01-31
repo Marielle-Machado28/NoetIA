@@ -30,14 +30,21 @@ El proyecto está diseñado como un **framework modular**, enfocado en claridad,
 
 ---
 
-## Estructura del proyecto
 ## Modelo de Datos
 
 Vista general del modelo entidad–relación de NoetIA:
 
 ![ER Diagram](assets/screenshots/noetia_erd.png)
 
+> Diagrama completo en versión interactiva:  
+> [Ver ERD en HTML](assets/screenshots/NoetIA-ERD.html)
+
+
 (assets/screenshots/noetia_erd.html)
+
+---
+
+## Estructura del proyecto
 
 ```text
 src/noetia/     → lógica principal del sistema
