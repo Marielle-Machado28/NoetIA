@@ -1,5 +1,6 @@
 import os
 from dotenv import load_dotenv
+from pathlib import Path
 
 load_dotenv()
 
@@ -11,3 +12,8 @@ def check_env():
             "ERROR: Falta OPENAI_API_KEY. Revisa tu archivo .env"
         )
     print("Entorno listo. API Key cargada correctamente.")
+
+def get_db_path() -> Path:
+    db_path = os.getenv("DB_PATH", "data/noetia.db")
+    return Path(db_path)
+
