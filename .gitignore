@@ -13,8 +13,6 @@ venv/
 **/*credentials*.json
 
 # Bases de Datos 
-sql/noetia.db
-*.db
 *.sqlite3
 .env
 **/*token*.json
