@@ -1,10 +1,19 @@
-import streamlit as st
 import sys
 import os
+
+root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+
+
+src_path = os.path.join(root_path, 'src')
+
+if src_path not in sys.path:
+    sys.path.insert(0, src_path)
+
+import streamlit as st
 from noetia.config import get_db_path
 from noetia.streamlit_ui import hero_logo
 
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 st.set_page_config(
     page_title="NoetIA",
     page_icon="assets/logo-minimal.png",
