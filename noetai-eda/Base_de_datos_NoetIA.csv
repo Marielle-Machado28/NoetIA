@@ -1,0 +1,663 @@
+id,creado_en,fecha_vencimiento,canal,texto_original,area,tema,intencion,estado,prioridad,longitud_texto,numero_palabras,tiene_pregunta,tiene_fecha
+1,24/05/2026,20/06/2026,Texto,Cita medica con el nutriologo,Salud,Doctor,Cita,Pendiente,3,29,5,0,0
+2,10/02/2027,05/03/2027,Texto,Poner gasolina al auto,Entorno Fisico,Mantenimiento,Tarea,Pendiente,3,22,4,0,0
+3,19/05/2027,15/06/2027,Voz,Entregar presentacion al conmutador para el simulacro,Trabajo,Gestion de Proyectos,Tarea,Pendiente,1,53,7,0,0
+4,12/04/2027,02/05/2027,Texto,Pagar tarjeta,Finanzas,Pagos,Tarea,Pendiente,3,13,2,0,0
+5,09/12/2026,14/12/2026,Voz,Cargar ordenes de trabajo en sistema,Trabajo,Entregables,Tarea,Pendiente,4,36,6,0,0
+6,16/11/2026,02/12/2026,Texto,Darle de desayunar a los perros,Familia,Responsabilidades,Tarea,Pendiente,4,31,6,0,0
+7,12/10/2027,19/10/2027,Voz,Jueves: mandar roster del weekend support todos los jueves,Trabajo,Entregables,Tarea,Pendiente,1,58,9,0,0
+8,07/02/2026,10/02/2026,Texto,Solicitar cita en agencia para servicio de auto.,Entorno Fisico,Tramite,Nota,Pendiente,3,48,8,0,0
+9,03/04/2027,20/04/2027,Voz,Comprar alimento para mascotas.,Entorno Fisico,Super,Tarea,Pendiente,3,31,4,0,0
+10,13/05/2027,29/05/2027,Voz,Renovar credencial del super.,Entorno Fisico,Tramite,Nota,Pendiente,1,29,4,0,0
+11,25/08/2026,02/09/2026,Texto,Pagar recibo de luz.,Finanzas,Pagos,Nota,Pendiente,4,20,4,0,0
+12,02/01/2026,11/01/2026,foto,Tramitar renovacion de tarjeta de circulacion.,Entorno Fisico,Tramite,Tarea,Pendiente,2,46,6,0,0
+13,15/08/2026,18/08/2026,Voz,Pagar mantenimiento de conjunto habitacional.,Finanzas,Pagos,Tarea,Pendiente,1,45,5,0,0
+14,26/12/2025,24/01/2026,Texto,Tomar medicamento.,Salud,Doctor,Tarea,En Progreso,3,18,2,0,0
+15,29/03/2026,09/04/2026,Texto,Desayunar,Salud,Comida y Dieta,Nota,Completada,3,9,1,0,0
+16,25/07/2027,04/08/2027,Texto,Llegar al Servicio Social,Trabajo,Gestion de Proyectos,Nota,Pendiente,4,25,4,0,0
+17,15/11/2026,08/12/2026,foto,Checar credenciales en filtro y asegurarme de los pagos pendientes de los atletas,Trabajo,Gestion de Proyectos,Tarea,Pendiente,3,81,13,0,0
+18,18/03/2026,02/04/2026,Voz,Hacer gimnasio,Salud,Ejercicio,Nota,En Progreso,3,14,2,0,0
+19,04/08/2026,18/08/2026,Texto,Llegar a la universidad,Trabajo,Gestion de Proyectos,Cita,Pendiente,4,24,4,0,0
+20,28/09/2026,04/10/2026,Texto,Darle de comer al perro,Familia,Responsabilidades,Tarea,Pendiente,4,23,5,0,0
+21,19/02/2027,05/03/2027,Voz,Darle su medicamento al perro,Familia,Responsabilidades,Tarea,Pendiente,4,29,5,0,0
+22,20/08/2026,29/08/2026,Voz,leer y escribir,Desarrollo Personal,Lectura,Nota,Pendiente,3,16,3,0,0
+23,18/01/2027,26/01/2027,Texto,preparar el cafe,Salud,Comida y Dieta,Tarea,En Progreso,1,16,3,0,0
+24,12/09/2026,20/09/2026,Voz,Iniciar con juntas,Trabajo,Reuniones Laborales,Nota,Pendiente,3,19,3,0,0
+25,29/08/2027,07/09/2027,Voz,preparar mi comida,Salud,Comida y Dieta,Tarea,Pendiente,4,19,3,0,0
+26,31/03/2027,15/04/2027,Texto,Ir al gym,Salud,Ejercicio,Tarea,Pendiente,1,9,3,0,0
+27,19/08/2027,21/08/2027,Texto,sacar a pasear al perro,Familia,Responsabilidades,Tarea,Pendiente,4,24,5,0,0
+28,18/03/2026,21/03/2026,Voz,lavar el patio,Entorno Fisico,Limpieza,Nota,Pendiente,4,15,3,0,0
+29,13/04/2026,22/04/2026,Texto,Leer 10 paginas del libro,Desarrollo Personal,Lectura,Nota,Pendiente,1,25,5,0,0
+30,30/10/2027,24/11/2027,Texto,Agendar cita con el dentista,Salud,Comida y Dieta,Cita,Completada,2,28,5,0,0
+31,03/10/2027,24/10/2027,Voz,Comprar vitaminas,Salud,Doctor,Tarea,En Progreso,2,17,2,0,0
+32,30/08/2026,01/09/2026,Texto,Terminar reporte de ventas,Trabajo,Gestion de Proyectos,Nota,En Progreso,4,26,4,0,0
+33,05/10/2026,21/10/2026,Voz,Estudiar curso de Python,Desarrollo Personal,Estudio,Tarea,Pendiente,1,24,4,0,0
+34,11/12/2026,17/12/2026,Texto,Actualizar LinkedIn,Trabajo,Perfil Profesional,Nota,Pendiente,1,19,2,0,0
+35,29/01/2027,20/02/2027,Voz,Revisar saldo de ahorro,Finanzas,Ahorro,Tarea,Pendiente,2,23,4,0,0
+36,14/06/2026,16/06/2026,Texto,Subir facturas al SAT,Finanzas,Revision financiera,Tarea,Pendiente,1,21,4,0,0
+37,12/01/2026,15/01/2026,Voz,Meditar 5 minutos,Desarrollo Personal,Organizacion,Tarea,Pendiente,2,17,3,0,0
+38,12/10/2027,30/10/2027,Voz,Escribir en el diario,Desarrollo Personal,Organizacion,Nota,Pendiente,4,21,4,0,0
+39,08/12/2026,19/12/2026,Texto,Lavar la ropa,Entorno Fisico,Limpieza,Tarea,Pendiente,3,13,3,0,0
+40,07/11/2026,08/11/2026,foto,Llevar la laptop a reparar,Entorno Fisico,Limpieza,Cita,Pendiente,4,26,5,0,0
+41,27/02/2026,22/03/2026,Voz,Comprar plantas para la sala,Entorno Fisico,Super,Nota,Pendiente,3,28,5,0,0
+42,16/08/2026,13/09/2026,Texto,Planear viaje a la playa,Diversión,Viajes,Tarea,Pendiente,3,24,5,0,0
+43,07/06/2026,04/07/2026,Texto,Ir al cine el viernes,Diversión,Salida Social,Cita,Pendiente,1,21,5,0,1
+44,20/09/2027,17/10/2027,Texto,Jugar Warzone con amigos,Diversión,Salida Social,Cita,Pendiente,3,24,4,0,0
+45,18/01/2027,29/01/2027,foto,Comprar regalo de aniversario,Romance,Cita Romantica,Nota,Pendiente,4,29,4,0,0
+46,18/03/2027,11/04/2027,Voz,Cena con mi novio,Romance,Cita Romantica,Cita,Pendiente,4,17,4,0,0
+47,18/07/2027,04/08/2027,Texto,Hablar sobre planes de mudanza,Romance,Cita Romantica,Nota,Pendiente,2,30,5,0,0
+48,09/05/2027,19/05/2027,Texto,Llamar a Luis por su cumple,Amistad,Salida con amigos,Tarea,Pendiente,4,27,6,0,0
+49,05/04/2027,17/04/2027,Voz,Organizar carne asada,Amistad,Salida con amigos,Nota,Pendiente,3,21,3,0,0
+50,06/05/2026,25/05/2026,Voz,Mandar mensaje al grupo,Amistad,Salida con amigos,Tarea,Pendiente,1,23,4,0,0
+51,03/02/2027,09/02/2027,Texto,Ir a comer con mis papas,Familia,Salida Familiar,Nota,Pendiente,1,24,6,0,0
+52,27/05/2026,23/06/2026,Voz,Ayudar a mi hermano con su tarea,Familia,Responsabilidades,Tarea,Pendiente,1,32,7,0,0
+53,25/06/2027,22/07/2027,Voz,Visitar a los abuelos,Familia,Salida Familiar,Nota,Pendiente,1,21,4,0,0
+54,05/12/2026,30/12/2026,Texto,Ir a misa,Espiritualidad,Religion,Cita,Pendiente,3,9,3,0,0
+55,20/12/2027,21/12/2027,Texto,Hacer mi oracion,Espiritualidad,Religion,Nota,Pendiente,4,16,3,0,0
+56,07/11/2026,04/12/2026,Voz,Participar en el voluntariado,Espiritualidad,Religion,Nota,Pendiente,2,29,4,0,0
+57,18/11/2026,10/12/2026,Texto,Donar ropa que no uso,Contribucion,Apoyo Social,Nota,Pendiente,3,21,5,0,0
+58,05/08/2027,30/08/2027,Texto,Reciclar botellas de plastico,Contribucion,Apoyo Social,Tarea,Pendiente,4,29,4,0,0
+59,01/07/2026,31/07/2026,Voz,Ayudar en el refugio de perros,Contribucion,Apoyo Social,Tarea,Pendiente,4,30,6,0,0
+60,29/01/2027,03/02/2027,Texto,Comprar leche y huevos,Entorno Fisico,Super,Tarea,Pendiente,1,22,4,0,0
+61,02/09/2027,29/09/2027,Voz,Renovar la licencia,Entorno Fisico,Tramite,Nota,Pendiente,2,19,3,0,0
+62,11/09/2027,03/10/2027,Texto,Contestar correos pendientes,Trabajo,Entregables,Tarea,Pendiente,2,28,3,0,0
+63,25/04/2027,14/05/2027,Voz,Brain dump: mi organizacion del depa,Entorno Fisico,Mantenimiento,Nota,Pendiente,4,36,6,0,0
+64,16/03/2027,10/04/2027,Texto,Cita | mi rutina de domingo,Ocio,,Cita,Pendiente,3,27,6,0,0
+65,05/12/2027,16/12/2027,Voz,Tema por investigar: resumen,Trabajo,,Nota,Pendiente,3,28,4,0,0
+66,18/08/2027,15/09/2027,Voz,Agendar la pago de servicios y archivar,Finanzas,,Tarea,Pendiente,1,39,7,0,0
+67,16/08/2026,08/09/2026,Texto,Revision: presentacion,Trabajo,,Cita,Pendiente,2,22,2,0,0
+68,18/02/2026,06/03/2026,foto,Enviar una practica en Notion,Trabajo,,Tarea,Pendiente,1,29,5,0,0
+69,29/08/2026,27/09/2026,Voz,Cita farmacia,Salud,,Cita,Pendiente,3,13,2,0,0
+70,12/04/2027,28/04/2027,Texto,Salida: ahorro,Finanzas,,Cita,Pendiente,1,14,2,0,0
+71,27/06/2027,02/07/2027,Texto,Revision de bano,Entorno Fisico,Mantenimiento,Cita,Pendiente,3,16,3,0,0
+72,02/04/2026,09/04/2026,Texto,Brain dump: vacunas,Salud,,Nota,Pendiente,4,19,3,0,0
+73,30/08/2026,09/09/2026,foto,Salida PR,Trabajo,,Cita,Pendiente,3,9,2,0,0
+74,19/02/2027,01/03/2027,Voz,Preparar la ahorro y dar seguimiento,Finanzas,,Tarea,Pendiente,3,36,6,0,0
+75,16/09/2026,28/09/2026,Texto,Checklist borrador: respaldos,Desarrollo Personal,Organizacion,Nota,Pendiente,4,29,3,0,0
+76,01/01/2026,13/01/2026,Texto,Definir: plan de accion,Trabajo,,Nota,Pendiente,3,23,4,0,0
+77,28/08/2027,02/09/2027,Voz,Llamada de mis finanzas 2026,Finanzas,,Cita,Pendiente,4,28,5,0,0
+78,28/01/2027,02/02/2027,Voz,Documentar una resumen esta semana,Trabajo,,Tarea,Pendiente,1,34,5,0,0
+79,26/11/2026,19/12/2026,Texto,Organizar la supermercado con checklist,Entorno Fisico,Super,Tarea,Pendiente,1,39,5,0,0
+80,06/05/2027,10/05/2027,Voz,Check-in de arena,Entorno Fisico,Mantenimiento,Cita,Pendiente,1,17,3,0,0
+81,28/12/2025,06/01/2026,Texto,Llamada: organizar archivos,Trabajo,,Cita,Pendiente,2,27,3,0,0
+82,23/08/2027,22/09/2027,Texto,Brain dump: mensaje pendiente,Desarrollo Personal,Organizacion,Nota,Pendiente,4,29,4,0,0
+83,29/11/2026,09/12/2026,Voz,Brain dump: mi roadmap profesional,Trabajo,,Nota,Pendiente,3,34,5,0,0
+84,19/02/2026,12/03/2026,Texto,Sesion de mi entrenamiento,Salud,,Cita,Pendiente,2,26,4,0,0
+85,06/06/2026,13/06/2026,Voz,Entrega | PR,Trabajo,,Cita,Pendiente,3,12,3,0,0
+86,18/04/2027,03/05/2027,Texto,Cita: hotel,Diversión,Viajes,Cita,Pendiente,4,11,2,0,0
+87,22/03/2026,28/03/2026,Voz,Separar la ejercicios de Python y archivar,Trabajo,,Tarea,Pendiente,1,42,7,0,0
+88,21/05/2026,16/06/2026,Texto,Definir: cocina,Entorno Fisico,Mantenimiento,Nota,Pendiente,2,15,2,0,0
+89,14/10/2027,15/10/2027,Voz,Visita: Amazon,Diversión,Salida Social,Cita,Pendiente,4,14,2,0,0
+90,02/12/2027,14/12/2027,Voz,Evento | regalo,Amistad,Salidas con Amigos,Cita,Pendiente,4,15,3,0,0
+91,17/07/2026,19/07/2026,Texto,Sesion de regalos,Amistad,Salidas con Amigos,Cita,Pendiente,1,17,3,0,0
+92,09/07/2026,18/07/2026,foto,Recordatorio: ropa deportiva,Salud,,Nota,Pendiente,4,28,3,0,0
+93,31/07/2027,21/08/2027,Voz,Cerrar mi maleta con checklist,Diversión,Viajes,Tarea,Pendiente,2,30,5,0,0
+94,11/10/2026,13/10/2026,Texto,Reflexionar sobre: mi sistema en Notion,Desarrollo Personal,Organizacion,Nota,Pendiente,1,39,6,0,0
+95,13/05/2027,27/05/2027,Texto,Definir: seguridad 2FA,Trabajo,,Nota,Pendiente,1,22,3,0,0
+96,12/06/2027,19/06/2027,Texto,Preguntas: transferencia bancaria,Finanzas,,Nota,Pendiente,2,33,3,0,0
+97,07/08/2027,12/08/2027,foto,Seguimiento zapatera,Entorno Fisico,Mantenimiento,Cita,Pendiente,2,20,2,0,0
+98,22/01/2026,06/02/2026,Voz,Limpiar mi actualizar apps,Desarrollo Personal,Organizacion,Tarea,Pendiente,3,26,4,0,0
+99,13/05/2026,15/05/2026,Texto,Tema por investigar: hogar,Entorno Fisico,Mantenimiento,Nota,Pendiente,3,26,4,0,0
+100,09/07/2026,25/07/2026,Texto,Llamada | pipeline,Trabajo,,Cita,Pendiente,3,18,3,0,0
+101,16/05/2027,10/06/2027,Voz,Evento | validacion,Trabajo,,Cita,Pendiente,1,19,3,0,0
+102,18/06/2026,07/07/2026,Voz,Optimizar el plan de accion,Trabajo,,Tarea,Pendiente,1,27,5,0,0
+103,22/04/2027,29/04/2027,Texto,Hacer la metricas,Trabajo,,Tarea,Pendiente,2,17,3,0,0
+104,18/12/2027,22/12/2027,Voz,Crear el Amazon y confirmar recepcion,Diversión,Salida Social,Tarea,Pendiente,1,37,6,0,0
+105,14/02/2027,13/03/2027,Voz,Responder mi refri,Entorno Fisico,Mantenimiento,Tarea,Pendiente,2,18,3,0,0
+106,01/04/2027,22/04/2027,Texto,Visita con practica,Trabajo,,Cita,Pendiente,4,19,3,0,0
+107,12/05/2027,24/05/2027,Texto,Validar mi plan con amigas,Amistad,Salidas con Amigos,Tarea,Pendiente,4,26,5,0,0
+108,14/08/2027,26/08/2027,Voz,Documentar la tarea del diplomado,Trabajo,,Tarea,Pendiente,3,33,5,0,0
+109,12/05/2026,17/05/2026,Texto,Visita de lista de lugares,Diversión,Viajes,Cita,Pendiente,4,26,5,0,0
+110,31/10/2026,29/11/2026,Texto,Seguimiento | veterinario,Familia,,Cita,Pendiente,3,25,3,0,0
+111,16/05/2027,18/05/2027,Texto,Revision: desparasitacion,Familia,,Cita,Pendiente,4,25,2,0,0
+112,07/07/2027,28/07/2027,Texto,Ordenar una skincare y dar seguimiento,Salud,,Tarea,Pendiente,1,38,6,0,0
+113,01/02/2026,03/02/2026,Texto,Idea: aniversario,Romance,,Nota,Pendiente,4,17,2,0,0
+114,07/12/2026,01/01/2027,Texto,Separar una rutina de sueno,Salud,,Tarea,Pendiente,3,27,5,0,0
+115,21/12/2025,09/01/2026,Voz,Clase con mi sistema en Notion,Desarrollo Personal,Organizacion,Cita,Pendiente,1,30,6,0,0
+116,25/12/2025,14/01/2026,Texto,Confirmar una ticket de soporte,Trabajo,,Tarea,Pendiente,4,31,5,0,0
+117,22/08/2026,29/08/2026,Voz,Entrega de mis finanzas 2026,Finanzas,,Cita,Pendiente,1,28,5,0,0
+118,15/08/2026,17/08/2026,Texto,Sesion | regalo,Amistad,Salidas con Amigos,Cita,Pendiente,4,15,3,0,0
+119,03/05/2027,29/05/2027,Voz,Descargar mi suplementos y archivar,Salud,,Tarea,Pendiente,2,35,5,0,0
+120,14/04/2027,13/05/2027,Texto,Renovar mi farmacia,Salud,,Tarea,Pendiente,4,19,3,0,0
+121,13/02/2027,14/02/2027,Voz,Llamar mi rutina de sueno,Salud,,Tarea,Pendiente,1,25,5,0,0
+122,14/11/2026,20/11/2026,Voz,Pagar la paseo,Diversión,Salida Social,Tarea,Pendiente,4,14,3,0,0
+123,09/10/2026,28/10/2026,Texto,Tema por investigar: mi estilo personal,Desarrollo Personal,Organizacion,Nota,Pendiente,2,39,6,0,0
+124,27/03/2026,28/03/2026,foto,Entregar el vitaminas y confirmar recepcion,Salud,,Tarea,Pendiente,4,43,6,0,0
+125,06/10/2027,05/11/2027,Voz,Definir: EDA,Trabajo,,Nota,Pendiente,2,12,2,0,0
+126,12/03/2027,09/04/2027,Texto,Clase de supermercado,Entorno Fisico,Mantenimiento,Cita,Pendiente,2,21,3,0,0
+127,06/02/2026,14/02/2026,Texto,Hacer la regalo en el calendario,Amistad,Salidas con Amigos,Tarea,Pendiente,3,32,6,0,0
+128,08/12/2027,21/12/2027,Texto,Definir: reservacion,Diversión,Salida Social,Nota,Pendiente,1,20,2,0,0
+129,03/03/2026,26/03/2026,foto,Prioridades de: mi productividad,Trabajo,,Nota,Pendiente,2,32,4,0,0
+130,15/04/2026,06/05/2026,Voz,Pagar la pipeline y archivar,Trabajo,,Tarea,Pendiente,2,28,5,0,0
+131,02/03/2026,15/03/2026,Texto,Cita: el equipo,Trabajo,,Cita,Pendiente,4,15,3,0,0
+132,11/07/2027,14/07/2027,Texto,Prioridades de: cocina,Entorno Fisico,Mantenimiento,Nota,Pendiente,1,22,3,0,0
+133,07/09/2026,03/10/2026,Voz,Pendiente por decidir: croquetas,Familia,,Nota,Pendiente,4,32,4,0,0
+134,24/10/2027,19/11/2027,Voz,Guardar una pago de servicios,Finanzas,,Tarea,Pendiente,1,29,5,0,0
+135,29/06/2026,10/07/2026,Texto,Preguntas: limpieza de fotos,Desarrollo Personal,Organizacion,Nota,Pendiente,4,28,4,0,0
+136,13/09/2027,01/10/2027,Voz,Pendiente por decidir: mi LinkedIn,Trabajo,,Nota,Pendiente,4,34,5,0,0
+137,31/01/2026,19/02/2026,Voz,Etiquetar la facturas en Notion,Finanzas,,Tarea,Pendiente,1,31,5,0,0
+138,23/07/2026,10/08/2026,Texto,Visita con actualizar apps,Desarrollo Personal,Organizacion,Cita,Pendiente,4,26,4,0,0
+139,10/11/2026,24/11/2026,Texto,Hacer la basura y archivar,Entorno Fisico,Mantenimiento,Tarea,Pendiente,1,26,5,0,0
+140,23/05/2026,16/06/2026,Voz,Lista de: limpieza de fotos,Desarrollo Personal,Organizacion,Nota,Pendiente,3,27,5,0,0
+141,26/03/2026,29/03/2026,Texto,Recordatorio: ropa deportiva,Salud,,Nota,Pendiente,3,28,3,0,0
+142,03/10/2027,11/10/2027,Texto,Salida de reciclaje,Entorno Fisico,Mantenimiento,Cita,Pendiente,2,19,3,0,0
+143,30/07/2027,02/08/2027,Texto,Armar una seguimiento por correo,Trabajo,,Tarea,Pendiente,2,32,5,0,0
+144,04/05/2027,27/05/2027,Texto,Llenar una backlog antes de las 6pm,Trabajo,,Tarea,Pendiente,2,35,7,0,0
+145,29/05/2027,17/06/2027,Texto,Solicitar la cine y archivar,Diversión,Salida Social,Tarea,Pendiente,4,28,5,0,0
+146,30/06/2027,26/07/2027,Texto,Cerrar el proyecto final en Notion,Trabajo,,Tarea,Pendiente,1,34,6,0,0
+147,26/09/2027,07/10/2027,Texto,Llamada con libros,Desarrollo Personal,Organizacion,Cita,Pendiente,2,18,3,0,0
+148,23/09/2026,04/10/2026,Texto,Brain dump: descanso,Salud,,Nota,Pendiente,3,20,3,0,0
+149,08/10/2027,24/10/2027,Voz,Tema por investigar: cuidado personal,Salud,,Nota,Pendiente,4,37,5,0,0
+150,23/10/2026,18/11/2026,Texto,Brain dump: cita medica,Salud,,Nota,Pendiente,3,23,4,0,0
+151,12/10/2027,02/11/2027,Voz,Brain dump: mi salud mental,Salud,,Nota,Pendiente,1,27,5,0,0
+152,13/10/2027,14/10/2027,Texto,Pagar el notebook antes de las 6pm,Trabajo,,Tarea,Pendiente,4,34,7,0,0
+153,02/09/2027,28/09/2027,Voz,Reflexionar sobre: llamada a familia,Familia,,Nota,Pendiente,1,36,5,0,0
+154,24/06/2027,19/07/2027,Texto,Validar la Amazon y confirmar recepcion,Diversión,Salida Social,Tarea,Pendiente,1,39,6,0,0
+155,18/08/2027,07/09/2027,Voz,Enviar mi zapatera y confirmar recepcion,Entorno Fisico,Mantenimiento,Tarea,Pendiente,4,40,6,0,0
+156,21/10/2026,26/10/2026,Voz,Notas sobre: libros,Desarrollo Personal,Organizacion,Nota,Pendiente,2,19,3,0,0
+157,04/09/2027,13/09/2027,Texto,Cita | cumpleanos,Amistad,Salidas con Amigos,Cita,Pendiente,2,17,3,0,0
+158,03/02/2027,05/03/2027,foto,Renovar mi tarjeta de credito,Finanzas,,Tarea,Pendiente,2,29,5,0,0
+159,01/12/2026,26/12/2026,Voz,Cita con pago de servicios,Finanzas,,Cita,Pendiente,1,26,5,0,0
+160,22/01/2026,26/01/2026,Texto,Checklist borrador: repositorio,Trabajo,,Nota,Pendiente,1,31,3,0,0
+161,31/12/2026,13/01/2027,Texto,Limpiar el presentacion,Trabajo,,Tarea,Pendiente,2,23,3,0,0
+162,20/11/2026,03/12/2026,Texto,Cerrar una itinerario en Notion,Trabajo,,Tarea,Pendiente,4,31,5,0,0
+163,01/01/2027,24/01/2027,foto,Llamada: organizar archivos,Trabajo,,Cita,Pendiente,2,27,3,0,0
+164,09/12/2026,04/01/2027,Voz,Opciones para: mis prioridades del mes,Trabajo,,Nota,Pendiente,3,38,6,0,0
+165,11/04/2026,28/04/2026,Texto,Recordatorio: mi sistema en Notion,Desarrollo Personal,Organizacion,Nota,Pendiente,4,34,5,0,0
+166,01/04/2027,24/04/2027,Texto,Respaldar una zapatera hoy,Entorno Fisico,Mantenimiento,Tarea,Pendiente,1,26,4,0,0
+167,28/03/2026,07/04/2026,Voz,Junta | Notion,Trabajo,,Cita,Pendiente,4,14,3,0,0
+168,26/12/2025,08/01/2026,Voz,Seguimiento plan de accion,Trabajo,,Cita,Pendiente,3,26,4,0,0
+169,18/05/2027,04/06/2027,Texto,Llamada de supermercado,Entorno Fisico,Mantenimiento,Cita,Pendiente,3,23,3,0,0
+170,04/11/2026,24/11/2026,Voz,Tema por investigar: desparasitacion,Familia,,Nota,Pendiente,2,36,4,0,0
+171,07/11/2026,08/11/2026,Voz,Definir: actualizar apps,Desarrollo Personal,Organizacion,Nota,Pendiente,4,24,3,0,0
+172,12/11/2027,10/12/2027,Texto,Imprimir el bano y confirmar recepcion,Entorno Fisico,Mantenimiento,Tarea,Pendiente,4,38,6,0,0
+173,14/09/2027,14/10/2027,Texto,Brain dump: regalo,Amistad,Salidas con Amigos,Nota,Pendiente,3,18,3,0,0
+174,23/12/2026,14/01/2027,Voz,Documentar mi impuestos con checklist,Finanzas,,Tarea,Pendiente,1,37,5,0,0
+175,01/09/2026,12/09/2026,Texto,Llamar el visita y archivar,Desarrollo Personal,Organizacion,Tarea,Pendiente,1,27,5,0,0
+176,25/07/2026,10/08/2026,Texto,Check-in: limpieza de platos,Entorno Fisico,Mantenimiento,Cita,Pendiente,4,28,4,0,0
+177,16/03/2026,25/03/2026,Texto,Checklist borrador: descanso,Salud,,Nota,Pendiente,1,28,3,0,0
+178,04/05/2027,05/05/2027,Texto,Imprimir mi documentos con checklist,Trabajo,,Tarea,Pendiente,4,36,5,0,0
+179,08/06/2027,10/06/2027,Texto,Cita: presupuesto mensual,Finanzas,,Cita,Pendiente,3,25,3,0,0
+180,04/02/2027,13/02/2027,Texto,Entrega | veterinario,Familia,,Cita,Pendiente,3,21,3,0,0
+181,02/05/2026,18/05/2026,Texto,Armar mi limpieza de fotos esta semana,Desarrollo Personal,Organizacion,Tarea,Pendiente,2,38,7,0,0
+182,16/06/2026,29/06/2026,Texto,Solicitar la plantillas y confirmar recepcion,Trabajo,,Tarea,Pendiente,3,45,6,0,0
+183,06/11/2026,19/11/2026,Voz,Configurar la seguridad 2FA y archivar,Trabajo,,Tarea,Pendiente,1,38,6,0,0
+184,31/08/2027,03/09/2027,Texto,Pagar la analisis clinicos en el calendario,Salud,,Tarea,Pendiente,4,43,7,0,0
+185,16/02/2027,12/03/2027,Voz,Llamada | meal prep,Salud,,Cita,Pendiente,3,19,4,0,0
+186,06/12/2027,21/12/2027,Texto,Optimizar una EDA en el calendario,Trabajo,,Tarea,Pendiente,2,34,6,0,0
+187,10/05/2026,18/05/2026,Voz,Agendar la nutricion y archivar,Salud,,Tarea,Pendiente,4,31,5,0,0
+188,27/11/2027,12/12/2027,Texto,Llenar la practica y dar seguimiento,Trabajo,,Tarea,Pendiente,4,36,6,0,0
+189,17/08/2027,25/08/2027,Voz,Clase | dentista,Salud,,Cita,Pendiente,4,16,3,0,0
+190,25/12/2025,15/01/2026,Voz,Opciones para: deploy,Trabajo,,Nota,Pendiente,2,21,3,0,0
+191,13/06/2026,08/07/2026,Texto,Seguimiento croquetas,Familia,,Cita,Pendiente,3,21,2,0,0
+192,30/10/2027,28/11/2027,foto,Reflexionar sobre: hogar,Entorno Fisico,Mantenimiento,Nota,Pendiente,1,24,3,0,0
+193,30/05/2026,17/06/2026,Voz,Responder el cine,Diversión,Salida Social,Tarea,Pendiente,2,17,3,0,0
+194,26/09/2027,25/10/2027,Texto,Opciones para: Amazon,Diversión,Salida Social,Nota,Pendiente,3,21,3,0,0
+195,26/04/2026,09/05/2026,Texto,Sesion | mi jefe,Trabajo,,Cita,Pendiente,2,16,4,0,0
+196,26/07/2027,30/07/2027,Texto,Prioridades de: lista de lugares,Diversión,Viajes,Nota,Pendiente,4,32,5,0,0
+197,12/01/2026,31/01/2026,foto,Brain dump: regalo,Amistad,Salidas con Amigos,Nota,Pendiente,1,18,3,0,0
+198,26/08/2026,28/08/2026,Voz,Lista de: flashcards,Desarrollo Personal,Organizacion,Nota,Pendiente,3,20,3,0,0
+199,21/03/2026,08/04/2026,Texto,Opciones para: automatizacion,Trabajo,,Nota,Pendiente,3,29,3,0,0
+200,16/10/2026,26/10/2026,Texto,Reflexionar sobre: automatizacion,Trabajo,,Nota,Pendiente,1,33,3,0,0
+201,30/07/2026,01/08/2026,Voz,Limpiar mi plan de accion con checklist,Trabajo,,Tarea,Pendiente,1,39,7,0,0
+202,19/02/2026,21/03/2026,Voz,Lista de: consulta dental,Salud,,Nota,Pendiente,3,25,4,0,0
+203,21/03/2027,20/04/2027,Texto,Visita croquetas,Familia,,Cita,Pendiente,4,16,2,0,0
+204,20/07/2026,23/07/2026,Voz,Entrega de presentacion,Trabajo,,Cita,Pendiente,3,23,3,0,0
+205,21/11/2027,08/12/2027,Voz,Preguntas: plan de accion,Trabajo,,Nota,Pendiente,2,25,4,0,0
+206,14/07/2027,18/07/2027,Texto,Idea: mi entrenamiento,Salud,,Nota,Pendiente,2,22,3,0,0
+207,26/03/2027,30/03/2027,Texto,Sesion transporte,Trabajo,,Cita,Pendiente,3,17,2,0,0
+208,06/11/2026,06/12/2026,Voz,Cita con snacks,Salud,,Cita,Pendiente,1,15,3,0,0
+209,30/05/2026,02/06/2026,Texto,Brain dump: modelado,Trabajo,,Nota,Pendiente,3,20,3,0,0
+210,23/04/2027,26/04/2027,Texto,Subir la tarea del diplomado,Trabajo,,Tarea,Pendiente,1,28,5,0,0
+211,03/01/2027,01/02/2027,Voz,Definir: plan con amigas,Amistad,Salidas con Amigos,Nota,Pendiente,1,24,4,0,0
+212,03/10/2027,22/10/2027,Texto,Confirmar mi documentacion,Trabajo,,Tarea,Pendiente,1,26,3,0,0
+213,25/02/2026,20/03/2026,Voz,Comprar una limpieza de fotos esta semana,Desarrollo Personal,Organizacion,Tarea,Pendiente,1,41,7,0,0
+214,31/12/2025,16/01/2026,Texto,Definir: hotel,Diversión,Salida Social,Nota,Pendiente,1,14,2,0,0
+215,08/08/2027,12/08/2027,Voz,Definir: cita medica,Salud,,Nota,Pendiente,3,20,3,0,0
+216,01/12/2026,30/12/2026,Texto,Anotar la modelado,Trabajo,,Tarea,Pendiente,4,18,3,0,0
+217,04/02/2027,19/02/2027,Voz,Cancelar mi fondo de emergencia hoy,Finanzas,,Tarea,Pendiente,2,35,6,0,0
+218,14/04/2026,18/04/2026,Voz,Comprar una ropa,Diversión,Viajes,Tarea,Pendiente,2,16,3,0,0
+219,03/08/2027,29/08/2027,Texto,Llamar mi regalos en Notion,Amistad,Salidas con Amigos,Tarea,Pendiente,3,27,5,0,0
+220,29/09/2026,26/10/2026,foto,Revision de alacena,Entorno Fisico,Mantenimiento,Cita,Pendiente,3,19,3,0,0
+221,20/05/2027,08/06/2027,Voz,Enviar el lavanderia,Entorno Fisico,Mantenimiento,Tarea,Pendiente,2,20,3,0,0
+222,26/05/2027,11/06/2027,Texto,Guardar el PR con checklist,Trabajo,,Tarea,Pendiente,3,27,5,0,0
+223,15/08/2026,22/08/2026,Texto,Etiquetar el bodega hoy,Entorno Fisico,Mantenimiento,Tarea,Pendiente,2,23,4,0,0
+224,29/04/2027,08/05/2027,Texto,Hacer la itinerario y dar seguimiento,Trabajo,,Tarea,Pendiente,4,37,6,0,0
+225,04/02/2027,28/02/2027,foto,Subir una bibliografia y dejar evidencia,Desarrollo Personal,Organizacion,Tarea,Pendiente,3,40,6,0,0
+226,27/03/2026,09/04/2026,Voz,Notas sobre: suscripciones,Finanzas,,Nota,Pendiente,4,26,3,0,0
+227,30/01/2026,04/02/2026,Texto,Check-in corte de unas,Salud,,Cita,Pendiente,3,22,4,0,0
+228,07/08/2027,17/08/2027,Texto,Entregar la cama y archivar,Entorno Fisico,Mantenimiento,Tarea,Pendiente,2,27,5,0,0
+229,16/01/2026,31/01/2026,Voz,Organizar una hidratacion,Salud,,Tarea,Pendiente,4,25,3,0,0
+230,11/10/2026,16/10/2026,Voz,Definir: mi productividad,Trabajo,,Nota,Pendiente,1,25,3,0,0
+231,09/09/2026,29/09/2026,Texto,Evento hidratacion,Salud,,Cita,Pendiente,1,18,2,0,0
+232,01/03/2027,24/03/2027,Voz,Revision cita medica,Salud,,Cita,Pendiente,2,20,3,0,0
+233,23/04/2027,11/05/2027,Voz,Optimizar la inbox zero hoy,Trabajo,,Tarea,Pendiente,2,27,5,0,0
+234,10/02/2027,10/03/2027,Texto,Cita | notebook,Trabajo,,Cita,Pendiente,2,15,3,0,0
+235,18/05/2026,17/06/2026,Texto,Revision rutina de sueno,Salud,,Cita,Pendiente,2,24,4,0,0
+236,27/06/2027,02/07/2027,Voz,Armar mi deploy hoy,Trabajo,,Tarea,Pendiente,4,19,4,0,0
+237,09/05/2027,04/06/2027,Texto,Descargar una hotel hoy,Diversión,Salida Social,Tarea,Pendiente,3,23,4,0,0
+238,13/04/2027,29/04/2027,Texto,Check-in | fondo de emergencia,Finanzas,,Cita,Pendiente,1,30,5,0,0
+239,22/09/2026,28/09/2026,Voz,Llamada: proyecto final,Trabajo,,Cita,Pendiente,1,23,3,0,0
+240,04/03/2026,10/03/2026,Texto,Configurar el ejercicios de Python hoy,Trabajo,,Tarea,Pendiente,4,38,6,0,0
+241,27/02/2026,09/03/2026,Voz,Clase cama,Entorno Fisico,Mantenimiento,Cita,Pendiente,4,10,2,0,0
+242,24/06/2026,21/07/2026,Texto,Seguimiento con plan de accion,Trabajo,,Cita,Pendiente,4,30,5,0,0
+243,21/11/2026,22/11/2026,Voz,Hacer el repositorio hoy,Trabajo,,Tarea,Pendiente,4,24,4,0,0
+244,19/10/2027,31/10/2027,Texto,Depurar el comida familiar y dar seguimiento,Familia,,Tarea,Pendiente,1,44,7,0,0
+245,10/08/2027,17/08/2027,Voz,Editar mi transferencia bancaria,Finanzas,,Tarea,Pendiente,2,32,4,0,0
+246,28/07/2026,07/08/2026,Voz,Brain dump: snacks,Salud,,Nota,Pendiente,4,18,3,0,0
+247,15/12/2027,24/12/2027,Texto,Cerrar una ropa hoy,Diversión,Salida Social,Tarea,Pendiente,1,19,4,0,0
+248,25/05/2026,15/06/2026,foto,Pendiente por decidir: cafe,Ocio,,Nota,Pendiente,3,27,4,0,0
+249,27/02/2027,05/03/2027,Voz,Lista de: caminar,Salud,,Nota,Pendiente,1,17,3,0,0
+250,17/04/2026,08/05/2026,Texto,Checklist borrador: roadmap,Trabajo,,Nota,Pendiente,4,27,3,0,0
+251,11/10/2026,16/10/2026,Texto,Check-in | mi portafolio,Trabajo,,Cita,Pendiente,3,24,4,0,0
+252,10/02/2027,08/03/2027,Texto,Lista de: paseo,Diversión,Salida Social,Nota,Pendiente,3,15,3,0,0
+253,23/09/2026,07/10/2026,foto,Etiquetar la Drive,Trabajo,,Tarea,Pendiente,3,18,3,0,0
+254,12/11/2027,29/11/2027,Voz,Llenar la hotel y archivar,Diversión,Salida Social,Tarea,Pendiente,2,26,5,0,0
+255,04/06/2027,30/06/2027,Texto,Planear mi hogar y archivar,Entorno Fisico,Mantenimiento,Tarea,Pendiente,3,27,5,0,0
+256,15/04/2027,24/04/2027,Texto,Recordatorio: bici,Salud,,Nota,Pendiente,2,18,2,0,0
+257,30/05/2027,24/06/2027,Voz,Imprimir la bano y archivar,Entorno Fisico,Mantenimiento,Tarea,Pendiente,3,27,5,0,0
+258,29/12/2026,12/01/2027,Voz,Registrar la actividades y dejar evidencia,Trabajo,,Tarea,Pendiente,1,42,6,0,0
+259,07/08/2027,08/08/2027,Texto,Comprar el corte de unas y archivar,Salud,,Tarea,Pendiente,2,35,7,0,0
+260,15/12/2026,01/01/2027,Voz,Guardar el refri,Entorno Fisico,Mantenimiento,Tarea,Pendiente,4,16,3,0,0
+261,13/09/2026,02/10/2026,Voz,Cerrar mi suscripciones en Notion,Finanzas,,Tarea,Pendiente,1,33,5,0,0
+262,07/02/2027,07/03/2027,Texto,Salida: cine,Diversión,Salida Social,Cita,Pendiente,3,12,2,0,0
+263,19/10/2026,01/11/2026,Texto,Entrega | consulta dental,Salud,,Cita,Pendiente,1,25,4,0,0
+264,30/04/2027,15/05/2027,Voz,Llamada con mantenimiento,Entorno Fisico,Mantenimiento,Cita,Pendiente,2,25,3,0,0
+265,04/10/2026,25/10/2026,Texto,Reflexionar sobre: Amazon,Diversión,Salida Social,Nota,Pendiente,1,25,3,0,0
+266,18/11/2027,19/11/2027,Texto,Definir: ropa,Diversión,Salida Social,Nota,Pendiente,1,13,2,0,0
+267,20/12/2026,04/01/2027,Voz,Configurar una llamada a familia,Familia,,Tarea,Pendiente,1,32,5,0,0
+268,27/11/2026,19/12/2026,Voz,Entrega: resumen,Trabajo,,Cita,Pendiente,1,16,2,0,0
+269,11/09/2026,19/09/2026,Texto,Depurar el arena con checklist,Entorno Fisico,Mantenimiento,Tarea,Pendiente,1,30,5,0,0
+270,03/10/2027,10/10/2027,Texto,Revision de Amazon,Diversión,Salida Social,Cita,Pendiente,2,18,3,0,0
+271,30/09/2027,11/10/2027,Voz,Salida RH,Trabajo,,Cita,Pendiente,2,9,2,0,0
+272,12/10/2026,09/11/2026,Texto,Reflexionar sobre: yoga,Salud,,Nota,Pendiente,1,23,3,0,0
+273,07/07/2026,19/07/2026,Texto,Solicitar mi practica y confirmar recepcion,Trabajo,,Tarea,Pendiente,1,43,6,0,0
+274,11/08/2027,29/08/2027,Texto,Notas sobre: proyecto final,Trabajo,,Nota,Pendiente,1,27,4,0,0
+275,28/12/2026,25/01/2027,Texto,Junta de maleta,Diversión,Salida Social,Cita,Pendiente,3,15,3,0,0
+276,13/05/2027,01/06/2027,Voz,Anotar mi ahorro con checklist,Finanzas,,Tarea,Pendiente,4,30,5,0,0
+277,11/11/2026,17/11/2026,Texto,Evento | cocina,Entorno Fisico,Mantenimiento,Cita,Pendiente,3,15,3,0,0
+278,11/06/2026,10/07/2026,Voz,Definir: tarea del diplomado,Trabajo,,Nota,Pendiente,1,28,4,0,0
+279,02/07/2026,23/07/2026,Texto,Clase con limpieza de fotos,Desarrollo Personal,Organizacion,Cita,Pendiente,2,27,5,0,0
+280,21/08/2026,12/09/2026,Voz,Checklist borrador: actualizar apps,Desarrollo Personal,Organizacion,Nota,Pendiente,4,35,4,0,0
+281,10/03/2027,26/03/2027,Texto,Llamar una plan de accion y confirmar recepcion,Trabajo,,Tarea,Pendiente,3,47,8,0,0
+282,15/09/2027,15/10/2027,Voz,Depurar una veterinario,Familia,,Tarea,Pendiente,4,23,3,0,0
+283,27/12/2026,21/01/2027,Voz,Idea: mi salud mental,Salud,,Nota,Pendiente,4,21,4,0,0
+284,24/10/2026,18/11/2026,Texto,Respaldar mi quiz en Notion,Desarrollo Personal,Organizacion,Tarea,Pendiente,3,27,5,0,0
+285,26/05/2026,21/06/2026,foto,Tema por investigar: mensaje pendiente,Desarrollo Personal,Organizacion,Nota,Pendiente,3,38,5,0,0
+286,08/05/2026,15/05/2026,Voz,Llamada: reciclaje,Entorno Fisico,Mantenimiento,Cita,Pendiente,4,18,2,0,0
+287,24/09/2026,03/10/2026,Texto,Idea: ticket de soporte,Trabajo,,Nota,Pendiente,3,23,4,0,0
+288,06/07/2027,05/08/2027,Texto,Llenar la lectura del modulo esta semana,Trabajo,,Tarea,Pendiente,1,40,7,0,0
+289,27/05/2027,02/06/2027,Texto,Configurar mi EDA hoy,Trabajo,,Tarea,Pendiente,1,21,4,0,0
+290,27/01/2027,30/01/2027,foto,Llamada soporte,Trabajo,,Cita,Pendiente,4,15,2,0,0
+291,15/07/2026,04/08/2026,Voz,Optimizar el itinerario en Notion,Trabajo,,Tarea,Pendiente,1,33,5,0,0
+292,06/02/2027,28/02/2027,Texto,Tema por investigar: seguimiento por correo,Trabajo,,Nota,Pendiente,3,43,6,0,0
+293,24/08/2027,18/09/2027,Texto,Opciones para: pago de servicios,Finanzas,,Nota,Pendiente,2,32,5,0,0
+294,02/11/2027,30/11/2027,Voz,Idea: mapa,Ocio,,Nota,Pendiente,2,10,2,0,0
+295,01/07/2027,27/07/2027,Voz,Revision de bodega,Entorno Fisico,Mantenimiento,Cita,Pendiente,3,18,3,0,0
+296,10/10/2026,07/11/2026,Texto,Visita con vacunas,Salud,,Cita,Pendiente,1,18,3,0,0
+297,05/12/2026,12/12/2026,Voz,Llamada | mi roadmap profesional,Trabajo,,Cita,Pendiente,2,32,5,0,0
+298,02/03/2027,15/03/2027,Voz,Sesion mi LinkedIn,Trabajo,,Cita,Pendiente,1,18,3,0,0
+299,13/10/2026,03/11/2026,Texto,Programar el zapatera en el calendario,Entorno Fisico,Mantenimiento,Tarea,Pendiente,2,38,6,0,0
+300,05/12/2026,10/12/2026,Texto,Pendiente por decidir: cama,Entorno Fisico,Mantenimiento,Nota,Pendiente,3,27,4,0,0
+301,21/05/2026,04/06/2026,Voz,Brain dump: estiramientos,Salud,,Nota,Pendiente,2,25,3,0,0
+302,21/04/2026,29/04/2026,Texto,Brain dump: limpieza de fotos,Desarrollo Personal,Organizacion,Nota,Pendiente,1,29,5,0,0
+303,08/07/2026,31/07/2026,Texto,Guardar una paseo y dejar evidencia,Diversión,Salida Social,Tarea,Pendiente,4,35,6,0,0
+304,13/02/2027,26/02/2027,Voz,Actualizar el croquetas hoy,Familia,,Tarea,Pendiente,2,27,4,0,0
+305,16/07/2026,13/08/2026,Texto,Comprar mi cuidado personal,Salud,,Tarea,Pendiente,2,27,4,0,0
+306,16/10/2026,22/10/2026,Voz,Checklist borrador: refri,Entorno Fisico,Mantenimiento,Nota,Pendiente,3,25,3,0,0
+307,10/03/2026,02/04/2026,Texto,Pendiente por decidir: regalo,Amistad,Salidas con Amigos,Nota,Pendiente,1,29,4,0,0
+308,27/05/2027,28/05/2027,Voz,Preguntas: transferencia bancaria,Finanzas,,Nota,Pendiente,2,33,3,0,0
+309,02/04/2026,05/04/2026,Texto,Solicitar mi documentacion,Trabajo,,Tarea,Pendiente,1,26,3,0,0
+310,06/10/2026,13/10/2026,Voz,Entregar mi snacks en Notion,Salud,,Tarea,Pendiente,3,28,5,0,0
+311,21/08/2026,13/09/2026,Voz,Limpiar la supermercado antes de las 6pm,Entorno Fisico,Mantenimiento,Tarea,Pendiente,1,40,7,0,0
+312,14/12/2025,12/01/2026,Texto,Seguimiento: notebook,Trabajo,,Cita,Pendiente,3,21,2,0,0
+313,17/05/2026,26/05/2026,foto,Visita | cita medica,Salud,,Cita,Pendiente,1,20,4,0,0
+314,08/09/2026,19/09/2026,Voz,Entregar una plan de accion y dar seguimiento,Trabajo,,Tarea,Pendiente,3,45,8,0,0
+315,04/09/2027,04/10/2027,Texto,Hacer una croquetas en Notion,Familia,,Tarea,Pendiente,3,29,5,0,0
+316,07/11/2027,12/11/2027,Texto,Salida: mi salud mental,Salud,,Cita,Pendiente,3,23,4,0,0
+317,13/02/2026,03/03/2026,Texto,Salida: farmacia,Salud,,Cita,Pendiente,2,16,2,0,0
+318,09/01/2026,20/01/2026,foto,Cerrar el mapa y confirmar recepcion,Ocio,,Tarea,Pendiente,2,36,6,0,0
+319,20/05/2027,18/06/2027,Voz,Llenar la snacks en Notion,Salud,,Tarea,Pendiente,2,26,5,0,0
+320,24/02/2027,26/03/2027,Texto,Revision | tarea del diplomado,Trabajo,,Cita,Pendiente,1,30,5,0,0
+321,17/01/2027,14/02/2027,Texto,Cerrar el tarjeta de credito esta semana,Finanzas,,Tarea,Pendiente,3,40,7,0,0
+322,22/11/2026,25/11/2026,Voz,Prioridades de: cita medica,Salud,,Nota,Pendiente,3,27,4,0,0
+323,04/10/2026,31/10/2026,Voz,Comparar una hotel antes de las 6pm,Diversión,Salida Social,Tarea,Pendiente,4,35,7,0,0
+324,14/10/2027,26/10/2027,Texto,Cita de mis prioridades del mes,Trabajo,,Cita,Pendiente,2,31,6,0,0
+325,26/12/2026,20/01/2027,Voz,Seguimiento de pipeline,Trabajo,,Cita,Pendiente,3,23,3,0,0
+326,27/03/2026,16/04/2026,Voz,Pendiente por decidir: presupuesto de viaje,Finanzas,,Nota,Pendiente,3,43,6,0,0
+327,25/03/2027,24/04/2027,Texto,Crear plan de estudio y archivar,Trabajo,,Tarea,Pendiente,1,32,6,0,0
+328,26/08/2027,25/09/2027,Texto,Confirmar el transferencia bancaria en Notion,Finanzas,,Tarea,Pendiente,1,45,6,0,0
+329,11/09/2026,09/10/2026,Voz,Reflexionar sobre: zapatera,Entorno Fisico,Mantenimiento,Nota,Pendiente,1,27,3,0,0
+330,13/09/2026,22/09/2026,Texto,Agendar una caminar,Salud,,Tarea,Pendiente,1,19,3,0,0
+331,19/04/2026,20/04/2026,Texto,Visita: dentista,Salud,,Cita,Pendiente,2,16,2,0,0
+332,19/06/2026,22/06/2026,Voz,Sesion con date con mi novio,Romance,,Cita,Pendiente,3,28,6,0,0
+333,19/03/2026,20/03/2026,Texto,Agendar la pipeline y dejar evidencia,Trabajo,,Tarea,Pendiente,4,37,6,0,0
+334,16/08/2027,19/08/2027,Voz,Renovar el alacena en el calendario,Entorno Fisico,Mantenimiento,Tarea,Pendiente,1,35,6,0,0
+335,07/01/2026,29/01/2026,Texto,Hacer una CETES,Finanzas,,Tarea,Pendiente,2,15,3,0,0
+336,28/07/2026,21/08/2026,Voz,Etiquetar mi seguro de viaje en Notion,Finanzas,,Tarea,Pendiente,2,38,7,0,0
+337,28/03/2027,26/04/2027,Texto,Agendar una visita y archivar,Desarrollo Personal,Organizacion,Tarea,Pendiente,3,29,5,0,0
+338,04/03/2026,21/03/2026,Voz,Notas sobre: metricas,Trabajo,,Nota,Pendiente,4,21,3,0,0
+339,11/05/2026,16/05/2026,Voz,Evento con reporte semanal,Trabajo,,Cita,Pendiente,3,26,4,0,0
+340,17/02/2027,04/03/2027,Texto,Checklist borrador: bici,Salud,,Nota,Pendiente,2,24,3,0,0
+341,16/07/2026,11/08/2026,foto,Actualizar una cine,Diversión,Salida Social,Tarea,Pendiente,2,19,3,0,0
+342,17/09/2026,04/10/2026,Voz,Visita | mis prioridades del mes,Trabajo,,Cita,Pendiente,2,32,6,0,0
+343,03/04/2027,06/04/2027,Texto,Entrega validacion,Trabajo,,Cita,Pendiente,4,18,2,0,0
+344,16/08/2026,23/08/2026,Texto,Revision de hotel,Diversión,Viajes,Cita,Pendiente,4,17,3,0,0
+345,25/03/2026,12/04/2026,Texto,Reflexionar sobre: mi proyecto de IA,Trabajo,,Nota,Pendiente,1,36,6,0,0
+346,19/09/2026,17/10/2026,foto,Junta | bano,Entorno Fisico,Mantenimiento,Cita,Pendiente,2,12,3,0,0
+347,17/09/2026,30/09/2026,Voz,Respaldar una presupuesto mensual,Finanzas,,Tarea,Pendiente,2,33,4,0,0
+348,13/09/2026,21/09/2026,Texto,Anotar una libros y confirmar recepcion,Desarrollo Personal,Organizacion,Tarea,Pendiente,3,39,6,0,0
+349,02/06/2026,09/06/2026,Texto,Clase: mi portafolio,Trabajo,,Cita,Pendiente,3,20,3,0,0
+350,04/12/2026,18/12/2026,Voz,Entrega | impuestos,Finanzas,,Cita,Pendiente,3,19,3,0,0
+351,18/04/2026,03/05/2026,Voz,Lista de: meal prep,Salud,,Nota,Pendiente,1,19,4,0,0
+352,26/04/2027,29/04/2027,Texto,Check-in | refri,Entorno Fisico,Mantenimiento,Cita,Pendiente,2,16,3,0,0
+353,04/11/2027,13/11/2027,Voz,Crear la vacunas en Notion,Salud,,Tarea,Pendiente,1,26,5,0,0
+354,04/03/2026,13/03/2026,Voz,Preguntas: vitaminas,Salud,,Nota,Pendiente,4,20,2,0,0
+355,29/03/2026,09/04/2026,Texto,Idea: brunch,Ocio,,Nota,Pendiente,3,12,2,0,0
+356,20/01/2026,04/02/2026,Texto,Clase | vitaminas,Salud,,Cita,Pendiente,1,17,3,0,0
+357,13/02/2027,15/02/2027,Voz,Clase con proyecto final,Trabajo,,Cita,Pendiente,1,24,4,0,0
+358,28/10/2027,06/11/2027,Texto,Cita: plan con amigas,Amistad,Salidas con Amigos,Cita,Pendiente,1,21,4,0,0
+359,14/09/2027,15/09/2027,Texto,Notas sobre: PR,Trabajo,,Nota,Pendiente,4,15,3,0,0
+360,18/12/2027,28/12/2027,Voz,Brain dump: vitaminas,Salud,,Nota,Pendiente,3,21,3,0,0
+361,05/12/2026,11/12/2026,Texto,Lista de: vacunas,Salud,,Nota,Pendiente,4,17,3,0,0
+362,19/01/2027,05/02/2027,Voz,Opciones para: inbox zero,Trabajo,,Nota,Pendiente,4,25,4,0,0
+363,10/12/2027,26/12/2027,Texto,Tema por investigar: vacunas,Salud,,Nota,Pendiente,3,28,4,0,0
+364,05/06/2027,12/06/2027,Voz,Enviar el yoga hoy,Salud,,Tarea,Pendiente,2,18,4,0,0
+365,28/03/2026,30/03/2026,Texto,Seguimiento con nutriologo,Salud,,Cita,Pendiente,2,26,3,0,0
+366,21/03/2027,05/04/2027,Voz,Sesion | meditacion,Salud,,Cita,Pendiente,1,19,3,0,0
+367,10/06/2027,28/06/2027,Voz,Preguntas: meal prep,Salud,,Nota,Pendiente,4,20,3,0,0
+368,14/03/2026,13/04/2026,Texto,Notas sobre: snacks,Salud,,Nota,Pendiente,1,19,3,0,0
+369,01/08/2027,20/08/2027,foto,Llamada: validacion,Trabajo,,Cita,Pendiente,2,19,2,0,0
+370,16/02/2027,24/02/2027,Voz,Etiquetar mi cita medica antes de las 6pm,Salud,,Tarea,Pendiente,3,41,8,0,0
+371,23/12/2025,18/01/2026,Texto,Prioridades de: transferencia bancaria,Finanzas,,Nota,Pendiente,4,38,4,0,0
+372,17/12/2026,31/12/2026,Texto,Evento de mi plan de habitos,Salud,,Cita,Pendiente,4,28,6,0,0
+373,07/05/2026,16/05/2026,Texto,Documentar una llamada a familia hoy,Familia,,Tarea,Pendiente,2,36,6,0,0
+374,10/07/2026,19/07/2026,foto,Separar mi inbox zero,Trabajo,,Tarea,Pendiente,1,21,4,0,0
+375,03/10/2027,13/10/2027,Voz,Junta: automatizacion,Trabajo,,Cita,Pendiente,4,21,2,0,0
+376,19/03/2027,15/04/2027,Texto,Tema por investigar: ticket de soporte,Trabajo,,Nota,Pendiente,3,38,6,0,0
+377,29/10/2026,07/11/2026,Texto,Comprar la deploy y archivar,Trabajo,,Tarea,Pendiente,2,28,5,0,0
+378,14/10/2026,12/11/2026,Voz,Revision | snacks,Salud,,Cita,Pendiente,4,17,3,0,0
+379,16/05/2027,01/06/2027,Voz,Pendiente por decidir: PR,Trabajo,,Nota,Pendiente,4,25,4,0,0
+380,21/08/2027,15/09/2027,Texto,Recordatorio: dataset,Trabajo,,Nota,Pendiente,3,21,2,0,0
+381,16/06/2027,24/06/2027,Voz,Armar una skincare y dejar evidencia,Salud,,Tarea,Pendiente,1,36,6,0,0
+382,27/09/2026,10/10/2026,Voz,Documentar una bodega y dar seguimiento,Entorno Fisico,Mantenimiento,Tarea,Pendiente,2,39,6,0,0
+383,28/07/2026,09/08/2026,Texto,Imprimir el cuidado personal y dar seguimiento,Salud,,Tarea,Pendiente,4,46,7,0,0
+384,09/05/2026,17/05/2026,Texto,Clase con closet,Entorno Fisico,Mantenimiento,Cita,Pendiente,4,16,3,0,0
+385,05/07/2027,11/07/2027,Voz,Sesion mi rutina de domingo,Ocio,,Cita,Pendiente,2,27,5,0,0
+386,11/02/2026,24/02/2026,Texto,Confirmar mi skincare y dejar evidencia,Salud,,Tarea,Pendiente,4,39,6,0,0
+387,11/08/2027,01/09/2027,Texto,Llamar una skincare,Salud,,Tarea,Pendiente,3,19,3,0,0
+388,11/02/2026,03/03/2026,Voz,Validar mi papeleria en el calendario,Trabajo,,Tarea,Pendiente,1,37,6,0,0
+389,07/10/2026,04/11/2026,Texto,Solicitar el notebook y archivar,Trabajo,,Tarea,Pendiente,2,32,5,0,0
+390,27/11/2027,10/12/2027,Voz,Prioridades de: supermercado,Entorno Fisico,Mantenimiento,Nota,Pendiente,4,28,3,0,0
+391,22/01/2026,13/02/2026,Texto,Documentar el presupuesto de viaje,Finanzas,,Tarea,Pendiente,2,34,5,0,0
+392,14/06/2027,25/06/2027,Voz,Salida de bici,Salud,,Cita,Pendiente,3,14,3,0,0
+393,12/10/2026,09/11/2026,Texto,Confirmar la actividades,Trabajo,,Tarea,Pendiente,4,24,3,0,0
+394,23/10/2026,21/11/2026,Voz,Definir: facturas,Finanzas,,Nota,Pendiente,3,17,2,0,0
+395,22/11/2026,19/12/2026,Voz,Validar una reunion con el equipo,Trabajo,,Tarea,Pendiente,4,33,6,0,0
+396,03/11/2026,09/11/2026,Texto,Idea: snacks,Salud,,Nota,Pendiente,3,12,2,0,0
+397,20/12/2026,19/01/2027,foto,Cita ropa deportiva,Salud,,Cita,Pendiente,1,19,3,0,0
+398,18/10/2027,10/11/2027,Voz,Reflexionar sobre: transporte,Trabajo,,Nota,Pendiente,3,29,3,0,0
+399,15/05/2026,19/05/2026,Texto,Clase paseo,Diversión,Salida Social,Cita,Pendiente,3,11,2,0,0
+400,02/01/2027,28/01/2027,Texto,Preparar el vitaminas y dar seguimiento,Salud,,Tarea,Pendiente,1,39,6,0,0
+401,03/04/2027,30/04/2027,Texto,Tema por investigar: reservacion,Diversión,Salida Social,Nota,Pendiente,3,32,4,0,0
+402,25/04/2027,25/05/2027,foto,Renovar la quiz,Desarrollo Personal,Organizacion,Tarea,Pendiente,4,15,3,0,0
+403,17/06/2026,22/06/2026,Voz,Revisar una quiz en Notion,Desarrollo Personal,Organizacion,Tarea,Pendiente,3,26,5,0,0
+404,04/12/2026,02/01/2027,Texto,Descargar mi actualizar apps y confirmar recepcion,Desarrollo Personal,Organizacion,Tarea,Pendiente,4,50,7,0,0
+405,16/01/2027,13/02/2027,Texto,Seguimiento de estado de cuenta,Finanzas,,Cita,Pendiente,1,31,5,0,0
+406,07/10/2027,08/10/2027,Voz,Respaldar una descanso en el calendario,Salud,,Tarea,Pendiente,2,39,6,0,0
+407,10/03/2026,14/03/2026,Voz,Tema por investigar: mi proyecto de IA,Trabajo,,Nota,Pendiente,1,38,7,0,0
+408,15/06/2026,13/07/2026,Texto,Visita: presentacion,Trabajo,,Cita,Pendiente,2,20,2,0,0
+409,09/10/2026,24/10/2026,Voz,Brain dump: zapatera,Entorno Fisico,Mantenimiento,Nota,Pendiente,2,20,3,0,0
+410,11/01/2027,26/01/2027,Voz,Registrar el analisis clinicos y dar seguimiento,Salud,,Tarea,Pendiente,2,48,7,0,0
+411,17/02/2026,18/03/2026,Texto,Anotar la farmacia y dejar evidencia,Salud,,Tarea,Pendiente,2,36,6,0,0
+412,17/03/2026,01/04/2026,Texto,Crear una presentacion y dar seguimiento,Trabajo,,Tarea,Pendiente,2,40,6,0,0
+413,16/03/2026,13/04/2026,Voz,Entregar una bodega y dar seguimiento,Entorno Fisico,Mantenimiento,Tarea,Pendiente,1,37,6,0,0
+414,12/04/2026,13/04/2026,Texto,Seguimiento con reciclaje,Entorno Fisico,Mantenimiento,Cita,Pendiente,3,25,3,0,0
+415,05/04/2027,28/04/2027,Texto,Responder mi regalo con checklist,Amistad,Salidas con Amigos,Tarea,Pendiente,4,33,5,0,0
+416,16/01/2026,15/02/2026,Voz,Recordatorio: documentos,Trabajo,,Nota,Pendiente,1,24,2,0,0
+417,03/07/2026,18/07/2026,Texto,Reflexionar sobre: pipeline,Trabajo,,Nota,Pendiente,1,27,3,0,0
+418,04/02/2026,02/03/2026,Voz,Junta: resumen,Trabajo,,Cita,Pendiente,1,14,2,0,0
+419,05/09/2027,25/09/2027,Texto,Confirmar mi check-in antes de las 6pm,Trabajo,,Tarea,Pendiente,3,38,7,0,0
+420,27/05/2027,09/06/2027,Voz,Llamada: paseo,Diversión,Salida Social,Cita,Pendiente,1,14,2,0,0
+421,19/05/2026,17/06/2026,Texto,Cancelar una tarea del diplomado hoy,Trabajo,,Tarea,Pendiente,2,36,6,0,0
+422,06/10/2027,12/10/2027,Voz,Reflexionar sobre: rutina de sueno,Salud,,Nota,Pendiente,3,34,5,0,0
+423,29/07/2026,05/08/2026,Voz,Cancelar una repositorio y confirmar recepcion,Trabajo,,Tarea,Pendiente,1,46,6,0,0
+424,23/05/2026,26/05/2026,Texto,Respaldar mi organizar archivos esta semana,Trabajo,,Tarea,Pendiente,4,43,6,0,0
+425,25/02/2026,27/03/2026,foto,Visita: limpieza de fotos,Desarrollo Personal,Organizacion,Cita,Pendiente,3,25,4,0,0
+426,12/12/2027,22/12/2027,Voz,Prioridades de: transferencia bancaria,Finanzas,,Nota,Pendiente,3,38,4,0,0
+427,14/07/2027,27/07/2027,Texto,Hacer una regalos,Amistad,Salidas con Amigos,Tarea,Pendiente,4,17,3,0,0
+428,10/07/2027,05/08/2027,Texto,Clase checkup,Salud,,Cita,Pendiente,4,13,2,0,0
+429,01/12/2027,27/12/2027,Texto,Programar el arena y archivar,Entorno Fisico,Mantenimiento,Tarea,Pendiente,4,29,5,0,0
+430,05/11/2027,07/11/2027,foto,Visita con suplementos,Salud,,Cita,Pendiente,3,22,3,0,0
+431,04/03/2027,02/04/2027,Voz,Registrar la visita,Desarrollo Personal,Organizacion,Tarea,Pendiente,2,19,3,0,0
+432,17/01/2027,06/02/2027,Texto,Validar una escritorio y dejar evidencia,Entorno Fisico,Mantenimiento,Tarea,Pendiente,4,40,6,0,0
+433,06/02/2026,28/02/2026,Texto,Solicitar una aniversario y dejar evidencia,Romance,,Tarea,Pendiente,2,43,6,0,0
+434,07/04/2027,14/04/2027,Voz,Evento de mi estilo personal,Desarrollo Personal,Organizacion,Cita,Pendiente,2,28,5,0,0
+435,15/09/2027,14/10/2027,Voz,Llenar mi cocina en el calendario,Entorno Fisico,Mantenimiento,Tarea,Pendiente,1,33,6,0,0
+436,02/07/2026,08/07/2026,Texto,Llamar la analisis clinicos y confirmar recepcion,Salud,,Tarea,Pendiente,3,49,7,0,0
+437,18/07/2027,11/08/2027,Voz,Revisar una yoga y dar seguimiento,Salud,,Tarea,Pendiente,3,34,6,0,0
+438,27/10/2026,14/11/2026,Voz,Limpiar una bodega con checklist,Entorno Fisico,Mantenimiento,Tarea,Pendiente,3,32,5,0,0
+439,24/12/2026,09/01/2027,Texto,Llamada con backlog,Trabajo,,Cita,Pendiente,2,19,3,0,0
+440,10/06/2026,11/06/2026,Texto,Checklist borrador: suplementos,Salud,,Nota,Pendiente,1,31,3,0,0
+441,28/05/2026,15/06/2026,Voz,Cita: croquetas,Familia,,Cita,Pendiente,3,15,2,0,0
+442,14/06/2027,23/06/2027,Texto,Documentar el corte de unas y archivar,Salud,,Tarea,Pendiente,3,38,7,0,0
+443,18/08/2026,25/08/2026,Texto,Organizar mi comida familiar en Notion,Familia,,Tarea,Pendiente,4,38,6,0,0
+444,11/12/2026,02/01/2027,Voz,Validar mi zapatera hoy,Entorno Fisico,Mantenimiento,Tarea,Pendiente,2,23,4,0,0
+445,26/03/2026,16/04/2026,Texto,Check-in mi proyecto de IA,Trabajo,,Cita,Pendiente,4,26,5,0,0
+446,21/04/2027,29/04/2027,Voz,Recordatorio: quiz,Desarrollo Personal,Organizacion,Nota,Pendiente,2,18,2,0,0
+447,21/02/2027,12/03/2027,Texto,Clase: check-in,Trabajo,,Cita,Pendiente,3,15,2,0,0
+448,02/11/2027,24/11/2027,Voz,Subir mi meditacion y confirmar recepcion,Salud,,Tarea,Pendiente,1,41,6,0,0
+449,17/05/2026,08/06/2026,Texto,Sesion de ejercicios de Python,Trabajo,,Cita,Pendiente,4,30,5,0,0
+450,12/02/2027,13/02/2027,Voz,Llamada | respaldos,Trabajo,,Cita,Pendiente,2,19,3,0,0
+451,14/09/2026,07/10/2026,Voz,Check-in estado de cuenta,Finanzas,,Cita,Pendiente,1,25,4,0,0
+452,17/02/2027,23/02/2027,Texto,Organizar mi closet en el calendario,Entorno Fisico,Mantenimiento,Tarea,Pendiente,1,36,6,0,0
+453,26/10/2026,13/11/2026,foto,Entregar una despensa en Notion,Entorno Fisico,Mantenimiento,Tarea,Pendiente,3,31,5,0,0
+454,12/12/2026,02/01/2027,Voz,Entrega | limpieza de fotos,Desarrollo Personal,Organizacion,Cita,Pendiente,3,27,5,0,0
+455,22/03/2027,18/04/2027,Texto,Respaldar mi meal prep y dejar evidencia,Salud,,Tarea,Pendiente,2,40,7,0,0
+456,08/03/2026,31/03/2026,Texto,Entrega de hogar,Entorno Fisico,Mantenimiento,Cita,Pendiente,2,16,3,0,0
+457,17/03/2027,03/04/2027,Texto,Revision con brunch,Ocio,,Cita,Pendiente,1,19,3,0,0
+458,19/05/2027,22/05/2027,foto,Preguntas: documentos,Trabajo,,Nota,Pendiente,1,21,2,0,0
+459,09/08/2026,19/08/2026,Voz,Reflexionar sobre: maleta,Diversión,Viajes,Nota,Pendiente,3,25,3,0,0
+460,23/08/2027,13/09/2027,Texto,Brain dump: mapa,Ocio,,Nota,Pendiente,3,16,3,0,0
+461,30/01/2026,19/02/2026,Texto,Reflexionar sobre: consulta dental,Salud,,Nota,Pendiente,4,34,4,0,0
+462,04/08/2026,10/08/2026,Voz,Anotar mi aniversario en el calendario,Romance,,Tarea,Pendiente,4,38,6,0,0
+463,28/07/2026,06/08/2026,Voz,Clase de meal prep,Salud,,Cita,Pendiente,1,18,4,0,0
+464,04/02/2027,17/02/2027,Texto,Preguntas: mi LinkedIn,Trabajo,,Nota,Pendiente,4,22,3,0,0
+465,09/08/2027,18/08/2027,Voz,Depurar mi lavanderia,Entorno Fisico,Mantenimiento,Tarea,Pendiente,2,21,3,0,0
+466,30/01/2026,28/02/2026,Voz,Junta: Drive,Trabajo,,Cita,Pendiente,4,12,2,0,0
+467,27/11/2027,21/12/2027,Texto,Preguntas: hidratacion,Salud,,Nota,Pendiente,4,22,2,0,0
+468,19/12/2027,30/12/2027,Texto,Reflexionar sobre: resumen,Trabajo,,Nota,Pendiente,3,26,3,0,0
+469,05/04/2026,29/04/2026,Voz,Check-in | checkup,Salud,,Cita,Pendiente,4,18,3,0,0
+470,17/11/2026,09/12/2026,Texto,Descargar el inbox zero antes de las 6pm,Trabajo,,Tarea,Pendiente,3,40,8,0,0
+471,07/01/2026,21/01/2026,Texto,Actualizar el cuidado personal y dejar evidencia,Salud,,Tarea,Pendiente,1,48,7,0,0
+472,28/09/2026,28/10/2026,Voz,Visita | presupuesto mensual,Finanzas,,Cita,Pendiente,1,28,4,0,0
+473,15/12/2026,24/12/2026,Texto,Configurar la brunch hoy,Ocio,,Tarea,Pendiente,1,24,4,0,0
+474,09/02/2027,07/03/2027,Voz,Tema por investigar: maleta,Diversión,Viajes,Nota,Pendiente,2,27,4,0,0
+475,07/10/2027,29/10/2027,Texto,Agendar una arena,Entorno Fisico,Mantenimiento,Tarea,Pendiente,1,17,3,0,0
+476,20/04/2026,13/05/2026,Voz,Ordenar una actividades y archivar,Trabajo,,Tarea,Pendiente,4,34,5,0,0
+477,14/07/2027,28/07/2027,Texto,Recordatorio: cocina,Entorno Fisico,Mantenimiento,Nota,Pendiente,4,20,2,0,0
+478,13/03/2027,25/03/2027,Voz,Idea: date con mi novio,Romance,,Nota,Pendiente,3,23,5,0,0
+479,21/11/2026,25/11/2026,Voz,Crear mi maleta,Diversión,Viajes,Tarea,Pendiente,2,15,3,0,0
+480,23/05/2027,09/06/2027,Texto,Llamada de hogar,Entorno Fisico,Mantenimiento,Cita,Pendiente,1,16,3,0,0
+481,23/09/2026,28/09/2026,foto,Visita con corte de unas,Salud,,Cita,Pendiente,3,24,5,0,0
+482,10/01/2027,01/02/2027,Voz,Documentar la despensa y archivar,Entorno Fisico,Mantenimiento,Tarea,Pendiente,4,33,5,0,0
+483,14/09/2026,14/10/2026,Texto,Seguimiento con mi entrenamiento,Salud,,Cita,Pendiente,2,32,4,0,0
+484,02/07/2027,24/07/2027,Texto,Checklist borrador: correo,Trabajo,,Nota,Pendiente,2,26,3,0,0
+485,28/04/2027,23/05/2027,Texto,Llenar una ahorro antes de las 6pm,Finanzas,,Tarea,Pendiente,3,34,7,0,0
+486,05/09/2026,22/09/2026,foto,Reflexionar sobre: mi rutina de domingo,Ocio,,Nota,Pendiente,2,39,6,0,0
+487,03/06/2026,15/06/2026,Voz,Configurar la nutricion y archivar,Salud,,Tarea,Pendiente,4,34,5,0,0
+488,20/03/2027,17/04/2027,Texto,Revision seguimiento por correo,Trabajo,,Cita,Pendiente,1,31,4,0,0
+489,19/01/2027,17/02/2027,Texto,Definir: mis finanzas 2026,Finanzas,,Nota,Pendiente,3,26,4,0,0
+490,11/09/2027,12/09/2027,Voz,Notas sobre: cumpleanos,Amistad,Salidas con Amigos,Nota,Pendiente,4,23,3,0,0
+491,22/03/2027,05/04/2027,Voz,Preguntas: lavanderia,Entorno Fisico,Mantenimiento,Nota,Pendiente,4,21,2,0,0
+492,11/02/2026,02/03/2026,Texto,Definir: Amazon,Diversión,Salida Social,Nota,Pendiente,4,15,2,0,0
+493,15/09/2027,18/09/2027,Voz,Sesion de papeleria,Trabajo,,Cita,Pendiente,1,19,3,0,0
+494,06/02/2026,17/02/2026,Voz,Preparar la bodega esta semana,Entorno Fisico,Mantenimiento,Tarea,Pendiente,1,30,5,0,0
+495,29/05/2026,24/06/2026,Texto,Prioridades de: hotel,Diversión,Salida Social,Nota,Pendiente,2,21,3,0,0
+496,11/09/2026,16/09/2026,Texto,Optimizar la rutina de sueno en Notion,Salud,,Tarea,Pendiente,2,38,7,0,0
+497,23/02/2027,13/03/2027,Voz,Check-in descanso,Salud,,Cita,Pendiente,2,17,2,0,0
+498,04/05/2027,26/05/2027,Texto,Idea: supermercado,Entorno Fisico,Mantenimiento,Nota,Pendiente,2,18,2,0,0
+499,18/03/2026,29/03/2026,Texto,Salida: mi roadmap profesional,Trabajo,,Cita,Pendiente,4,30,4,0,0
+500,10/05/2027,01/06/2027,Voz,Cita con comida familiar,Familia,,Cita,Pendiente,4,24,4,0,0
+501,26/06/2026,02/07/2026,Texto,Organizar la validacion antes de las 6pm,Trabajo,,Tarea,Pendiente,3,40,7,0,0
+502,15/12/2025,02/01/2026,Voz,Notas sobre: hidratacion,Salud,,Nota,Pendiente,1,24,3,0,0
+503,13/07/2027,30/07/2027,Texto,Respaldar la despensa,Entorno Fisico,Mantenimiento,Tarea,Pendiente,4,21,3,0,0
+504,10/11/2027,26/11/2027,Voz,Armar el desparasitacion,Familia,,Tarea,Pendiente,2,24,3,0,0
+505,25/05/2026,26/05/2026,Texto,Actualizar el vitaminas,Salud,,Tarea,Pendiente,2,23,3,0,0
+506,12/11/2027,11/12/2027,Voz,Revision de zapatera,Entorno Fisico,Mantenimiento,Cita,Pendiente,1,20,3,0,0
+507,08/05/2027,04/06/2027,Voz,Checklist borrador: roadmap,Trabajo,,Nota,Pendiente,3,27,3,0,0
+508,20/06/2027,22/06/2027,Texto,Renovar el vitaminas con checklist,Salud,,Tarea,Pendiente,3,34,5,0,0
+509,29/05/2027,24/06/2027,foto,Tema por investigar: estado de cuenta,Finanzas,,Nota,Pendiente,4,37,6,0,0
+510,30/08/2027,20/09/2027,Voz,Prioridades de: modelado,Trabajo,,Nota,Pendiente,4,24,3,0,0
+511,22/11/2027,28/11/2027,Texto,Separar mi ropa deportiva esta semana,Salud,,Tarea,Pendiente,3,37,6,0,0
+512,14/03/2026,27/03/2026,Texto,Crear una analisis clinicos esta semana,Salud,,Tarea,Pendiente,3,39,6,0,0
+513,18/06/2026,11/07/2026,Texto,Responder mi skincare hoy,Salud,,Tarea,Pendiente,1,25,4,0,0
+514,10/07/2027,06/08/2027,foto,Clase de descanso,Salud,,Cita,Pendiente,2,17,3,0,0
+515,02/02/2026,27/02/2026,Voz,Prioridades de: mis finanzas 2026,Finanzas,,Nota,Pendiente,2,33,5,0,0
+516,16/07/2027,07/08/2027,Texto,Opciones para: arena,Entorno Fisico,Mantenimiento,Nota,Pendiente,4,20,3,0,0
+517,09/01/2026,26/01/2026,Texto,Planear mi transferencia bancaria y dejar evidencia,Finanzas,,Tarea,Pendiente,1,51,7,0,0
+518,10/01/2027,02/02/2027,Voz,Junta closet,Entorno Fisico,Mantenimiento,Cita,Pendiente,1,12,2,0,0
+519,18/10/2026,27/10/2026,Voz,Salida | farmacia,Salud,,Cita,Pendiente,1,17,3,0,0
+520,19/06/2026,14/07/2026,Texto,Checklist borrador: documentos,Trabajo,,Nota,Pendiente,4,30,3,0,0
+521,08/03/2027,27/03/2027,Voz,Revision: Drive,Trabajo,,Cita,Pendiente,3,15,2,0,0
+522,12/11/2027,19/11/2027,Voz,Cita de ropa,Diversión,Salida Social,Cita,Pendiente,4,12,3,0,0
+523,30/01/2027,31/01/2027,Texto,Confirmar mi EDA antes de las 6pm,Trabajo,,Tarea,Pendiente,1,33,7,0,0
+524,14/02/2027,11/03/2027,Texto,Llamar mi tarjeta de credito en Notion,Finanzas,,Tarea,Pendiente,1,38,7,0,0
+525,23/12/2025,01/01/2026,Voz,Planear el lectura del modulo y archivar,Trabajo,,Tarea,Pendiente,2,40,7,0,0
+526,11/03/2027,28/03/2027,Texto,Reflexionar sobre: pago de servicios,Finanzas,,Nota,Pendiente,2,36,5,0,0
+527,03/08/2026,10/08/2026,Texto,Imprimir mi cita medica y archivar,Salud,,Tarea,Pendiente,3,34,6,0,0
+528,10/09/2026,28/09/2026,Voz,Lista de: snacks,Salud,,Nota,Pendiente,1,16,3,0,0
+529,29/12/2026,07/01/2027,Texto,Tema por investigar: mis finanzas 2026,Finanzas,,Nota,Pendiente,4,38,6,0,0
+530,14/11/2027,16/11/2027,Voz,Depurar el backlog y dejar evidencia,Trabajo,,Tarea,Pendiente,2,36,6,0,0
+531,29/10/2026,27/11/2026,Texto,Responder el dataset en Notion,Trabajo,,Tarea,Pendiente,3,30,5,0,0
+532,16/02/2027,08/03/2027,Voz,Respaldar mi mensaje pendiente,Desarrollo Personal,Organizacion,Tarea,Pendiente,3,30,4,0,0
+533,28/08/2027,04/09/2027,Texto,Junta con fondo de emergencia,Finanzas,,Cita,Pendiente,3,29,5,0,0
+534,02/11/2027,05/11/2027,Voz,Tema por investigar: mi portafolio,Trabajo,,Nota,Pendiente,1,34,5,0,0
+535,09/01/2026,15/01/2026,Voz,Pendiente por decidir: check-in,Trabajo,,Nota,Pendiente,1,31,4,0,0
+536,24/07/2027,25/07/2027,Texto,Armar el reporte semanal y archivar,Trabajo,,Tarea,Pendiente,2,35,6,0,0
+537,19/10/2027,06/11/2027,foto,Etiquetar una repositorio y dejar evidencia,Trabajo,,Tarea,Pendiente,1,43,6,0,0
+538,16/04/2026,21/04/2026,Voz,Reflexionar sobre: comisiones,Finanzas,,Nota,Pendiente,3,29,3,0,0
+539,25/02/2027,20/03/2027,Texto,Anotar la tarea del diplomado antes de las 6pm,Trabajo,,Tarea,Pendiente,4,46,9,0,0
+540,16/09/2027,13/10/2027,Texto,Clase hogar,Entorno Fisico,Mantenimiento,Cita,Pendiente,3,11,2,0,0
+541,04/10/2027,26/10/2027,Texto,Revision con presentacion,Trabajo,,Cita,Pendiente,3,25,3,0,0
+542,13/05/2026,18/05/2026,foto,Reflexionar sobre: limpieza de fotos,Desarrollo Personal,Organizacion,Nota,Pendiente,2,36,5,0,0
+543,12/10/2027,24/10/2027,Voz,Seguimiento con zapatera,Entorno Fisico,Mantenimiento,Cita,Pendiente,2,24,3,0,0
+544,17/05/2027,19/05/2027,Texto,Lista de: seguridad 2FA,Trabajo,,Nota,Pendiente,4,23,4,0,0
+545,10/04/2026,05/05/2026,Texto,Brain dump: check-in,Trabajo,,Nota,Pendiente,2,20,3,0,0
+546,03/05/2026,19/05/2026,Voz,Definir: skincare,Salud,,Nota,Pendiente,4,17,2,0,0
+547,13/09/2026,29/09/2026,Voz,Limpiar una comida familiar esta semana,Familia,,Tarea,Pendiente,2,39,6,0,0
+548,06/12/2026,30/12/2026,Texto,Salida de seguro de viaje,Finanzas,,Cita,Pendiente,3,25,5,0,0
+549,26/05/2026,15/06/2026,Voz,Opciones para: mensaje pendiente,Desarrollo Personal,Organizacion,Nota,Pendiente,4,32,4,0,0
+550,11/04/2027,05/05/2027,Voz,Configurar una presentacion en Notion,Trabajo,,Tarea,Pendiente,3,37,5,0,0
+551,20/07/2026,09/08/2026,Texto,Entrega | hidratacion,Salud,,Cita,Pendiente,4,21,3,0,0
+552,01/02/2026,02/03/2026,Texto,Programar mi hotel en el calendario,Diversión,Salida Social,Tarea,Pendiente,4,35,6,0,0
+553,29/08/2026,11/09/2026,Voz,Registrar el bibliografia y dar seguimiento,Desarrollo Personal,Organizacion,Tarea,Pendiente,3,43,6,0,0
+554,28/08/2026,10/09/2026,Texto,Guardar una meditacion hoy,Salud,,Tarea,Pendiente,2,26,4,0,0
+555,19/12/2026,09/01/2027,Texto,Programar el cama en el calendario,Entorno Fisico,Mantenimiento,Tarea,Pendiente,2,34,6,0,0
+556,13/12/2026,17/12/2026,Voz,Reflexionar sobre: vacunas,Salud,,Nota,Pendiente,3,26,3,0,0
+557,25/09/2027,01/10/2027,Texto,Prioridades de: reunion con el equipo,Trabajo,,Nota,Pendiente,2,37,6,0,0
+558,07/03/2026,30/03/2026,Voz,Clase de mapa,Ocio,,Cita,Pendiente,4,13,3,0,0
+559,20/11/2026,29/11/2026,Texto,Idea: mi estilo personal,Desarrollo Personal,Organizacion,Nota,Pendiente,1,24,4,0,0
+560,03/07/2026,02/08/2026,Voz,Configurar una bano y dejar evidencia,Entorno Fisico,Mantenimiento,Tarea,Pendiente,1,37,6,0,0
+561,08/02/2027,02/03/2027,Texto,Junta veterinario,Familia,,Cita,Pendiente,4,17,2,0,0
+562,23/12/2027,24/12/2027,Voz,Clase: validacion,Trabajo,,Cita,Pendiente,3,17,2,0,0
+563,03/05/2026,28/05/2026,Voz,"Oye, este... cita con el dentista el 28 de mayo de 2026 a las 10:30.",Salud,Doctor,Cita,Completada,1,66,15,0,1
+564,14/02/2026,21/02/2026,Voz,"Nomas para que no se te vaya, este consulta de oftalmologia este sabado a las 20:00.",Salud,Doctor,Cita,Pendiente,2,84,16,0,1
+565,22/04/2026,22/05/2026,Voz,"Oye, este... por fa sesion de fisioterapia el 22 de mayo a las 9:30 (45 min).",Salud,Doctor,Cita,Pendiente,2,75,16,0,1
+566,17/06/2026,07/07/2026,Voz,"Mira, rapido consulta de oftalmologia el 7 de julio a las 16:00 (1 hr).",Salud,Doctor,Cita,Pendiente,2,71,14,0,1
+567,21/09/2026,14/10/2026,Voz,"Oye, este... tipo consulta de oftalmologia este viernes a las 15:00, si se mueve queda para el 14 de octubre a las 15:00.",Salud,Doctor,Cita,Pendiente,3,119,23,0,1
+568,10/02/2026,12/03/2026,Voz,"Oye, clase de cita con el nutriologo en tres semanas a las 9:00.",Salud,Doctor,Cita,Pendiente,1,64,13,0,1
+569,05/03/2026,21/03/2026,Voz,"Ehm, mmm bloque para ordenar pensamientos el proximo mes, o sea el 21 de marzo de 2026 a las 9:00.",Desarrollo Personal,Organizacion,Cita,Pendiente,2,98,20,0,1
+570,31/01/2026,25/02/2026,Voz,"Nomas para que no se te vaya, rapido sesion de bloque para ordenar pensamientos este miercoles a las 11:00.",Desarrollo Personal,Organizacion,Cita,Pendiente,3,107,19,0,1
+571,21/11/2026,26/11/2026,Voz,"Oigan, Cita de tiempo para planear la semana el 26 de noviembre a las 21:00.",Desarrollo Personal,Lectura,Cita,Pendiente,1,76,15,0,1
+572,10/10/2027,04/11/2027,Voz,"Te dejo esto: rapido espacio para leer en calma el proximo ano, el 4 de noviembre de 2027 a las 8:30.",Desarrollo Personal,Organizacion,Cita,Pendiente,3,101,21,0,1
+573,01/02/2026,24/02/2026,Voz,"Nomas para que no se te vaya, Junta de bloque para ordenar pensamientos el martes a las 8:30 (1 hr).",Desarrollo Personal,Organizacion,Cita,Pendiente,3,100,20,0,1
+574,18/02/2027,02/03/2027,Voz,"Ehm, Salida de reset del cuarto el proximo ano el 2 de marzo de 2027 a las 16:00 (45 min).",Desarrollo Personal,Organizacion,Cita,Pendiente,1,90,20,0,1
+575,16/02/2026,16/03/2026,Voz,"Ehm, rapido revision de suscripciones el 16 de marzo de 2026 a las 11:00 (30 min).",Finanzas,Revision financiera,Cita,Pendiente,3,82,16,0,1
+576,02/05/2026,23/05/2026,Voz,"Nomas para que no se te vaya, tipo revision de presupuesto mensual el 23 de mayo a las 14:00 (1 hr).",Finanzas,Revision financiera,Cita,Pendiente,1,100,21,0,1
+577,28/01/2026,21/02/2026,Voz,"Nomas para que no se te vaya, Clase de pago de seguro el sabado a las 11:00 (3 hrs).",Finanzas,Pagos,Cita,Pendiente,2,84,19,0,1
+578,23/01/2026,22/02/2026,Voz,"Mira, por fa clase de pago de luz este domingo a las 10:00.",Finanzas,Pagos,Cita,Pendiente,3,59,13,0,1
+579,10/07/2026,03/08/2026,Voz,"Super rapido, literal pago de internet este domingo a las 17:00, si se mueve queda para el 3 de agosto a las 17:00.",Finanzas,Pagos,Cita,Pendiente,2,115,23,0,1
+580,25/12/2026,29/12/2026,Voz,"Super rapido, este corte de la tarjeta el 29 de diciembre de 2026 a las 14:00 (1 hr).",Finanzas,Pagos,Cita,Pendiente,4,85,18,0,1
+581,03/02/2026,25/02/2026,Voz,"Super rapido, o sea cena con familia este miercoles a las 9:30.",Familia,Salida Familiar,Cita,Pendiente,3,63,12,0,1
+582,26/02/2026,21/03/2026,Voz,"A ver, por fa cumpleanos de un familiar en un mes, o sea el 21 de marzo de 2026 a las 21:00.",Familia,Salida Familiar,Cita,Pendiente,3,92,22,0,1
+583,09/02/2026,20/02/2026,Voz,Te dejo esto: cita de cena con familia para el 20 de febrero a las 8:00.,Familia,Salida Familiar,Cita,Pendiente,3,72,16,0,1
+584,29/07/2027,02/08/2027,Voz,"Ehm, Clase de reunion familiar el proximo ano el 2 de agosto de 2027 a las 10:30 (3 hrs).",Familia,Salida Familiar,Cita,Pendiente,3,89,19,0,1
+585,31/01/2027,08/02/2027,Voz,"Oigan, este visita a casa de mi mama el proximo ano, el 8 de febrero de 2027 a las 6:30.",Familia,Salida Familiar,Cita,Pendiente,1,88,20,0,1
+586,08/12/2026,11/12/2026,Voz,"Oye, literal visita a casa de mi mama este viernes a las 18:00, si se mueve queda para el 11 de diciembre a las 18:00.",Familia,Salida Familiar,Cita,Pendiente,2,118,25,0,1
+587,20/02/2026,25/02/2026,Voz,"A ver, o sea revision de revision de objetivos del trimestre este miercoles a las 13:00.",Trabajo,Gestion de Proyectos,Cita,Pendiente,2,88,16,0,1
+588,12/02/2026,25/02/2026,Voz,"Ehm, literal revision de practica de entrevista este miercoles a las 18:00.",Trabajo,Gestion de Proyectos,Cita,Pendiente,2,75,12,0,1
+589,19/12/2026,06/01/2027,Voz,"A ver, literal demo del proyecto el 6 de enero a las 9:00 (1.5 hrs).",Trabajo,Gestion de Proyectos,Cita,Pendiente,1,68,15,0,1
+590,09/02/2026,25/02/2026,Voz,"Ehm, Clase de reunion con stakeholders el miercoles a las 15:00 (2 hrs).",Trabajo,Gestion de Proyectos,Cita,En Progreso,4,72,13,0,1
+591,10/02/2026,25/02/2026,Voz,"Mira, Bloque de 1:1 con mi lider el miercoles a las 10:30 (3 hrs).",Trabajo,Reuniones Laborales,Cita,Pendiente,3,66,14,0,1
+592,11/02/2026,20/02/2026,Voz,"A ver, o sea cita de sesion de mentoring este viernes a las 13:00.",Trabajo,Reuniones Laborales,Cita,Pendiente,2,66,14,0,1
+593,12/03/2026,21/03/2026,Voz,"Oigan, por fa servicio en comunidad el proximo mes, o sea el 21 de marzo de 2026 a las 15:00.",Espiritualidad,Religion,Cita,Pendiente,3,93,20,0,1
+594,23/02/2026,05/03/2026,Voz,"Oye, este... sesion de visita a un lugar tranquilo en dos semanas a las 10:30.",Espiritualidad,Religion,Cita,Pendiente,1,76,15,0,1
+595,18/03/2026,02/04/2026,Voz,"Oye, este... por fa sesion de breathwork este viernes a las 12:00, si se mueve queda para el 2 de abril a las 12:00.",Espiritualidad,Religion,Cita,Pendiente,3,114,24,0,1
+596,09/02/2026,22/02/2026,Voz,"Mira, rapido meditacion guiada este domingo a las 8:30.",Espiritualidad,Religion,Cita,Pendiente,4,55,9,0,1
+597,14/03/2026,21/03/2026,Voz,"Nomas para que no se te vaya, o sea circulo de reflexion en tres semanas, o sea el 21 de marzo de 2026 a las 20:00.",Espiritualidad,Religion,Cita,Pendiente,3,115,26,0,1
+598,19/02/2026,21/03/2026,Voz,"Oye, tipo gratitud y journaling espiritual en tres semanas, o sea el 21 de marzo de 2026 a las 11:00.",Espiritualidad,Religion,Cita,Pendiente,3,101,20,0,1
+599,06/03/2026,21/03/2026,Voz,"Oigan, clase de tarde de museo en un mes a las 13:00.",Ocio,Hobbies,Cita,Pendiente,1,53,12,0,1
+600,14/02/2026,20/02/2026,Voz,"Mira, por fa sesion de cine este viernes a las 15:00.",Ocio,Hobbies,Cita,Pendiente,2,53,11,0,1
+601,12/09/2027,12/10/2027,Voz,"Nomas para que no se te vaya, Sesion de paseo al parque el proximo ano el 12 de octubre de 2027 a las 8:30 (30 min).",Ocio,Sin asignar,Cita,Pendiente,1,116,26,0,1
+602,19/12/2026,27/12/2026,Voz,"A ver, mmm tarde de pintura el 27 de diciembre a las 7:30 (30 min).",Ocio,Hobbies,Cita,Pendiente,3,67,15,0,1
+603,25/01/2026,24/02/2026,Voz,Te dejo esto: por fa tarde de museo este martes a las 10:30.,Ocio,Sin asignar,Cita,Pendiente,4,60,13,0,1
+604,16/03/2026,21/03/2026,Voz,"Oye, por fa paseo al parque en un mes, o sea el 21 de marzo de 2026 a las 14:00.",Ocio,Sin asignar,Cita,Pendiente,3,80,20,0,1
+605,14/02/2026,20/02/2026,Voz,"Nomas para que no se te vaya, mmm clase de donacion a causa este viernes a las 21:00.",Contribucion,Apoyo Social,Cita,Pendiente,2,85,18,0,1
+606,23/02/2026,23/03/2026,Voz,"Nomas para que no se te vaya, mmm donacion de ropa el 23 de marzo a las 8:30 (45 min).",Contribucion,Apoyo Social,Cita,Pendiente,2,86,20,0,1
+607,02/02/2026,26/02/2026,Voz,"Ehm, Sesion de apoyo en evento comunitario el jueves a las 6:30 (3 hrs).",Contribucion,Apoyo Social,Cita,Pendiente,4,72,14,0,1
+608,23/12/2026,30/12/2026,Voz,"Mira, salida de donacion a causa para el 30 de diciembre de 2026 a las 14:00.",Contribucion,Apoyo Social,Cita,Pendiente,4,77,16,0,1
+609,02/05/2026,19/05/2026,Voz,"Ehm, clase de visita a asilo (actividad) para el 19 de mayo de 2026 a las 8:00.",Contribucion,Apoyo Social,Cita,Pendiente,4,79,17,0,1
+610,23/02/2026,21/03/2026,Voz,"Oye, este... o sea recolecta de alimentos en dos semanas, o sea el 21 de marzo de 2026 a las 21:00.",Contribucion,Apoyo Social,Cita,Pendiente,1,97,21,0,1
+611,16/02/2026,25/02/2026,Voz,"Oigan, Revision de curso online (leccion) el miercoles a las 17:00 (2 hrs).",Desarrollo Personal,Estudio,Cita,Pendiente,3,75,13,0,1
+612,01/03/2026,23/03/2026,Voz,"Te dejo esto: literal sesion de estudio del diplomado este jueves a las 21:00, si se mueve queda para el 23 de marzo a las 21:00.",Desarrollo Personal,Estudio,Cita,Pendiente,3,129,26,0,1
+613,17/06/2026,30/06/2026,Voz,"Te dejo esto: o sea clase de frances este sabado a las 9:00, si se mueve queda para el 30 de junio a las 9:00.",Desarrollo Personal,Estudio,Cita,Pendiente,1,110,25,0,1
+614,14/04/2026,12/05/2026,Voz,"Oye, Evento de plan mensual de habitos el 12 de mayo de 2026 a las 9:30.",Desarrollo Personal,Organizacion,Cita,Pendiente,1,72,16,0,1
+615,15/08/2026,20/08/2026,Voz,"A ver, este bloque para aprender Python este lunes a las 15:00, si se mueve queda para el 20 de agosto a las 15:00.",Desarrollo Personal,Estudio,Cita,Pendiente,4,115,24,0,1
+616,10/06/2026,25/06/2026,Voz,"Oye, este... o sea clase de portugues este jueves a las 6:30, si se mueve queda para el 25 de junio a las 6:30.",Desarrollo Personal,Estudio,Cita,Pendiente,1,109,24,0,1
+617,13/02/2026,25/02/2026,Voz,"Oigan, o sea revision de plomeria este miercoles a las 6:30.",Entorno Fisico,Mantenimiento,Cita,Pendiente,4,60,11,0,1
+618,18/02/2026,05/03/2026,Voz,"A ver, cita de revision de plomeria en dos semanas a las 14:00.",Entorno Fisico,Mantenimiento,Cita,Pendiente,1,63,13,0,1
+619,05/08/2026,06/08/2026,Voz,"Te dejo esto: literal lavado de ropa y sabanas este miercoles a las 13:00, si se mueve queda para el 6 de agosto a las 13:00.",Entorno Fisico,Limpieza,Cita,Pendiente,2,125,26,0,1
+620,04/02/2026,23/02/2026,Voz,Te dejo esto: por fa evento de revision de plomeria este lunes a las 17:00.,Entorno Fisico,Mantenimiento,Cita,Pendiente,1,75,15,0,1
+621,31/05/2026,24/06/2026,Voz,"A ver, junta de revision de filtros/ventilacion para el 24 de junio de 2026 a las 10:30.",Entorno Fisico,Mantenimiento,Cita,Pendiente,2,88,17,0,1
+622,27/01/2026,23/02/2026,Voz,"Super rapido, Evento de mantenimiento del boiler el lunes a las 7:30 (1.5 hrs).",Entorno Fisico,Limpieza,Cita,Pendiente,1,79,14,0,1
+623,17/11/2026,20/11/2026,Voz,"Super rapido, por fa paseo nocturno este viernes a las 11:30, si se mueve queda para el 20 de noviembre a las 11:30.",Romance,Cita Romantica,Cita,Pendiente,3,116,23,0,1
+624,14/10/2026,28/10/2026,Voz,"Mira, tipo planear sorpresa romantica este jueves a las 7:30, si se mueve queda para el 28 de octubre a las 7:30.",Romance,Cita Romantica,Cita,Pendiente,3,113,22,0,1
+625,23/02/2026,24/02/2026,Voz,Te dejo esto: Cita de cena romantica el martes a las 7:00 (2 hrs).,Romance,Cita Romantica,Cita,Pendiente,1,66,14,0,1
+626,24/01/2026,21/02/2026,Voz,"Oye, este... literal date night este sabado a las 8:00.",Romance,Cita Romantica,Cita,Pendiente,2,53,10,0,1
+627,24/05/2027,27/05/2027,Voz,"Mira, mmm planear sorpresa romantica el proximo ano, el 27 de mayo de 2027 a las 9:00.",Romance,Cita Romantica,Cita,Pendiente,4,86,17,0,1
+628,19/03/2026,31/03/2026,Voz,"Nomas para que no se te vaya, sesion de brunch en pareja para el 31 de marzo de 2026 a las 14:00.",Romance,Cita Romantica,Cita,Pendiente,3,97,22,0,1
+629,18/03/2026,21/03/2026,Voz,"A ver, tipo llamada con amiga en dos semanas, o sea el 21 de marzo de 2026 a las 8:00.",Amistad,Salida con amigos,Cita,Pendiente,3,86,20,0,1
+630,04/02/2026,26/02/2026,Voz,"Nomas para que no se te vaya, Entrega de salida con amigas el jueves a las 9:30 (2 hrs).",Amistad,Salida con amigos,Cita,Pendiente,2,88,19,0,1
+631,11/02/2026,20/02/2026,Voz,"Oigan, tipo entrega de llamada con amiga este viernes a las 11:00.",Amistad,Salida con amigos,Cita,Pendiente,4,66,12,0,1
+632,20/04/2026,05/05/2026,Voz,"Oigan, o sea planear viaje corto con amigas el 5 de mayo a las 7:30 (45 min).",Amistad,Salida con amigos,Cita,Pendiente,4,77,17,0,1
+633,08/04/2026,15/04/2026,Voz,"Nomas para que no se te vaya, Cita de brunch con amigas el 15 de abril de 2026 a las 14:00.",Amistad,Salida con amigos,Cita,Pendiente,4,91,21,0,1
+634,10/02/2026,25/02/2026,Voz,"Mira, por fa cumpleanos de amiga este miercoles a las 9:30.",Amistad,Salida con amigos,Cita,Pendiente,1,59,11,0,1
+635,07/02/2026,23/02/2026,Voz,"A ver, o sea clase de parque de diversiones este lunes a las 7:30.",Diversión,Salida Social,Cita,Pendiente,1,66,14,0,1
+636,08/06/2026,28/06/2026,Voz,"A ver, bloque de stand up comedy para el 28 de junio a las 7:00.",Diversión,Concierto,Cita,Pendiente,2,64,15,0,1
+637,24/01/2026,20/02/2026,Voz,Te dejo esto: o sea stand up comedy este viernes a las 7:00.,Diversión,Concierto,Cita,Pendiente,1,60,13,0,1
+638,02/03/2026,12/03/2026,Voz,"Oye, este... bloque de tarde de arcade en tres semanas a las 20:00.",Diversión,Salida Social,Cita,Pendiente,1,65,13,0,1
+639,16/02/2026,20/02/2026,Voz,"Oigan, Bloque de parque de diversiones el viernes a las 11:00 (30 min).",Diversión,Salida Social,Cita,Pendiente,1,71,13,0,1
+640,07/02/2026,21/02/2026,Voz,"Ehm, o sea bar con musica en vivo este sabado a las 7:30.",Diversión,Salida Social,Cita,Pendiente,1,57,13,0,1
+641,15/02/2026,08/03/2026,Voz,Te dejo esto: o sea reunion con stakeholders el 8 de marzo a las 8:00 (3 hrs).,Trabajo,Reuniones Laborales,Cita,En Progreso,3,78,17,0,1
+642,11/02/2026,19/02/2026,Voz,"Oye, este... Cita de cine el jueves a las 9:00 (3 hrs).",Ocio,Sin asignar,Cita,Pendiente,2,53,12,0,1
+643,27/07/2026,19/08/2026,Voz,"Oigan, literal lectura de un capitulo de un libro este domingo a las 10:30, si se mueve queda para el 19 de agosto a las 10:30.",Desarrollo Personal,Lectura,Cita,Pendiente,2,127,26,0,1
+644,01/02/2026,24/02/2026,Voz,"Mira, tipo revision de suscripciones este martes a las 12:00.",Finanzas,Revision financiera,Cita,Pendiente,3,61,10,0,1
+645,10/02/2027,08/03/2027,Voz,"A ver, Sesion de cita para manicure el proximo ano el 8 de marzo de 2027 a las 8:30 (3 hrs).",Desarrollo Personal,Organizacion,Cita,Pendiente,2,92,21,0,1
+646,16/04/2026,26/04/2026,Voz,"Oye, este salida con amigas el 26 de abril de 2026 a las 10:00 (1.5 hrs).",Amistad,Salida con amigos,Cita,Pendiente,3,73,16,0,1
+647,22/03/2026,25/03/2026,Voz,"Nomas para que no se te vaya, mmm planear viaje corto con amigas el 25 de marzo a las 16:00 (45 min).",Amistad,Salida con amigos,Cita,Pendiente,3,101,22,0,1
+648,02/04/2026,27/04/2026,Voz,"Oigan, mmm comida familiar el 27 de abril a las 7:30 (1 hr).",Familia,Salida Familiar,Cita,Pendiente,2,60,13,0,1
+649,03/03/2026,21/03/2026,Voz,"Oigan, mmm karaoke en una semana, o sea el 21 de marzo de 2026 a las 9:30.",Diversión,Salida Social,Cita,Pendiente,1,74,17,0,1
+650,11/02/2026,21/02/2026,Voz,"Oigan, por fa entrega de paseo nocturno este sabado a las 21:00.",Romance,Cita Romantica,Cita,Pendiente,4,64,12,0,1
+651,01/12/2026,28/12/2026,Voz,"Oye, este... sesion de lavado de ropa y sabanas para el 28 de diciembre de 2026 a las 8:30.",Entorno Fisico,Limpieza,Cita,Pendiente,2,89,19,0,1
+652,19/08/2027,13/09/2027,Voz,"A ver, mmm cita con el dentista el proximo ano, el 13 de septiembre de 2027 a las 19:00.",Salud,Doctor,Cita,Pendiente,2,88,19,0,1
+653,15/09/2027,02/10/2027,Voz,"Te dejo esto: rapido sesion de mentoring el proximo ano, el 2 de octubre de 2027 a las 11:30.",Trabajo,Reuniones Laborales,Cita,Pendiente,1,93,19,0,1
+654,21/03/2026,01/04/2026,Voz,"Nomas para que no se te vaya, rapido brunch en pareja el 1 de abril a las 17:00 (1 hr).",Romance,Cita Romantica,Cita,Pendiente,2,87,20,0,1
+655,13/02/2026,23/02/2026,Voz,"A ver, este salida con amigas este lunes a las 6:30.",Amistad,Salida con amigos,Cita,Pendiente,4,52,11,0,1
+656,20/02/2026,25/02/2026,Voz,"Oye, este... Sesion de 1:1 con mi lider el miercoles a las 17:00 (45 min).",Trabajo,Reuniones Laborales,Cita,Pendiente,3,72,15,0,1
+657,28/01/2026,26/02/2026,Voz,"Nomas para que no se te vaya, Salida de servicio en comunidad el jueves a las 9:00 (30 min).",Espiritualidad,Religion,Cita,Pendiente,1,92,19,0,1
+658,25/01/2026,20/02/2026,Voz,"Super rapido, rapido sesion de entrevista de trabajo este viernes a las 11:30.",Trabajo,Reuniones Laborales,Cita,Pendiente,1,78,13,0,1
+659,25/01/2026,21/02/2026,Voz,"Nomas para que no se te vaya, Entrega de practica de speaking en ingles el sabado a las 9:30 (2 hrs).",Desarrollo Personal,Entregable,Cita,Pendiente,2,101,21,0,1
+660,06/02/2026,24/02/2026,Voz,"Nomas para que no se te vaya, este circulo de reflexion este martes a las 9:30.",Espiritualidad,Religion,Cita,Pendiente,3,79,16,0,1
+661,10/06/2026,17/06/2026,Voz,"Oye, este... Sesion de bar con musica en vivo el 17 de junio de 2026 a las 10:00.",Diversión,Salida Social,Cita,Pendiente,4,79,18,0,1
+662,18/07/2026,12/08/2026,Voz,"Oye, mmm cita con el ginecologo este jueves a las 9:30, si se mueve queda para el 12 de agosto a las 9:30.",Salud,Doctor,Cita,Pendiente,4,106,23,0,1

@@ -55,7 +55,32 @@ def restaurar_con_datos():
             (6, 1, 1, 'Ejercicio', 'Deporte', '2026-02-20 07:16:31'),
             (7, 1, 3, 'Python Backend', 'Código','2026-02-20 07:16:31'),
             (8, 1, 9, 'Casa y Orden', 'Setup', '2026-02-20 07:16:31'),
-            (9, 1, 2, 'Ahorro', 'Futuro', '2026-02-20 07:16:31')
+            (9, 1, 2, 'Ahorro', 'Futuro', '2026-02-20 07:16:31'),
+            (10,1,1,'Doctor', 'citas medicas', '2026-02-20 07:16:31'),
+            (11, 1, 6, 'Salida con amigos', 'reuniones',  '2026-02-20 07:16:31'),
+            (12, 1, 3, 'Entregables', 'Entregar pendientes del trabajo', '2026-02-20 07:16:31'),
+            (13, 1, 3, 'Reuniones Laborales', 'Reuniones presenciales o en linea', '2026-02-20 07:16:31'),
+            (14, 1, 8, 'Estudio', 'Sesiones de estudio', '2026-02-20 07:16:31'),
+            (15, 1, 3, 'Perfil Profesional', 'Mejoas al perfil profesional', '2026-02-20 07:16:31'),
+            (16, 1, 10, 'Cita Romantica', 'Salidas en Pareja', '2026-02-20 07:16:31'),
+            (17, 1, 11, 'Viajes', 'Planeacion de viajes', '2026-02-20 07:16:31'),
+            (18, 1, 11, 'Concierto', 'Eventos importantes', '2026-02-20 07:16:31'),
+            (19, 1, 11, 'Salida Social', 'Salidas Casuales', '2026-02-20 07:16:31'),
+            (20, 1, 8, 'Entregable', 'Entregas de cursos', '2026-02-20 07:16:31'),
+            (21, 1, 8, 'Lectura', 'Lectura de informes o libros', '2026-02-20 07:16:31'),
+            (22, 1, 8, 'Organización', 'Organizacion para mi crecimiento', '2026-02-20 07:16:31'),
+            (23, 1, 9, 'Tramite', 'Tramites personales o renovacion de membresias', '2026-02-20 07:16:31'),
+            (24, 1, 9, 'Mantenimiento', 'Modificaciones o actividades que involucren cuidar tu espacio', '2026-02-20 07:16:31'),
+            (25, 1, 9, 'Limpieza', 'Tareas de limpieza del hogar', '2026-02-20 07:16:31'),
+            (26, 1, 9, 'Super', 'Compras pendientes', '2026-02-20 07:16:31'),
+            (27, 1, 4, 'Responzabilidades', 'Responsabilidades con mi familia', '2026-02-20 07:16:31'),
+            (28, 1, 4, 'Salida Familiar', 'Eventos Familiares', '2026-02-20 07:16:31'),
+            (29, 1, 2, 'Pagos', 'Pagos pendientes', '2026-02-20 07:16:31'),
+            (30, 1, 2, 'Revisión financiera', 'Manejo de mis finanzas', '2026-02-20 07:16:31'),
+            (31, 1, 2, 'Ahorro', 'Fondo de ahorro', '2026-02-20 07:16:31'),
+            (32, 1, 7, 'Apoyo Social', 'eventos y ayuda a la comunidad', '2026-02-20 07:16:31'),
+            (33, 1, 5, 'Religion', 'Tareas o eventos de mi religion', '2026-02-20 07:16:31'),
+            (34, 1, 12, 'Sin asignar', 'Actividades que no siempre pertenezcan a un tema', '2026-02-20 07:16:31')
         ]
         cursor.executemany("""
             INSERT OR IGNORE INTO tema (idTema, idPerfil, idArea, nombreTema, descripcionTema, fechaCreacion
