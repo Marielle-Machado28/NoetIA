@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/noetia/__init__.py
+src/noetia/config.py
+src/noetia/pipeline.py
+src/noetia/preprocessing.py
+src/noetia/schema.py
+src/noetia.egg-info/PKG-INFO
+src/noetia.egg-info/SOURCES.txt
+src/noetia.egg-info/dependency_links.txt
+src/noetia.egg-info/requires.txt
+src/noetia.egg-info/top_level.txt
+src/noetia/db/__init__.py
+src/noetia/db/sqlite.py
+src/noetia/llm/__init__.py
+src/noetia/llm/client.py

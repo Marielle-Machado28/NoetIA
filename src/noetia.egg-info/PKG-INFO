@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: noetia
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.14
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-dotenv>=1.2.1
+Requires-Dist: streamlit>=1.53.1
+Dynamic: license-file
+
+# NoetIA
+NoetIA es un asistente inteligente orientado a la organización de información no estructurada. A partir de texto libre, aplica técnicas de procesamiento de lenguaje natural para clasificar tareas, notas e ideas en una jerarquía clara y funcional.
