@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS entradaCruda (
     idEntradaCruda INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
     idPerfil INTEGER NOT NULL,
     fuente TEXT NOT NULL,
-    contenidoCrudo TEXT NOT NULL,
+    textoOriginal TEXT NOT NULL,
     fechaCreacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP NOT NULL,
 
     FOREIGN KEY (idPerfil) REFERENCES perfil(idPerfil)
@@ -101,6 +101,7 @@ CREATE TABLE IF NOT EXISTS tarea (
     idArea INTEGER,
     idProyecto INTEGER,
     idTema INTEGER,
+    titulo Text NOT NULL,
     fechaVencimiento TIMESTAMP,
     fechaCreacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP  NOT NULL,
     fechaActualizacion TIMESTAMP,
