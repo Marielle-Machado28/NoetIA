@@ -6,6 +6,8 @@ src/noetia/config.py
 src/noetia/pipeline.py
 src/noetia/preprocessing.py
 src/noetia/schema.py
+src/noetia/sqlite.py
+src/noetia/streamlit_ui.py
 src/noetia.egg-info/PKG-INFO
 src/noetia.egg-info/SOURCES.txt
 src/noetia.egg-info/dependency_links.txt
