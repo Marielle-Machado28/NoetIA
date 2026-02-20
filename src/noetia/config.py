@@ -14,6 +14,7 @@ def check_env():
     print("Entorno listo. API Key cargada correctamente.")
 
 def get_db_path() -> Path:
-    db_path = os.getenv("DB_PATH", "data/noetia.db")
+    default_path = Path.cwd() / "sql" / "noetia.db"
+    db_path = os.getenv("DB_PATH", str(default_path))
     return Path(db_path)
 

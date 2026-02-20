@@ -1,6 +1,6 @@
 import streamlit as st
 from noetia.config import get_db_path
-from noetia.db import get_conn, fetch_all
+from noetia.sqlite import get_conn, fetch_all
 
 st.set_page_config(page_title="NoetIA | Tareas", page_icon="assets/logo-minimal.png", layout="wide")
 
