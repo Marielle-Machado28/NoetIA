@@ -1,4 +1,6 @@
 import streamlit as st
+import sys
+import os
 from noetia.config import get_db_path
 from noetia.streamlit_ui import hero_logo
 
