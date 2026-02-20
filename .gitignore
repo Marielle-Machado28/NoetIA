@@ -208,3 +208,5 @@ __marimo__/
 # NoetIA specific
 data/
 *.sqlite3
+
+sql/noetia.db
