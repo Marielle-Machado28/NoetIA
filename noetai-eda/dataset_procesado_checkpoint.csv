@@ -1,0 +1,651 @@
+texto_estandar,fecha_detectada,lugar,longitud_tokens,verbo_principal,cambios,es_ambiguo,es_fecha_default,id_original
+Llamar a Luis por su cumpleaños.,2026-02-21T00:00:00,,8,Llamar,[],False,True,0
+Organizar una carne asada,2026-02-21T00:00:00,,5,Organizar,[],False,True,1
+Mandar un mensaje al grupo.,2026-02-21T00:00:00,,7,Mandar,[],False,True,2
+Comprar un regalo.,2026-02-21T00:00:00,,4,Comprar,[],False,True,3
+Iniciar sesión de regalos,2026-02-21T00:00:00,,5,Iniciar,[],False,True,4
+Validar el plan con amigas,2026-02-21T00:00:00,,6,Validar,[],False,True,5
+Agendar sesión de regalo.,2026-02-21T00:00:00,,5,Agendar,[],False,True,6
+Agregar el regalo al calendario,2026-02-21T00:00:00,,7,Agregar,"[""Reformulación de 'hacer la regalo' a 'Agregar el regalo'""]",False,True,7
+Agendar cita de cumpleaños.,2026-02-21T00:00:00,,5,Agendar,"[""Reformulación de 'cita cumpleanos' a 'cita de cumpleaños'.""]",False,True,8
+Comprar un regalo.,2026-02-21T00:00:00,,4,Comprar,[],False,True,9
+Comprar un regalo,2026-02-21T00:00:00,,4,Comprar,[],False,True,10
+Definir un plan con amigas,2026-02-21T00:00:00,,6,Definir,[],False,True,11
+Llamar para recoger mis regalos en Notion.,2026-02-21T00:00:00,Notion,10,Llamar,"['Reformulación para mayor claridad', 'Corrección de gramática']",False,True,12
+Decidir el regalo,2026-02-21T00:00:00,,4,Decidir,['Reformulación para mayor claridad'],True,True,13
+Agendar una cita con amigas,2026-02-21T00:00:00,,6,Agendar,"[""Reformulación de 'cita: plan con amigas' a 'Agendar una cita con amigas'""]",False,True,14
+Responder el regalo con un checklist.,2026-02-21T00:00:00,,8,Responder,"[""Se agregó 'el' antes de 'regalo' para mayor claridad."", ""Se añadió 'un' antes de 'checklist' para completar la acción.""]",False,True,15
+Hacer un regalo,2026-02-21T00:00:00,,4,Hacer,"[""Corregido 'regalos' a 'regalo' para que sea singular y más natural.""]",False,True,16
+Tomar notas sobre el cumpleaños.,2026-02-21T00:00:00,,7,Tomar,"[""Reformulación de 'notas sobre: cumpleanos' a 'Tomar notas sobre el cumpleaños.'""]",False,True,17
+Llamar a la amiga el 2026-03-21 a las 08:00,2026-03-21T08:00:00,,10,Llamar,"['Reformulación de la frase para mayor claridad', 'Ajuste de la fecha y hora']",False,False,18
+Entregar salida con amigas,2026-02-23T09:30:00,,6,Entregar,['Reformulación para claridad y ejecución'],False,False,19
+Hacer una llamada con la amiga a las 11:00,2026-02-24T11:00:00,,10,Hacer,"['Reformulación de la frase para mayor claridad', 'Extracción de la fecha y hora']",False,False,20
+Planear un viaje corto con amigas.,2026-05-05T07:30:00,,8,Planear,"[""Se eliminó la referencia a '45 min' ya que no es necesaria para la acción principal.""]",False,False,21
+Agendar cita de brunch con amigas,2026-04-15T14:00:00,,7,Agendar,"['Reformulación de la frase para claridad y ejecución', 'Eliminación de información redundante']",False,False,22
+Revisar el cumpleaños de la amiga a las 9:30,2026-02-22T09:30:00,,10,Revisar,"['Reformulación para mayor claridad', 'Ajuste de la fecha y hora']",False,False,23
+Salir con amigas a las 10:00,2026-04-26T10:00:00,,6,Salir,"['Eliminación de información redundante sobre duración', 'Reformulación para claridad']",False,False,24
+Planear un viaje corto con amigas.,2026-03-25T16:00:00,,8,Planear,"[""Eliminación de 'nomas para que no se te vaya mmm'"", 'Ajuste de la hora a la fecha específica']",False,False,25
+Ver esta salida con amigas a las 18:30,2026-02-20T18:30:00,,10,Ver,"['Reformulación de la frase para mayor claridad', ""Cambio de '6:30' a '18:30' para formato de 24 horas""]",False,False,26
+Donar ropa que no uso.,2026-02-21T00:00:00,,5,Donar,[],False,True,27
+Reciclar botellas de plástico.,2026-02-21T00:00:00,,4,Reciclar,[],False,True,28
+Ayudar en el refugio de perros,2026-02-21T00:00:00,refugio de perros,6,Ayudar,[],False,True,29
+Asistir a la clase de donación a causa.,2026-02-24T21:00:00,,10,Asistir,"['Reformulación de la frase para mayor claridad', 'Eliminación de información redundante']",False,False,30
+Donar ropa el 2026-03-23 a las 08:30.,2026-03-23T08:30:00,,10,Donar,['Se eliminó la ambigüedad y se ajustó la frase para que sea clara y ejecutable.'],False,False,31
+Agendar sesión de apoyo en evento comunitario a las 18:30.,2026-02-23T18:30:00,,12,Agendar,"['Reformulación de la frase para mayor claridad', 'Ajuste de la hora a formato de 24 horas', 'Eliminación de la duración de 3 hrs ya que no es necesaria']",False,False,32
+Revisar salida de donación a causa,2026-12-30T14:00:00,,8,Revisar,['Se eliminó la referencia temporal ambigua y se ajustó la frase para mayor claridad.'],False,False,33
+Asistir a la clase de visita a asilo a las 8:00,2026-05-19T08:00:00,,10,Asistir,"['Reformulación de la frase para mayor claridad', 'Extracción de la hora y fecha']",False,False,34
+Recolectar alimentos,2026-03-21T21:00:00,,3,Recolectar,['Eliminada la ambigüedad y reformulada la frase para mayor claridad.'],False,False,35
+Leer y escribir.,2026-02-21T00:00:00,,4,Leer,[],False,True,36
+Leer 10 páginas del libro.,2026-02-21T00:00:00,,7,Leer,[],False,True,37
+Estudiar el curso de Python,2026-02-21T00:00:00,,6,Estudiar,[],False,True,38
+Meditar 5 minutos,2026-02-21T00:00:00,,3,Meditar,[],False,True,39
+Escribir en el diario,2026-02-21T00:00:00,,5,Escribir,[],False,True,40
+Revisar los respaldos.,2026-02-21T00:00:00,,4,Revisar,[],False,True,41
+Enviar un mensaje pendiente.,2026-02-21T00:00:00,,5,Enviar,[],False,True,42
+Reflexionar sobre el sistema en Notion,2026-02-21T00:00:00,,8,Reflexionar,"[""Se agregó 'el' antes de 'sistema' para mayor claridad.""]",False,True,43
+Limpiar y actualizar las aplicaciones,2026-02-21T00:00:00,,6,Limpiar,"['Reformulación de la frase para mayor claridad', 'Separación de acciones en dos verbos']",False,True,44
+Asistir a la clase con mi sistema en Notion,2026-02-21T00:00:00,,10,Asistir,['Reformulación para mayor claridad y naturalidad'],False,True,45
+Investigar mi estilo personal.,2026-02-21T00:00:00,,5,Investigar,[],False,True,46
+Limpiar las fotos.,2026-02-21T00:00:00,,4,Limpiar,[],False,True,47
+Visitar para actualizar las aplicaciones.,2026-02-21T00:00:00,,7,Visitar,['Reformulación para mayor claridad y naturalidad.'],False,True,48
+Limpiar las fotos.,2026-02-21T00:00:00,,4,Limpiar,[],False,True,49
+Llamar para preguntar sobre los libros.,2026-02-21T00:00:00,,8,Llamar,['Reformulación para mayor claridad y naturalidad.'],False,True,50
+Revisar libros,2026-02-21T00:00:00,,3,Revisar,"[""Se eliminó la palabra 'notas' para hacer la instrucción más clara.""]",False,True,51
+Revisar mi sistema en Notion,2026-02-21T00:00:00,,6,Revisar,"[""Se eliminó la palabra 'recordatorio' y se ajustó la frase para mayor claridad.""]",False,True,52
+Actualizar las aplicaciones.,2026-02-21T00:00:00,,4,Actualizar,[],False,True,53
+Llamar a la visita y archivar.,2026-02-21T00:00:00,,10,Llamar,"[""Se agregó 'a' antes de 'la visita' para mayor claridad.""]",False,True,54
+Armar la limpieza de fotos,2026-02-21T00:00:00,,6,Armar,['Reformulación para mayor claridad'],False,True,55
+Crear flashcards.,2026-02-21T00:00:00,,3,Crear,[],False,True,56
+Comprar una limpieza de fotos.,2026-02-21T00:00:00,,7,Comprar,"[""Eliminada la referencia temporal 'esta semana' para establecer una fecha por defecto.""]",False,True,57
+Subir una bibliografía y dejar evidencia.,2026-02-21T00:00:00,,10,Subir,[],False,True,58
+Asistir a la clase de limpieza de fotos,2026-02-21T00:00:00,,7,Asistir,['Reformulación para mayor claridad y naturalidad'],False,True,59
+Actualizar las aplicaciones.,2026-02-21T00:00:00,,4,Actualizar,[],False,True,60
+Respaldar el quiz en Notion,2026-02-21T00:00:00,,6,Respaldar,[],False,True,61
+Investigar el mensaje pendiente.,2026-02-21T00:00:00,,5,Investigar,[],False,True,62
+Limpiar las fotos.,2026-02-21T00:00:00,,4,Limpiar,[],False,True,63
+Agendar una visita,2026-02-21T00:00:00,,4,Agendar,"[""Se eliminó 'y archivar' ya que no se especifica una acción clara.""]",False,True,64
+Anotar los libros y confirmar la recepción.,2026-02-21T00:00:00,,10,Anotar,"[""Se ajustó 'una libros' a 'los libros' para concordancia gramatical."", ""Se agregó 'la' antes de 'recepción' para mayor claridad.""]",False,True,65
+Renovar el quiz,2026-02-21T00:00:00,,4,Renovar,[],False,True,66
+Revisar un quiz en Notion,2026-02-21T00:00:00,Notion,6,Revisar,[],False,True,67
+Descargar la actualización de las aplicaciones y confirmar la recepción.,2026-02-21T00:00:00,,15,Descargar,['Reformulación para mayor claridad y naturalidad.'],False,True,68
+Limpiar fotos,2026-02-21T00:00:00,,3,Limpiar,[],False,True,69
+Registrar la visita,2026-02-21T00:00:00,,4,Registrar,[],False,True,70
+Asistir a un evento de estilo personal.,2026-02-21T00:00:00,,7,Asistir,['Reformulación para mayor claridad y naturalidad.'],False,True,71
+Estudiar para el quiz.,2026-02-21T00:00:00,,5,Estudiar,[],False,True,72
+Entregar la limpieza de fotos.,2026-02-21T00:00:00,,6,Entregar,[],False,True,73
+Respaldar el mensaje pendiente.,2026-02-21T00:00:00,,5,Respaldar,[],False,True,74
+Reflexionar sobre la limpieza de fotos.,2026-02-21T00:00:00,,7,Reflexionar,[],False,True,75
+Revisar opciones para el mensaje pendiente.,2026-02-21T00:00:00,,10,Revisar,[],False,True,76
+Registrar la bibliografía y dar seguimiento.,2026-02-21T00:00:00,,10,Registrar,"[""Se agregó 'la' antes de 'bibliografía' para mayor claridad.""]",False,True,77
+Definir mi estilo personal,2026-02-21T00:00:00,,5,Definir,['Reformulación para claridad y ejecución'],False,True,78
+Ordenar pensamientos el 2026-03-21 a las 9:00.,2026-03-21T09:00:00,,10,Ordenar,"['Reformulación de la frase para mayor claridad', 'Eliminación de palabras innecesarias']",False,False,79
+Agendar sesión de bloque para ordenar pensamientos.,2026-02-22T11:00:00,,10,Agendar,"['Reformulación de la frase para mayor claridad', 'Eliminación de información redundante']",False,False,80
+Agendar cita para planear la semana.,2023-11-26T21:00:00,,8,Agendar,"[""Se eliminó la referencia a 'oigan' para mayor claridad."", 'Se ajustó la frase para que sea más natural y ejecutable.']",False,False,81
+Leer en calma el 4 de noviembre de 2027 a las 8:30.,2027-11-04T08:30:00,,10,Leer,['Reformulación de la frase para mayor claridad y naturalidad.'],False,False,82
+Agendar junta de bloque para ordenar pensamientos.,2026-02-21T08:30:00,,10,Agendar,"['Reformulación de la frase para mayor claridad', 'Eliminación de información redundante']",False,False,83
+Revisar la salida de reset del cuarto,2027-03-02T16:00:00,,8,Revisar,"['Eliminación de información temporal innecesaria', 'Ajuste de la frase para mayor claridad']",False,False,84
+Revisar la lección del curso en línea el miércoles a las 17:00 por 2 horas.,2026-02-22T17:00:00,,17,Revisar,"['Se ajustó la frase para mayor claridad y naturalidad.', 'Se especificó la duración de la revisión.']",False,False,85
+Agendar sesión de estudio del diplomado el 2026-02-23 a las 21:00,2026-02-23T21:00:00,,10,Agendar,"['Se eliminó la ambigüedad sobre el cambio de fecha y se estableció una fecha concreta.', 'Se ajustó la redacción para mayor claridad.']",False,False,86
+Asistir a la clase de francés el 2026-02-25T09:00:00.,2026-02-25T09:00:00,,10,Asistir,"['Reformulación de la frase para claridad', 'Eliminación de información sobre el cambio de fecha']",False,False,87
+Agendar evento de plan mensual de hábitos a las 9:30,2026-05-12T09:30:00,,10,Agendar,"['Reformulación de la frase para mayor claridad', 'Eliminación de palabras innecesarias']",False,False,88
+Aprender Python este lunes a las 15:00.,2026-02-20T15:00:00,,7,Aprender,"['Eliminada la parte sobre el bloque y la fecha del 20 de agosto, ya que no era necesaria para la instrucción principal.']",False,False,89
+Asistir a la clase de portugués el 2026-02-23T18:30:00 o el 2026-06-25T18:30:00 si se mueve.,2026-02-23T18:30:00,,22,Asistir,"['Reformulación de la frase para mayor claridad y ejecución', 'Extracción de fechas específicas']",True,False,90
+Leer un capítulo de un libro el 2026-02-19 a las 10:30,2026-02-19T10:30:00,,12,Leer,"['Reformulación de la frase para mayor claridad', 'Eliminación de información redundante sobre el cambio de fecha']",False,False,91
+Agendar sesión de cita para manicure el 2027-03-08 a las 08:30.,2027-03-08T08:30:00,,15,Agendar,"[""Se eliminó la referencia a 'el próximo año' ya que se especificó una fecha exacta."", 'Se ajustó la hora a un formato estándar.']",False,False,92
+Entregar la práctica de speaking en inglés el sábado a las 9:30.,2026-02-25T09:30:00,,14,Entregar,"['Reformulación de la frase para mayor claridad', 'Eliminación de información redundante']",False,False,93
+Planear un viaje a la playa,2026-02-21T00:00:00,playa,7,Planear,[],False,True,94
+Ir al cine.,2026-02-24T00:00:00,cine,4,Ir,"[""Se eliminó la referencia temporal 'el viernes' y se estableció la fecha correspondiente.""]",False,False,95
+Jugar Warzone con amigos,2026-02-21T00:00:00,,5,Jugar,[],False,True,96
+Agendar una cita en el hotel,2026-02-21T00:00:00,hotel,7,Agendar,"[""Reformulación de 'cita: hotel' a 'Agendar una cita en el hotel'""]",False,True,97
+Visitar Amazon,2026-02-21T00:00:00,,3,Visitar,[],False,True,98
+Cerrar la maleta con la lista de verificación.,2026-02-21T00:00:00,,10,Cerrar,"[""Se agregó 'la' antes de 'maleta' para mayor claridad."", ""Se cambió 'checklist' por 'lista de verificación' para mayor naturalidad.""]",False,True,99
+Crear la cuenta de Amazon y confirmar la recepción.,2026-02-21T00:00:00,,12,Crear,"[""Se agregó 'la cuenta de' para mayor claridad."", 'Se ajustó la redacción para que suene más natural.']",False,True,100
+Visitar la lista de lugares.,2026-02-21T00:00:00,,5,Visitar,[],False,True,101
+Pagar el paseo,2026-02-21T00:00:00,,4,Pagar,"[""Se agregó el artículo 'el' para mayor claridad.""]",False,True,102
+Definir la reservación.,2026-02-21T00:00:00,,5,Definir,[],False,True,103
+Solicitar el cine y archivar.,2026-02-21T00:00:00,,8,Solicitar,[],False,True,104
+Validar la cuenta de Amazon y confirmar la recepción.,2026-02-21T00:00:00,,12,Validar,"[""Se agregó 'la cuenta de' para mayor claridad."", 'Se ajustó la frase para que suene más natural.']",False,True,105
+Responder sobre el cine,2026-02-21T00:00:00,,5,Responder,['Reformulación para mayor claridad'],False,True,106
+Revisar opciones para Amazon,2026-02-21T00:00:00,,6,Revisar,[],False,True,107
+Revisar la lista de lugares.,2026-02-21T00:00:00,,6,Revisar,[],False,True,108
+Definir el hotel,2026-02-21T00:00:00,,4,Definir,[],False,True,109
+Comprar ropa,2026-02-21T00:00:00,,3,Comprar,[],False,True,110
+Descargar un hotel.,2026-02-21T00:00:00,,5,Descargar,"[""Reformulación de 'una hotel' a 'un hotel'.""]",False,True,111
+Cerrar la ropa,2026-02-21T00:00:00,,4,Cerrar,['Reformulación para mayor claridad'],False,True,112
+Pasear.,2026-02-21T00:00:00,,1,Pasear,[],False,True,113
+Llenar el hotel y archivar.,2026-02-21T00:00:00,,7,Llenar,[],False,True,114
+Ir al cine,2026-02-21T00:00:00,cine,4,Ir,[],False,True,115
+Reflexionar sobre Amazon.,2026-02-21T00:00:00,,5,Reflexionar,[],False,True,116
+Definir la ropa,2026-02-21T00:00:00,,4,Definir,[],False,True,117
+Revisar Amazon,2026-02-21T00:00:00,,3,Revisar,[],False,True,118
+Preparar la maleta,2026-02-21T00:00:00,,4,Preparar,[],False,True,119
+Guardar un paseo y dejar evidencia.,2026-02-21T00:00:00,,10,Guardar,['Reformulación para mayor claridad'],False,True,120
+Comparar un hotel antes de las 18:00:00,2026-02-21T00:00:00,,10,Comparar,"[""ajustar 'antes de las 6pm' a 'antes de las 18:00:00'""]",False,True,121
+Actualizar el cine,2026-02-21T00:00:00,,4,Actualizar,"[""Reformulación de 'actualizar una cine' a 'Actualizar el cine'""]",False,True,122
+Revisar el hotel,2026-02-21T00:00:00,,4,Revisar,[],False,True,123
+Asistir a la clase de paseo.,2026-02-21T00:00:00,,7,Asistir,['Reformulación para mayor claridad y naturalidad.'],False,True,124
+Investigar sobre reservaciones.,2026-02-21T00:00:00,,5,Investigar,[],False,True,125
+Llamar para coordinar un paseo.,2026-02-21T00:00:00,,7,Llamar,['Reformulación de la frase para mayor claridad.'],False,True,126
+Reflexionar sobre la maleta.,2026-02-21T00:00:00,,5,Reflexionar,[],False,True,127
+Investigar sobre maletas.,2026-02-21T00:00:00,,4,Investigar,"[""Reformulación de 'tema por investigar: maleta' a 'Investigar sobre maletas.'""]",False,True,128
+Preparar mi maleta,2026-02-21T00:00:00,,4,Preparar,[],False,True,129
+Definir Amazon,2026-02-21T00:00:00,,3,Definir,[],False,True,130
+Revisar las prioridades del hotel.,2026-02-21T00:00:00,hotel,7,Revisar,"[""Se agregó el artículo 'las' para mayor claridad.""]",False,True,131
+Agendar cita para ropa.,2026-02-21T00:00:00,,6,Agendar,['Reformulación para mayor claridad.'],False,True,132
+Programar el hotel en el calendario,2026-02-21T00:00:00,,8,Programar,"[""Se agregó el artículo 'el' para mayor claridad.""]",False,True,133
+Asistir a la clase en el parque de diversiones a las 07:30,2026-02-20T07:30:00,parque de diversiones,12,Asistir,"['Reformulación de la frase para mayor claridad', 'Extracción del lugar']",False,False,134
+Ver bloque de stand up comedy el 2026-06-28 a las 19:00.,2026-06-28T19:00:00,,12,Ver,"['Reformulación de la frase para mayor claridad', 'Cambio de formato de hora a 24 horas']",False,False,135
+Asistir a stand up comedy este viernes a las 19:00.,2026-02-24T19:00:00,,10,Asistir,"['Reformulación de la frase para mayor claridad', ""Cambio de '7:00' a '19:00' para formato de 24 horas""]",False,False,136
+Agendar bloque de tarde de arcade a las 20:00,2026-03-14T20:00:00,,10,Agendar,"['Reformulación de la frase para mayor claridad', 'Ajuste de la fecha basada en la referencia temporal']",False,False,137
+Ir al bloque de parque de diversiones el viernes a las 11:00 por 30 minutos.,2026-02-24T11:00:00,bloque de parque de diversiones,15,Ir,"['Reformulación de la frase para mayor claridad', 'Ajuste de la fecha y hora según el contexto']",False,False,138
+Ir al bar con música en vivo a las 19:30,2026-02-25T19:30:00,bar,10,Ir,"['Reformulación de la frase para mayor claridad', ""Cambio de '7:30' a '19:30' para formato de 24 horas""]",False,False,139
+Cantar en el karaoke el 2026-03-21 a las 9:30,2026-03-21T09:30:00,,10,Cantar,"['Reformulación de la frase para mayor claridad', 'Extracción de la fecha explícita']",False,False,140
+Asistir a la sesión de bar con música en vivo.,2026-06-17T10:00:00,bar,10,Asistir,"['Reformulación de la frase para mayor claridad', ""Extracción del lugar 'bar'""]",False,False,141
+Poner gasolina al auto,2026-02-21T00:00:00,,5,Poner,[],False,True,142
+Solicitar una cita en la agencia para el servicio del auto.,2026-02-21T00:00:00,agencia,14,Solicitar,"[""Se agregó 'una' antes de 'cita' para mayor claridad."", ""Se ajustó 'servicio de auto' a 'servicio del auto'.""]",False,True,143
+Comprar alimento para mascotas,2026-02-21T00:00:00,,5,Comprar,[],False,True,144
+Renovar la credencial del super,2026-02-21T00:00:00,,7,Renovar,[],False,True,145
+Tramitar la renovación de la tarjeta de circulación.,2026-02-21T00:00:00,,10,Tramitar,"[""Se agregó 'la' antes de 'renovación' para mayor claridad.""]",False,True,146
+Lavar el patio,2026-02-21T00:00:00,,4,Lavar,[],False,True,147
+Lavar la ropa,2026-02-21T00:00:00,,3,Lavar,[],False,True,148
+Llevar la laptop a reparar.,2026-02-21T00:00:00,,7,Llevar,[],False,True,149
+Comprar plantas para la sala,2026-02-21T00:00:00,sala,6,Comprar,[],False,True,150
+Comprar leche y huevos.,2026-02-21T00:00:00,,5,Comprar,[],False,True,151
+Renovar la licencia,2026-02-21T00:00:00,,4,Renovar,[],False,True,152
+Organizar el departamento.,2026-02-21T00:00:00,,4,Organizar,"[""Reformulación de 'mi organizacion del depa' a 'Organizar el departamento.'""]",False,True,153
+Revisar el baño,2026-02-21T00:00:00,,4,Revisar,[],False,True,154
+Organizar el supermercado con checklist,2026-02-21T00:00:00,,7,Organizar,[],False,True,155
+Hacer check in de arena,2026-02-21T00:00:00,,5,Hacer,[],False,True,156
+Definir la cocina,2026-02-21T00:00:00,,4,Definir,[],False,True,157
+Hacer seguimiento de la zapatera.,2026-02-21T00:00:00,,6,Hacer,[],False,True,158
+Investigar sobre el hogar.,2026-02-21T00:00:00,,5,Investigar,[],False,True,159
+Responder el mensaje sobre el refrigerador.,2026-02-21T00:00:00,,10,Responder,"[""Se agregó 'el mensaje sobre' para mayor claridad.""]",False,True,160
+Asistir a la clase de supermercado.,2026-02-21T00:00:00,,7,Asistir,['Reformulación para mayor claridad y naturalidad.'],False,True,161
+Revisar las prioridades de la cocina,2026-02-21T00:00:00,,7,Revisar,[],False,True,162
+Sacar la basura y archivar documentos.,2026-02-21T00:00:00,,10,Sacar,['Reformulación para mayor claridad y naturalidad.'],False,True,163
+Sacar la salida de reciclaje.,2026-02-21T00:00:00,,6,Sacar,[],False,True,164
+Enviar la zapatera y confirmar la recepción.,2026-02-21T00:00:00,,10,Enviar,"[""Se agregó el artículo 'la' antes de 'zapatera' y 'recepción' para mayor claridad.""]",False,True,165
+Respaldar una zapatera.,2026-02-21T00:00:00,,5,Respaldar,"[""Se eliminó 'hoy' ya que se asumió la fecha por defecto.""]",False,True,166
+Llamar al supermercado,2026-02-21T00:00:00,supermercado,5,Llamar,[],False,True,167
+Imprimir el baño y confirmar recepción.,2026-02-21T00:00:00,,10,Imprimir,['Reformulación para mayor claridad.'],False,True,168
+Limpiar los platos,2026-02-21T00:00:00,,4,Limpiar,[],False,True,169
+Reflexionar sobre el hogar,2026-02-21T00:00:00,,5,Reflexionar,[],False,True,170
+Revisar la alacena,2026-02-21T00:00:00,,4,Revisar,[],False,True,171
+Enviar la ropa a la lavandería.,2026-02-21T00:00:00,lavandería,7,Enviar,"['Reformulación de la frase para mayor claridad', ""Adición del artículo 'la' antes de 'ropa'""]",False,True,172
+Etiquetar la bodega.,2026-02-21T00:00:00,bodega,5,Etiquetar,['Reformulación para mayor claridad y naturalidad.'],False,True,173
+Entregar la cama y archivar.,2026-02-21T00:00:00,,7,Entregar,[],False,True,174
+Revisar la clase de cama,2026-02-21T00:00:00,,5,Revisar,[],False,True,175
+Planear el hogar y archivar.,2026-02-21T00:00:00,,8,Planear,['Reformulación para mayor claridad.'],False,True,176
+Imprimir el documento y archivar.,2026-02-21T00:00:00,,8,Imprimir,"[""Se agregó 'el documento' para mayor claridad.""]",False,True,177
+Guardar el refrigerador.,2026-02-21T00:00:00,,4,Guardar,[],False,True,178
+Llamar a mantenimiento.,2026-02-21T00:00:00,,4,Llamar,[],False,True,179
+Depurar la arena con el checklist.,2026-02-21T00:00:00,,10,Depurar,[],False,True,180
+Cocinar,2026-02-21T00:00:00,,1,Cocinar,[],False,True,181
+Llamar para preguntar sobre reciclaje.,2026-02-21T00:00:00,,7,Llamar,['Reformulación para mayor claridad y naturalidad.'],False,True,182
+Revisar la bodega,2026-02-21T00:00:00,bodega,4,Revisar,[],False,True,183
+Programar la zapatera en el calendario,2026-02-21T00:00:00,,8,Programar,[],False,True,184
+Decidir sobre la cama,2026-02-21T00:00:00,,5,Decidir,['Reformulación para mayor claridad'],True,True,185
+Revisar el borrador en el refrigerador,2026-02-21T00:00:00,refrigerador,7,Revisar,"[""Se agregó 'el' antes de 'borrador'"", ""Se cambió 'refri' por 'refrigerador'""]",False,True,186
+Limpiar el supermercado antes de las 18:00:00.,2026-02-21T00:00:00,supermercado,8,Limpiar,"['Ajustar la hora a formato 24 horas', ""Agregar artículo 'el' antes de 'supermercado'""]",False,True,187
+Reflexionar sobre la zapatera.,2026-02-21T00:00:00,,5,Reflexionar,[],False,True,188
+Renovar la alacena en el calendario,2026-02-21T00:00:00,,8,Renovar,[],False,True,189
+Agendar una junta en el baño,2026-02-21T00:00:00,baño,7,Agendar,"[""Reformulación de 'junta bano' a 'Agendar una junta en el baño'""]",False,True,190
+Revisar el refrigerador,2026-02-21T00:00:00,,4,Revisar,[],False,True,191
+Documentar una bodega y dar seguimiento.,2026-02-21T00:00:00,bodega,10,Documentar,[],False,True,192
+Asistir a la clase con closet.,2026-02-21T00:00:00,,6,Asistir,[],False,True,193
+Revisar prioridades en el supermercado,2026-02-21T00:00:00,supermercado,6,Revisar,['Se ajustó la frase para que sea clara y ejecutable.'],False,True,194
+Organizar la zapatera.,2026-02-21T00:00:00,,5,Organizar,[],False,True,195
+Entregar la bodega y dar seguimiento.,2026-02-21T00:00:00,bodega,10,Entregar,"[""Se agregó 'la' antes de 'bodega' para mayor claridad.""]",False,True,196
+Hacer seguimiento con el reciclaje,2026-02-21T00:00:00,,7,Hacer,[],False,True,197
+Programar el arena y archivar.,2026-02-21T00:00:00,,7,Programar,[],False,True,198
+Validar un escritorio y dejar evidencia.,2026-02-21T00:00:00,,10,Validar,[],False,True,199
+Llenar la cocina en el calendario,2026-02-21T00:00:00,cocina,8,Llenar,['Reformulación para mayor claridad'],False,True,200
+Limpiar la bodega con el checklist.,2026-02-21T00:00:00,la bodega,10,Limpiar,"[""Se agregó 'la' antes de 'bodega' para mayor claridad.""]",False,True,201
+Validar la zapatera,2026-02-21T00:00:00,,5,Validar,[],False,True,202
+Organizar el closet,2026-02-21T00:00:00,,4,Organizar,['Reformulación de la frase para mayor claridad'],False,True,203
+Entregar una despensa en Notion,2026-02-21T00:00:00,Notion,7,Entregar,[],False,True,204
+Entregar el hogar.,2026-02-21T00:00:00,,4,Entregar,[],False,True,205
+Depurar la lavandería,2026-02-21T00:00:00,,4,Depurar,[],False,True,206
+Agendar una arena.,2026-02-21T00:00:00,,5,Agendar,[],False,True,207
+Limpiar la cocina,2026-02-21T00:00:00,cocina,4,Limpiar,[],False,True,208
+Llamar a casa,2026-02-21T00:00:00,casa,4,Llamar,[],False,True,209
+Documentar la despensa y archivar.,2026-02-21T00:00:00,,7,Documentar,[],False,True,210
+Llamar a la lavandería,2026-02-21T00:00:00,,5,Llamar,"[""Reformulación de 'preguntas: lavanderia' a 'Llamar a la lavandería'""]",False,True,211
+Preparar la bodega.,2026-02-21T00:00:00,la bodega,5,Preparar,"[""Se eliminó 'esta semana' para mayor claridad.""]",False,True,212
+Ir al supermercado.,2026-02-21T00:00:00,supermercado,5,Ir,"[""Reformulación de 'idea: supermercado' a 'Ir al supermercado.'""]",False,True,213
+Respaldar la despensa.,2026-02-21T00:00:00,,4,Respaldar,[],False,True,214
+Revisar la zapatera,2026-02-21T00:00:00,,4,Revisar,[],False,True,215
+Revisar opciones para arena,2026-02-21T00:00:00,,5,Revisar,[],False,True,216
+Juntar el closet.,2026-02-21T00:00:00,,3,Juntar,[],False,True,217
+Asistir a la clase de hogar.,2026-02-21T00:00:00,,7,Asistir,[],False,True,218
+Hacer seguimiento con la zapatera.,2026-02-21T00:00:00,,7,Hacer,[],False,True,219
+Programar la cama en el calendario,2026-02-21T00:00:00,,10,Programar,['Reformulación para mayor claridad'],False,True,220
+Configurar un baño y dejar evidencia.,2026-02-21T00:00:00,,10,Configurar,[],False,True,221
+Revisar la plomería este miércoles a las 6:30.,2026-02-22T06:30:00,,10,Revisar,['Se ajustó la frase para mayor claridad y se añadió la hora específica.'],False,False,222
+Agendar cita de revisión de plomería.,2026-03-07T14:00:00,,7,Agendar,"['Reformulación de la frase para mayor claridad', 'Eliminación de detalles temporales innecesarios']",False,False,223
+Lavar ropa y sábanas.,2026-02-22T00:00:00,,5,Lavar,['Se eliminó la referencia a fechas específicas y se simplificó la acción.'],False,True,224
+Agendar evento de revisión de plomería.,2026-02-20T17:00:00,,8,Agendar,['Reformulación de la frase para mayor claridad y naturalidad.'],False,False,225
+Asistir a la junta de revisión de filtros de ventilación,2026-06-24T10:30:00,,10,Asistir,"['Reformulación de la frase para mayor claridad', 'Eliminación de información redundante']",False,False,226
+Realizar evento de mantenimiento del boiler a las 07:30,2026-02-21T07:30:00,,10,Realizar,"['Reformulación de la frase para mayor claridad', ""Eliminación de información redundante como 'super rápido' y '5 hrs'""]",False,False,227
+Iniciar sesión de lavado de ropa y sábanas.,2026-12-28T08:30:00,,10,Iniciar,['Reformulación de la frase para mayor claridad y naturalidad.'],False,False,228
+Ir a misa,2026-02-21T00:00:00,,3,Ir,[],False,True,229
+Hacer mi oración.,2026-02-21T00:00:00,,4,Hacer,[],False,True,230
+Participar en el voluntariado,2026-02-21T00:00:00,,5,Participar,[],False,True,231
+Solicitar servicio en comunidad,2026-03-21T15:00:00,,5,Solicitar,"['Reformulación de la frase para mayor claridad', 'Extracción de la fecha explícita']",False,False,232
+Agendar sesión de visita a un lugar tranquilo.,2026-03-07T10:30:00,,10,Agendar,"['Reformulación de la frase para mayor claridad', 'Eliminación de la referencia temporal ambigua y ajuste a fecha específica']",False,False,233
+Agendar sesión de breathwork el 2026-02-24T12:00:00.,2026-02-24T12:00:00,,10,Agendar,"['Reformulación de la frase para mayor claridad', 'Eliminación de información sobre el cambio de fecha']",False,False,234
+Realizar meditación guiada a las 8:30,2026-02-19T08:30:00,,7,Realizar,"['Reformulación de la frase para mayor claridad', 'Ajuste de la fecha según referencia temporal']",False,False,235
+Agendar círculo de reflexión.,2026-03-21T20:00:00,,5,Agendar,"['Se eliminó la ambigüedad y se simplificó la frase.', 'Se extrajo la fecha y hora específica.']",False,False,236
+Realizar gratitud y journaling espiritual.,2026-03-21T11:00:00,,7,Realizar,['Se eliminó la referencia temporal ambigua y se ajustó a una instrucción clara.'],False,False,237
+Agendar salida de servicio en comunidad a las 9:00 por 30 minutos.,2026-02-23T09:00:00,comunidad,15,Agendar,"['Reformulación de la frase para mayor claridad', ""Extracción del lugar 'comunidad'"", 'Especificación de la hora y duración']",False,False,238
+Asistir al círculo de reflexión el martes a las 09:30.,2026-02-21T09:30:00,,10,Asistir,"['Reformulación de la frase para mayor claridad', ""Cambio de 'nomas' a 'Asistir'""]",False,False,239
+Dar de desayunar a los perros.,2026-02-21T00:00:00,,6,Dar,[],False,True,240
+Dar de comer al perro.,2026-02-21T00:00:00,,5,Dar,[],False,True,241
+Dar su medicamento al perro.,2026-02-21T00:00:00,,7,Dar,[],False,True,242
+Sacar a pasear al perro,2026-02-21T00:00:00,,6,Sacar,[],False,True,243
+Ir a comer con mis papás,2026-02-21T00:00:00,,6,Ir,[],False,True,244
+Ayudar a mi hermano con su tarea,2026-02-21T00:00:00,,8,Ayudar,[],False,True,245
+Visitar a los abuelos,2026-02-21T00:00:00,,5,Visitar,[],False,True,246
+Realizar seguimiento veterinario,2026-02-21T00:00:00,,4,Realizar,[],False,True,247
+Realizar desparasitacion en el veterinario,2026-02-21T00:00:00,veterinario,7,Realizar,[],False,True,248
+Decidir sobre las croquetas.,2026-02-21T00:00:00,,5,Decidir,['Reformulación para mayor claridad'],False,True,249
+Reflexionar sobre la llamada a la familia.,2026-02-21T00:00:00,,8,Reflexionar,[],False,True,250
+Investigar sobre desparasitacion.,2026-02-21T00:00:00,,5,Investigar,"[""Reformulación de 'tema por investigar' a 'Investigar sobre'""]",False,True,251
+Entregar al veterinario,2026-02-21T00:00:00,,4,Entregar,[],False,True,252
+Hacer seguimiento de las croquetas.,2026-02-21T00:00:00,,6,Hacer,['Reformulación para mayor claridad'],False,True,253
+Visitar croquetas.,2026-02-21T00:00:00,,3,Visitar,[],False,True,254
+Depurar la comida familiar y dar seguimiento.,2026-02-21T00:00:00,,10,Depurar,[],False,True,255
+Configurar una llamada a la familia.,2026-02-21T00:00:00,,7,Configurar,[],False,True,256
+Depurar un veterinario,2026-02-21T00:00:00,,4,Depurar,['Reformulación para mayor claridad'],True,True,257
+Actualizar las croquetas.,2026-02-21T00:00:00,,4,Actualizar,"[""Se agregó el artículo 'las' para mayor claridad.""]",False,True,258
+Hacer croquetas en Notion,2026-02-21T00:00:00,,5,Hacer,"[""Reformulación de 'hacer una croquetas' a 'Hacer croquetas'""]",False,True,259
+Documentar una llamada a la familia.,2026-02-21T00:00:00,,8,Documentar,['Se ajustó la frase para mayor claridad y naturalidad.'],False,True,260
+Agendar cita para croquetas.,2026-02-21T00:00:00,,6,Agendar,[],False,True,261
+Organizar la comida familiar en Notion,2026-02-21T00:00:00,,8,Organizar,[],False,True,262
+Agendar cita con la familia para comer.,2026-02-21T00:00:00,,10,Agendar,['Reformulación para mayor claridad y naturalidad.'],False,True,263
+Armar la desparasitacion.,2026-02-21T00:00:00,,5,Armar,[],False,True,264
+Limpiar después de la comida familiar,2026-02-21T00:00:00,,7,Limpiar,"['Reformulación para mayor claridad', ""Ajuste de la acción a 'Limpiar después de la comida familiar'""]",False,True,265
+Agendar una junta con el veterinario,2026-02-21T00:00:00,,7,Agendar,['Reformulación para mayor claridad y naturalidad'],False,True,266
+Cenar con la familia a las 21:30,2026-02-22T21:30:00,,7,Cenar,"[""Reformulación de 'super rapido o sea cena con familia este miercoles a las 9:30' a una instrucción clara y ejecutable.""]",False,False,267
+Verificar el cumpleaños de un familiar.,2026-03-21T21:00:00,,8,Verificar,"['Reformulación de la frase para mayor claridad', 'Extracción de la fecha y hora']",False,False,268
+Agendar cita de cena con la familia,2026-02-20T20:00:00,,8,Agendar,"['Reformulación de la frase para mayor claridad', 'Extracción de la fecha y hora']",False,False,269
+Agendar clase de reunión familiar el 2027-08-02 a las 10:30.,2027-08-02T10:30:00,,10,Agendar,"['Reformulación de la frase para mayor claridad', 'Eliminación de información redundante sobre duración']",False,False,270
+Visitar a mi mamá el 2027-02-08 a las 18:30.,2027-02-08T18:30:00,casa de mi mamá,10,Visitar,"['Reformulación de la frase para mayor claridad', 'Ajuste de la hora a formato de 24 horas']",False,False,271
+Visitar a casa de mi mamá el 2023-11-03T18:00:00.,2023-11-03T18:00:00,casa de mi mamá,12,Visitar,"['Reformulación de la frase para mayor claridad', 'Extracción de la fecha y hora específica']",False,False,272
+Agendar comida familiar,2026-04-27T19:30:00,,4,Agendar,['Se eliminó la referencia a la duración de 1 hr ya que no es necesaria para la acción ejecutable.'],False,False,273
+Pagar la tarjeta,2026-02-21T00:00:00,,4,Pagar,[],False,True,274
+Pagar el recibo de luz.,2026-02-21T00:00:00,,6,Pagar,[],False,True,275
+Pagar el mantenimiento del conjunto habitacional.,2026-02-21T00:00:00,conjunto habitacional,9,Pagar,"[""Se agregó 'el' antes de 'mantenimiento' para mayor claridad."", ""Se ajustó 'de conjunto habitacional' a 'del conjunto habitacional'.""]",False,True,276
+Revisar el saldo de ahorro,2026-02-21T00:00:00,,6,Revisar,[],False,True,277
+Subir las facturas al SAT.,2026-02-21T00:00:00,,7,Subir,"[""Agregado artículo 'las' antes de 'facturas'"", 'Reformulada la frase para mayor claridad']",False,True,278
+Agendar el pago de servicios.,2026-02-21T00:00:00,,30,Agendar,"[""Se eliminó 'y archivar' para mayor claridad.""]",False,True,279
+Iniciar un ahorro.,2026-02-21T00:00:00,,4,Iniciar,[],False,True,280
+Preparar el ahorro y dar seguimiento.,2026-02-21T00:00:00,,10,Preparar,[],False,True,281
+Llamar para revisar mis finanzas.,2026-01-01T00:00:00,,7,Llamar,['Reformulación de la frase para mayor claridad.'],False,False,282
+Realizar una transferencia bancaria.,2026-02-21T00:00:00,,5,Realizar,[],False,True,283
+Entregar mis finanzas.,2026-01-01T00:00:00,,4,Entregar,['Reformulación para claridad y naturalidad'],False,False,284
+Guardar un pago de servicios.,2026-02-21T00:00:00,,6,Guardar,[],False,True,285
+Etiquetar las facturas en Notion,2026-02-21T00:00:00,Notion,7,Etiquetar,"[""Se agregó el artículo 'las' para mayor claridad.""]",False,True,286
+Renovar la tarjeta de crédito.,2026-02-21T00:00:00,,5,Renovar,[],False,True,287
+Agendar cita para pago de servicios.,2026-02-21T00:00:00,,8,Agendar,['Reformulación para mayor claridad y naturalidad.'],False,True,288
+Documentar mis impuestos con el checklist.,2026-02-21T00:00:00,,10,Documentar,[],False,True,289
+Revisar el presupuesto mensual,2026-02-21T00:00:00,,5,Revisar,[],False,True,290
+Cancelar el fondo de emergencia.,2026-02-21T00:00:00,,6,Cancelar,"[""Se eliminó 'mi' para mayor claridad."", 'Se ajustó la estructura para que suene más natural.']",False,True,291
+Revisar suscripciones,2026-02-21T00:00:00,,3,Revisar,[],False,True,292
+Revisar el fondo de emergencia,2026-02-21T00:00:00,,5,Revisar,[],False,True,293
+Editar la transferencia bancaria.,2026-02-21T00:00:00,,5,Editar,[],False,True,294
+Cerrar la suscripción en Notion,2026-02-21T00:00:00,,7,Cerrar,['Reformulación para mayor claridad y naturalidad'],False,True,295
+Anotar el ahorro utilizando un checklist.,2026-02-21T00:00:00,,10,Anotar,['Reformulación para mayor claridad y naturalidad.'],False,True,296
+Revisar opciones para el pago de servicios.,2026-02-21T00:00:00,,10,Revisar,"[""Se agregó el artículo 'el' para mayor claridad.""]",False,True,297
+Realizar una transferencia bancaria.,2026-02-21T00:00:00,,5,Realizar,[],False,True,298
+Cerrar la tarjeta de crédito.,2026-02-21T00:00:00,,6,Cerrar,"[""Se eliminó 'esta semana' para mayor claridad.""]",False,True,299
+Decidir el presupuesto de viaje,2026-02-21T00:00:00,,6,Decidir,['Reformulación de la frase para mayor claridad'],False,True,300
+Confirmar la transferencia bancaria en Notion,2026-02-21T00:00:00,Notion,8,Confirmar,[],False,True,301
+Hacer una inversión en CETES.,2026-02-21T00:00:00,,6,Hacer,['Reformulación para mayor claridad y naturalidad.'],False,True,302
+Etiquetar el seguro de viaje en Notion,2026-02-21T00:00:00,Notion,8,Etiquetar,"['Reformulación para mayor claridad', ""Extracción del lugar 'Notion'""]",False,True,303
+Respaldar el presupuesto mensual,2026-02-21T00:00:00,,5,Respaldar,[],False,True,304
+Entregar impuestos,2026-02-21T00:00:00,,3,Entregar,[],False,True,305
+Iniciar transferencia bancaria.,2026-02-21T00:00:00,,4,Iniciar,[],False,True,306
+Documentar el presupuesto de viaje.,2026-02-21T00:00:00,,6,Documentar,[],False,True,307
+Definir las facturas.,2026-02-21T00:00:00,,5,Definir,[],False,True,308
+Realizar seguimiento del estado de cuenta.,2026-02-21T00:00:00,,7,Realizar,[],False,True,309
+Realizar una transferencia bancaria.,2026-02-21T00:00:00,,5,Realizar,[],False,True,310
+Revisar el estado de cuenta,2026-02-21T00:00:00,,5,Revisar,[],False,True,311
+Visitar el presupuesto mensual.,2026-02-21T00:00:00,,5,Visitar,['Reformulación para mayor claridad y naturalidad.'],False,True,312
+Llenar un ahorro antes de las 18:00:00.,2026-02-21T00:00:00,,8,Llenar,['Ajustar la hora a formato 24 horas.'],False,True,313
+Definir mis finanzas,2026-01-01T00:00:00,,4,Definir,[],False,False,314
+Investigar el estado de cuenta.,2026-02-21T00:00:00,,6,Investigar,['Reformulación para mayor claridad y naturalidad.'],False,True,315
+Revisar mis finanzas.,2026-02-21T00:00:00,,4,Revisar,['Se eliminó la ambigüedad y se formuló como una acción clara.'],False,True,316
+Planear la transferencia bancaria y dejar evidencia.,2026-02-21T00:00:00,,10,Planear,[],False,True,317
+Llamar a mi tarjeta de crédito en Notion,2026-02-21T00:00:00,Notion,10,Llamar,['Reformulación para mayor claridad y naturalidad'],False,True,318
+Reflexionar sobre el pago de servicios,2026-02-21T00:00:00,,7,Reflexionar,[],False,True,319
+Investigar sobre mis finanzas.,2026-02-21T00:00:00,,5,Investigar,['Reformulación de la frase para mayor claridad.'],False,True,320
+Agendar junta con fondo de emergencia,2026-02-21T00:00:00,,7,Agendar,[],False,True,321
+Reflexionar sobre las comisiones.,2026-02-21T00:00:00,,5,Reflexionar,[],False,True,322
+Solicitar la salida del seguro de viaje.,2026-02-21T00:00:00,,8,Solicitar,[],False,True,323
+Revisar suscripciones el 2026-03-16 a las 11:00,2026-03-16T11:00:00,,10,Revisar,"[""Eliminación de 'ehm rapido' y '30 min' para mayor claridad.""]",False,False,324
+Revisar el presupuesto mensual,2026-05-23T14:00:00,,5,Revisar,"[""Eliminada la expresión 'nomas para que no se te vaya tipo'"", 'Ajustada la frase para que sea clara y ejecutable']",False,False,325
+Asistir a la clase de pago de seguro el sábado a las 11:00.,2026-02-25T11:00:00,,15,Asistir,"['Reformulación de la frase para mayor claridad', 'Eliminación de información redundante']",False,False,326
+Revisar la clase de pago de luz,2026-02-19T10:00:00,,7,Revisar,"[""Se eliminó 'mira por fa' para hacer la instrucción más clara y directa."", 'Se ajustó la fecha y hora a un formato estándar.']",False,False,327
+Realizar el pago de internet el 2026-02-19 a las 17:00.,2026-02-19T17:00:00,,12,Realizar,"['Reformulación de la frase para mayor claridad', 'Eliminación de información redundante sobre el 3 de agosto']",False,False,328
+Cortar la tarjeta el 2026-12-29 a las 14:00.,2026-12-29T14:00:00,,10,Cortar,"[""Se eliminó la referencia a 'super rápido' para mayor claridad."", 'Se ajustó la estructura para que sea más natural.']",False,False,329
+Revisar suscripciones a las 12:00,2026-02-21T12:00:00,,6,Revisar,"[""Se eliminó 'mira tipo' para mayor claridad"", 'Se ajustó la estructura para que sea más natural']",False,False,330
+Agendar mi rutina de domingo.,2026-02-21T00:00:00,,6,Agendar,"[""Reformulación de 'cita mi rutina de domingo' a 'Agendar mi rutina de domingo.'""]",False,True,331
+Decidir sobre el café.,2026-02-21T00:00:00,,5,Decidir,['Reformulación de la frase para mayor claridad.'],False,True,332
+Crear un mapa.,2026-02-21T00:00:00,,4,Crear,[],False,True,333
+Cerrar el mapa y confirmar recepción.,2026-02-21T00:00:00,,10,Cerrar,[],False,True,334
+Preparar brunch,2026-02-21T00:00:00,,2,Preparar,[],False,True,335
+Iniciar sesión de mi rutina de domingo,2026-02-21T00:00:00,,7,Iniciar,['Reformulación para mayor claridad'],False,True,336
+Revisar durante el brunch,2026-02-21T00:00:00,,5,Revisar,['Se ajustó la frase para que sea más clara y ejecutable.'],False,True,337
+Crear un mapa.,2026-02-21T00:00:00,,4,Crear,[],False,True,338
+Configurar el brunch,2026-02-21T00:00:00,,4,Configurar,['Reformulación para mayor claridad'],False,True,339
+Reflexionar sobre la rutina del domingo,2026-02-21T00:00:00,,7,Reflexionar,['Reformulación para mayor claridad'],False,True,340
+Asistir a la clase de mapa.,2026-02-21T00:00:00,,7,Asistir,[],False,True,341
+Asistir a la clase de tarde de museo.,2026-02-21T13:00:00,museo,8,Asistir,"['Reformulación de la frase para mayor claridad', ""Extracción del lugar 'museo'""]",False,False,342
+Revisar sesión de cine el 2026-02-24 a las 15:00,2026-02-24T15:00:00,,10,Revisar,"['Reformulación de la frase para mayor claridad', 'Incorporación de la fecha y hora exacta']",False,False,343
+Agendar sesión de paseo al parque.,2027-10-12T08:30:00,parque,8,Agendar,"[""Eliminada la referencia a 'nomas para que no se te vaya'."", 'Reformulada la frase para mayor claridad.']",False,False,344
+Asistir a la tarde de pintura el 2026-12-27 a las 19:30.,2026-12-27T19:30:00,,15,Asistir,"['Reformulación de la frase para mayor claridad', 'Ajuste de la hora a formato de 24 horas']",False,False,345
+Visitar el museo a las 10:30,2026-02-21T10:30:00,museo,7,Visitar,"['Reformulación de la frase para mayor claridad', ""Extracción del lugar 'museo'""]",False,False,346
+Pasear al parque el 2026-03-21 a las 14:00,2026-03-21T14:00:00,parque,10,Pasear,"['Reformulación de la frase para mayor claridad', 'Extracción de la fecha y hora']",False,False,347
+Agendar cita de cine a las 9:00,2026-02-23T09:00:00,,7,Agendar,"['Reformulación de la frase para mayor claridad', ""Eliminación de '3 hrs' ya que no es necesario""]",False,False,348
+Comprar un regalo de aniversario.,2026-02-21T00:00:00,,6,Comprar,[],False,True,349
+Cenar con mi novio,2026-02-21T00:00:00,,4,Cenar,[],False,True,350
+Hablar sobre los planes de mudanza.,2026-02-21T00:00:00,,7,Hablar,['Reformulación para mayor claridad.'],False,True,351
+Celebrar el aniversario.,2026-02-21T00:00:00,,3,Celebrar,[],False,True,352
+Agendar sesión con mi novio,2026-02-21T00:00:00,,6,Agendar,"[""Reformulación de 'sesion con date con mi novio' a 'Agendar sesión con mi novio'""]",False,True,353
+Solicitar un aniversario y dejar evidencia.,2026-02-21T00:00:00,,10,Solicitar,[],False,True,354
+Anotar el aniversario en el calendario,2026-02-21T00:00:00,,8,Anotar,[],False,True,355
+Agendar una cita con mi novio,2026-02-21T00:00:00,,7,Agendar,"[""Reformulación de 'date con mi novio' a 'cita con mi novio'""]",False,True,356
+Pasear este viernes a las 11:30.,2026-02-24T11:30:00,,7,Pasear,['Se eliminó la parte sobre el 20 de noviembre ya que no es relevante para la acción principal.'],False,False,357
+Planear una sorpresa romántica para este jueves a las 19:30.,2026-02-23T19:30:00,,12,Planear,"['Reformulación de la frase para mayor claridad', 'Ajuste de la hora a formato de 24 horas']",False,False,358
+Agendar cita de cena romántica a las 19:00,2026-02-21T19:00:00,,10,Agendar,"[""Reformulación de 'cita de cena romantica el martes a las 7:00 2 hrs' a 'Agendar cita de cena romántica a las 19:00'""]",False,False,359
+Agendar una cita para date night a las 20:00,2026-02-25T20:00:00,,10,Agendar,"[""Reformulación de 'date night este sabado a las 8:00' a 'una cita para date night a las 20:00'""]",False,False,360
+Planear una sorpresa romántica.,2027-05-27T09:00:00,,5,Planear,['Se eliminó la ambigüedad y se clarificó la acción.'],False,False,361
+Agendar sesión de brunch en pareja,2026-03-31T14:00:00,,7,Agendar,"['Reformulación de la frase para claridad y ejecución', 'Eliminación de información redundante']",False,False,362
+Entregar el paseo nocturno.,2026-02-25T21:00:00,,5,Entregar,"['Reformulación de la frase para mayor claridad', 'Extracción de la fecha y hora']",False,False,363
+Agendar brunch en pareja,2026-04-01T17:00:00,,5,Agendar,"[""Se eliminó la referencia a 'nomas para que no se te vaya rapido' para mayor claridad."", 'Se ajustó la frase para que sea más natural y ejecutable.']",False,False,364
+Recordar la cita con el nutriologo.,2026-02-21T00:00:00,,8,Recordar,[],False,True,365
+Tomar el medicamento del día.,2026-02-21T00:00:00,,7,Tomar,[],False,True,366
+Preparar y desayunar algo nutritivo.,2026-02-21T00:00:00,,7,Preparar,[],False,True,367
+Ir al gimnasio según la rutina.,2026-02-21T00:00:00,gimnasio,8,Ir,['Reformulación para mayor claridad'],False,True,368
+Preparar el café de la mañana.,2026-02-21T00:00:00,,7,Preparar,[],False,True,369
+Preparar la comida del día,2026-02-21T00:00:00,,6,Preparar,[],False,True,370
+Ir al gimnasio según el plan semanal.,2026-02-21T00:00:00,gimnasio,10,Ir,['Reformulación para mayor claridad y naturalidad.'],False,True,371
+Agendar una cita con el dentista.,2026-02-21T00:00:00,,8,Agendar,['Reformulación para mayor claridad y naturalidad.'],False,True,372
+Comprar las vitaminas necesarias.,2026-02-21T00:00:00,,5,Comprar,[],False,True,373
+Ir a la farmacia por medicamentos pendientes.,2026-02-21T00:00:00,farmacia,10,Ir,[],False,True,374
+Anotar pendientes relacionados con vacunas.,2026-02-21T00:00:00,,7,Anotar,[],False,True,375
+Programar una sesión de entrenamiento.,2026-02-21T00:00:00,,6,Programar,['Reformulación para mayor claridad y naturalidad.'],False,True,376
+Preparar la ropa deportiva para el entrenamiento,2026-02-21T00:00:00,,10,Preparar,[],False,True,377
+Organizar la rutina de skincare y dar seguimiento.,2026-02-21T00:00:00,,10,Organizar,[],False,True,378
+Definir y organizar mi rutina de sueño.,2026-02-21T00:00:00,,8,Definir,['Reformulación para mayor claridad y naturalidad.'],False,True,379
+Registrar suplementos y archivar comprobantes.,2026-02-21T00:00:00,,7,Registrar,[],False,True,380
+Revisar y renovar los medicamentos necesarios.,2026-02-21T00:00:00,,8,Revisar,"[""Se agregó 'los' antes de 'medicamentos' para mayor claridad.""]",False,True,381
+Evaluar cómo está funcionando mi rutina de sueño.,2026-02-21T00:00:00,,10,Evaluar,['Reformulación para mayor claridad y naturalidad.'],False,True,382
+Confirmar la recepción de mis vitaminas.,2026-02-21T00:00:00,,8,Confirmar,['Reformulación para mayor claridad y naturalidad.'],False,True,383
+Preparar ropa deportiva,2026-02-21T00:00:00,,4,Preparar,[],False,True,384
+Anotar ideas para mejorar el descanso,2026-02-21T00:00:00,,10,Anotar,[],False,True,385
+Investigar mejores prácticas de cuidado personal.,2026-02-21T00:00:00,,7,Investigar,[],False,True,386
+Preparar temas para comentar en la cita médica.,2026-02-21T00:00:00,,10,Preparar,"[""Se agregó 'la' antes de 'cita médica' para mayor claridad.""]",False,True,387
+Reflexionar sobre mi salud mental.,2026-02-21T00:00:00,,6,Reflexionar,[],False,True,388
+Crear un checklist para mejorar el descanso.,2026-02-21T00:00:00,,10,Crear,[],False,True,389
+Pagar el análisis clínico y registrarlo en el calendario.,2026-02-21T00:00:00,,15,Pagar,"[""Agregado artículo 'el' antes de 'análisis clínico'"", 'Reformulada la frase para mayor claridad']",False,True,390
+Coordinar la preparación de comidas por llamada.,2026-02-21T00:00:00,,10,Coordinar,['Reformulación para mayor claridad y naturalidad.'],False,True,391
+Agendar una cita de nutrición y guardar el registro.,2026-02-21T00:00:00,,14,Agendar,"[""Se agregó 'una' antes de 'cita' para mayor claridad."", ""Se cambió 'nutricion' a 'nutrición' para corregir la ortografía."", ""Se agregó 'el' antes de 'registro' para mayor claridad.""]",False,True,392
+Asistir a la consulta dental,2026-02-21T00:00:00,,6,Asistir,[],False,True,393
+Preparar la lista de preguntas para la consulta dental.,2026-02-21T00:00:00,,12,Preparar,"[""Se agregó 'la' antes de 'lista' para mayor claridad.""]",False,True,394
+Anotar ideas para mejorar el entrenamiento.,2026-02-21T00:00:00,,10,Anotar,[],False,True,395
+Planear snacks saludables para la semana,2026-02-21T00:00:00,,7,Planear,"[""Se agregó 'para' para mayor claridad.""]",False,True,396
+Definir la fecha para la próxima cita médica.,2026-02-21T00:00:00,,10,Definir,['Reformulación para mayor claridad'],False,True,397
+Revisar cuándo necesito un corte de uñas.,2026-02-21T00:00:00,,10,Revisar,"[""Se ajustó 'corte de unas' a 'corte de uñas' para mayor claridad.""]",False,True,398
+Organizar un plan diario de hidratación.,2026-02-21T00:00:00,,8,Organizar,[],False,True,399
+Recordar hidratarse durante el día.,2026-02-21T00:00:00,,6,Recordar,['Reformulación para mayor claridad y naturalidad.'],False,True,400
+Revisar los detalles de la cita médica.,2026-02-21T00:00:00,,10,Revisar,"[""Se agregó el artículo 'la' antes de 'cita médica' para mayor claridad.""]",False,True,401
+Evaluar la rutina de sueño actual.,2026-02-21T00:00:00,,7,Evaluar,[],False,True,402
+Anotar ideas de snacks saludables.,2026-02-21T00:00:00,,6,Anotar,[],False,True,403
+Planear caminatas para la semana,2026-02-21T00:00:00,,6,Planear,['Reformulación para mayor claridad'],False,True,404
+Recordar salir en bici,2026-02-21T00:00:00,,5,Recordar,['Reformulación para mayor claridad'],False,True,405
+Agendar un corte de uñas,2026-02-21T00:00:00,,6,Agendar,['Reformulación para mayor claridad y naturalidad'],False,True,406
+Registrar los resultados de la consulta dental.,2026-02-21T00:00:00,,10,Registrar,"[""Se agregó 'los' antes de 'resultados' para mayor claridad."", ""Se añadió 'de la' antes de 'consulta dental' para completar la acción.""]",False,True,407
+Reflexionar sobre cómo me sentí en yoga.,2026-02-21T00:00:00,,10,Reflexionar,"[""Corregir 'como' a 'cómo' para mayor claridad.""]",False,True,408
+Anotar ideas para fortalecer la salud mental.,2026-02-21T00:00:00,,10,Anotar,[],False,True,409
+Asistir a la cita de vacunación,2026-02-21T00:00:00,,7,Asistir,[],False,True,410
+Anotar la rutina de estiramientos.,2026-02-21T00:00:00,,7,Anotar,[],False,True,411
+Comprar productos de cuidado personal.,2026-02-21T00:00:00,,5,Comprar,[],False,True,412
+Registrar los snacks en Notion,2026-02-21T00:00:00,,7,Registrar,"[""Se agregó 'los' para mayor claridad"", ""Se especificó 'en Notion'""]",False,True,413
+Asistir a la cita médica programada.,2026-02-21T00:00:00,,8,Asistir,"[""Se agregó el artículo 'la' antes de 'cita médica' para mayor claridad.""]",False,True,414
+Cuidar mi salud mental.,2026-02-21T00:00:00,,5,Cuidar,[],False,True,415
+Ir a la farmacia,2026-02-21T00:00:00,farmacia,5,Ir,[],False,True,416
+Actualizar el registro de snacks en Notion.,2026-02-21T00:00:00,Notion,8,Actualizar,"[""Se agregó 'el' antes de 'registro'"", ""Se cambió 'notion' a 'Notion' para respetar la capitalización correcta.""]",False,True,417
+Definir prioridades para la cita médica.,2026-02-21T00:00:00,,8,Definir,[],False,True,418
+Agendar una caminata.,2026-02-21T00:00:00,,5,Agendar,"[""Reformulación de 'agendar caminata esta semana' a 'Agendar una caminata.'""]",False,True,419
+Ir a la consulta con el dentista,2026-02-21T00:00:00,,8,Ir,[],False,True,420
+Crear un checklist para la salida en bici.,2026-02-21T00:00:00,,10,Crear,[],False,True,421
+Planear la preparación de comidas para la semana,2026-02-21T00:00:00,,10,Planear,['Reformulación para mayor claridad y naturalidad'],False,True,422
+Registrar las vacunas en Notion,2026-02-21T00:00:00,Notion,6,Registrar,"[""Se agregó 'las' antes de 'vacunas' para mayor claridad.""]",False,True,423
+Anotar dudas sobre vitaminas,2026-02-21T00:00:00,,5,Anotar,[],False,True,424
+Revisar la información sobre vitaminas.,2026-02-21T00:00:00,,7,Revisar,[],False,True,425
+Anotar observaciones sobre vitaminas.,2026-02-21T00:00:00,,6,Anotar,[],False,True,426
+Revisar las vacunas pendientes.,2026-02-21T00:00:00,,5,Revisar,['Se ajustó la frase para que sea clara y ejecutable.'],False,True,427
+Investigar información sobre vacunas.,2026-02-21T00:00:00,,6,Investigar,[],False,True,428
+Confirmar asistencia a la clase de yoga.,2026-02-21T00:00:00,,8,Confirmar,['Reformulación para mayor claridad y naturalidad.'],False,True,429
+Dar seguimiento con el nutriologo,2026-02-21T00:00:00,,7,Dar,[],False,True,430
+Realizar una sesión de meditación.,2026-02-21T00:00:00,,7,Realizar,[],False,True,431
+Anotar dudas sobre la preparación de comidas.,2026-02-21T00:00:00,,10,Anotar,"[""Se agregó 'la' antes de 'preparación' para mayor claridad.""]",False,True,432
+Registrar notas sobre snacks.,2026-02-21T00:00:00,,5,Registrar,[],False,True,433
+Registrar y etiquetar la cita médica antes de las 18:00.,2026-02-21T18:00:00,,10,Registrar,"['Se ajustó la hora a formato de 24 horas.', ""Se agregó el artículo 'la' antes de 'cita médica'.""]",False,False,434
+Revisar el avance de mi plan de hábitos de salud.,2026-02-21T00:00:00,,10,Revisar,[],False,True,435
+Revisar la calidad de los snacks de la semana.,2026-02-21T00:00:00,,10,Revisar,[],False,True,436
+Organizar la rutina de skincare y registrar la evidencia.,2026-02-21T00:00:00,,12,Organizar,"[""Se agregó 'la' antes de 'rutina' para mayor claridad."", ""Se agregó 'la' antes de 'evidencia' para mayor claridad.""]",False,True,437
+Revisar los productos de cuidado personal pendientes.,2026-02-21T00:00:00,,8,Revisar,"[""Se agregó el artículo 'los' para mayor claridad.""]",False,True,438
+Confirmar el cumplimiento de la rutina de skincare.,2026-02-21T00:00:00,,10,Confirmar,[],False,True,439
+Salir en bici,2026-02-21T00:00:00,,3,Salir,['Reformulación para mayor claridad'],False,True,440
+Anotar ideas de snacks saludables.,2026-02-21T00:00:00,,6,Anotar,[],False,True,441
+Revisar o comprar la ropa deportiva necesaria.,2026-02-21T00:00:00,,10,Revisar,"[""Se agregó 'la' para mayor claridad."", 'Se mantuvo la estructura de la acción.']",False,True,442
+Preparar vitaminas y dar seguimiento al consumo.,2026-02-21T00:00:00,,10,Preparar,"[""Se ajustó 'dar seguimiento a consumo' a 'dar seguimiento al consumo' para mayor claridad.""]",False,True,443
+Registrar el descanso en el calendario,2026-02-21T00:00:00,,8,Registrar,[],False,True,444
+Registrar análisis clínicos y dar seguimiento.,2026-02-21T00:00:00,,8,Registrar,[],False,True,445
+Registrar las compras en la farmacia y guardar la evidencia.,2026-02-21T00:00:00,farmacia,15,Registrar,"[""Se agregó 'las' antes de 'compras' para mayor claridad."", ""Se agregó 'la' antes de 'evidencia' para mayor claridad.""]",False,True,446
+Reflexionar sobre mi rutina de sueño.,2026-02-21T00:00:00,,7,Reflexionar,[],False,True,447
+Asistir a un chequeo médico.,2026-02-21T00:00:00,,6,Asistir,['Reformulación para mayor claridad y naturalidad.'],False,True,448
+Revisar suplementos con el especialista,2026-02-21T00:00:00,,7,Revisar,"[""Se agregó 'el' antes de 'especialista' para mayor claridad.""]",False,True,449
+Confirmar la recepción de resultados de análisis clínicos.,2026-02-21T00:00:00,,10,Confirmar,[],False,True,450
+Evaluar el progreso en yoga.,2026-02-21T00:00:00,,6,Evaluar,[],False,True,451
+Crear un checklist de suplementos.,2026-02-21T00:00:00,,6,Crear,[],False,True,452
+Registrar el corte de uñas y archivar la evidencia.,2026-02-21T00:00:00,,12,Registrar,"[""Se agregó 'el' antes de 'corte de uñas' para mayor claridad."", ""Se agregó 'la' antes de 'evidencia' para mayor claridad.""]",False,True,453
+Registrar la sesión de meditación completada.,2026-02-21T00:00:00,,8,Registrar,[],False,True,454
+Registrar el meal prep realizado,2026-02-21T00:00:00,,5,Registrar,[],False,True,455
+Reflexionar sobre los resultados de la consulta dental.,2026-02-21T00:00:00,,10,Reflexionar,"[""Se agregó 'los' antes de 'resultados' para mayor claridad.""]",False,True,456
+Programar una sesión de meal prep.,2026-02-21T00:00:00,,7,Programar,['Reformulación para mayor claridad y naturalidad.'],False,True,457
+Anotar dudas sobre hidratación.,2026-02-21T00:00:00,,6,Anotar,[],False,True,458
+Hacer check-in posterior al chequeo médico.,2026-02-21T00:00:00,,8,Hacer,['Reformulación para mayor claridad y naturalidad.'],False,True,459
+Actualizar la rutina de cuidado personal y registrar la evidencia.,2026-02-21T00:00:00,,14,Actualizar,"[""Se agregó 'la' antes de 'evidencia' para mayor claridad.""]",False,True,460
+Asistir a la cita de corte de uñas,2026-02-21T00:00:00,,8,Asistir,"[""Se agregó 'la' antes de 'cita' para mayor claridad.""]",False,True,461
+Dar seguimiento a mi entrenamiento semanal.,2026-02-21T00:00:00,,8,Dar,[],False,True,462
+Configurar un plan nutricional y archivar el registro.,2026-02-21T00:00:00,,10,Configurar,"[""Se agregó 'un' antes de 'plan nutricional' para mayor claridad."", ""Se agregó 'el' antes de 'registro' para mayor claridad.""]",False,True,463
+Actualizar la rutina de sueño en Notion,2026-02-21T00:00:00,,8,Actualizar,"[""Se agregó 'la' antes de 'rutina'"", ""Se cambió 'sueno' por 'sueño'""]",False,True,464
+Evaluar la calidad de mi descanso.,2026-02-21T00:00:00,,7,Evaluar,[],False,True,465
+Registrar notas sobre la hidratación.,2026-02-21T00:00:00,,7,Registrar,[],False,True,466
+Actualizar el registro de vitaminas.,2026-02-21T00:00:00,,6,Actualizar,[],False,True,467
+Renovar las vitaminas usando la checklist.,2026-02-21T00:00:00,,10,Renovar,"[""Se agregó 'las' antes de 'vitaminas' para mayor claridad.""]",False,True,468
+Preparar la ropa deportiva para la semana,2026-02-21T00:00:00,,8,Preparar,[],False,True,469
+Programar análisis clínicos.,2026-02-21T00:00:00,,4,Programar,"[""Se eliminó 'esta semana' para mayor claridad temporal.""]",False,True,470
+Completar la rutina de skincare.,2026-02-21T00:00:00,,6,Completar,"[""Se eliminó 'hoy' y se ajustó la frase para mayor claridad.""]",False,True,471
+Realizar una sesión guiada de descanso.,2026-02-21T00:00:00,,7,Realizar,[],False,True,472
+Ir a la farmacia,2026-02-21T00:00:00,farmacia,5,Ir,[],False,True,473
+Guardar el comprobante de la cita médica.,2026-02-21T00:00:00,,10,Guardar,"[""Se agregó el artículo 'el' antes de 'comprobante' y 'la' antes de 'cita' para mayor claridad.""]",False,True,474
+Comprar snacks saludables.,2026-02-21T00:00:00,,4,Comprar,"[""Reformulación de 'lista de snacks saludables para comprar' a 'Comprar snacks saludables.'""]",False,True,475
+Definir una rutina de skincare.,2026-02-21T00:00:00,,6,Definir,[],False,True,476
+Registrar el seguimiento de hidratación.,2026-02-21T00:00:00,,7,Registrar,[],False,True,477
+Registrar la meditación realizada hoy.,2026-02-21T00:00:00,,7,Registrar,[],False,True,478
+Reflexionar sobre las próximas vacunas necesarias.,2026-02-21T00:00:00,,8,Reflexionar,"[""Se agregó 'las' para mayor claridad.""]",False,True,479
+Reflexionar sobre las vacunas.,2026-02-21T00:00:00,,5,Reflexionar,[],False,True,480
+Asistir a la cita con el dentista.,2026-05-28T10:30:00,,8,Asistir,['Reformulación de la frase para mayor claridad y naturalidad.'],False,False,481
+Agendar consulta de oftalmología a las 20:00,2026-02-25T20:00:00,,8,Agendar,"['Reformulación para claridad y naturalidad', 'Extracción de la fecha y hora']",False,False,482
+Agendar sesión de fisioterapia el 2026-05-22 a las 09:30 por 45 minutos.,2026-05-22T09:30:00,,15,Agendar,"['Reformulación de la frase para mayor claridad', 'Ajuste de la hora y duración']",False,False,483
+Consultar oftalmología el 2026-07-07 a las 16:00,2026-07-07T16:00:00,,8,Consultar,"['Reformulación de la frase para mayor claridad', 'Eliminación de información redundante sobre duración']",False,False,484
+Consultar oftalmología el 2023-10-06 a las 15:00.,2023-10-06T15:00:00,,10,Consultar,"['Reformulación de la frase para mayor claridad', 'Eliminación de información sobre el cambio de fecha']",False,False,485
+Agendar cita con el nutriologo a las 9:00,2026-03-07T09:00:00,,10,Agendar,"['Reformulación de la frase para mayor claridad', 'Extracción de la hora y cálculo de la fecha']",False,False,486
+Agendar cita con el dentista,2027-09-13T19:00:00,,7,Agendar,"['Reformulación de la frase para claridad', 'Eliminación de información redundante sobre el año']",False,False,487
+Agendar cita con el ginecólogo para el 2026-02-23 a las 09:30.,2026-02-23T09:30:00,,15,Agendar,['Se eliminó la ambigüedad sobre la fecha de reprogramación y se estableció una fecha concreta.'],False,False,488
+Entregar la presentación al conmutador para el simulacro.,2026-02-21T00:00:00,,14,Entregar,[],False,True,489
+Cargar órdenes de trabajo en el sistema.,2026-02-21T00:00:00,,8,Cargar,[],False,True,490
+Mandar el roster del weekend support todos los jueves.,2026-02-23T00:00:00,,10,Mandar,['Reformulación para mayor claridad y naturalidad.'],False,True,491
+Llegar al servicio social,2026-02-21T00:00:00,,5,Llegar,[],False,True,492
+Checar las credenciales en el filtro y asegurarme de los pagos pendientes de los atletas.,2026-02-21T00:00:00,,19,Checar,['Reformulación para mayor claridad y naturalidad.'],False,True,493
+Llegar a la universidad,2026-02-21T00:00:00,universidad,5,Llegar,[],False,True,494
+Iniciar juntas,2026-02-21T00:00:00,,3,Iniciar,[],False,True,495
+Terminar el reporte de ventas.,2026-02-21T00:00:00,,5,Terminar,[],False,True,496
+Actualizar el perfil de LinkedIn.,2026-02-21T00:00:00,,6,Actualizar,"[""Se agregó 'el perfil de' para mayor claridad.""]",False,True,497
+Contestar los correos pendientes.,2026-02-21T00:00:00,,5,Contestar,[],False,True,498
+Investigar y documentar las mejores prácticas para el resumen ejecutivo.,2026-02-21T00:00:00,,14,Investigar,"[""Se agregó 'las' antes de 'mejores prácticas' para mayor claridad.""]",False,True,499
+Revisar la presentación antes de la entrega.,2026-02-21T00:00:00,,10,Revisar,"[""Se agregó 'la' antes de 'presentación' para mayor claridad."", ""Se añadió 'antes de la entrega' para completar la acción.""]",False,True,500
+Enviar la práctica en Notion y confirmar el envío.,2026-02-21T00:00:00,,12,Enviar,"[""Se agregó 'la' antes de 'práctica' para mayor claridad."", ""Se ajustó 'confirmar envio' a 'confirmar el envío'.""]",False,True,501
+Registrar la salida de PR.,2026-02-21T00:00:00,,6,Registrar,[],False,True,502
+Definir un plan de acción para el proyecto.,2026-02-21T00:00:00,,10,Definir,['Reformulación para mayor claridad y naturalidad.'],False,True,503
+Documentar el resumen semanal del proyecto.,2026-02-21T00:00:00,,8,Documentar,[],False,True,504
+Llamar para organizar archivos pendientes.,2026-02-21T00:00:00,,7,Llamar,[],False,True,505
+Anotar ideas para el roadmap profesional.,2026-02-21T00:00:00,,8,Anotar,[],False,True,506
+Entregar el PR y notificar al equipo.,2026-02-21T00:00:00,,10,Entregar,"[""Se agregó 'el' antes de 'PR' para mayor claridad."", 'Se mantuvo la estructura original de la acción.']",False,True,507
+Organizar ejercicios de Python y archivarlos.,2026-02-21T00:00:00,,8,Organizar,[],False,True,508
+Definir la configuración de seguridad 2FA.,2026-02-21T00:00:00,,7,Definir,[],False,True,509
+Llamar para hacer seguimiento al pipeline.,2026-02-21T00:00:00,,10,Llamar,['Reformulación para mayor claridad y naturalidad.'],False,True,510
+Validar el evento programado.,2026-02-21T00:00:00,,5,Validar,['Reformulación para mayor claridad y naturalidad.'],False,True,511
+Optimizar el plan de acción actual.,2026-02-21T00:00:00,,7,Optimizar,[],False,True,512
+Definir las métricas clave del proyecto.,2026-02-21T00:00:00,,8,Definir,[],False,True,513
+Revisar el avance de la práctica asignada.,2026-02-21T00:00:00,,10,Revisar,"[""Se agregó el artículo 'la' antes de 'práctica' para mayor claridad.""]",False,True,514
+Documentar la tarea del diplomado.,2026-02-21T00:00:00,,7,Documentar,[],False,True,515
+Confirmar el ticket de soporte abierto.,2026-02-21T00:00:00,,7,Confirmar,[],False,True,516
+Definir el alcance de EDA.,2026-02-21T00:00:00,,6,Definir,[],False,True,517
+Definir prioridades de productividad semanal.,2026-02-21T00:00:00,,6,Definir,[],False,True,518
+Registrar el pipeline y archivar la documentación.,2026-02-21T00:00:00,,10,Registrar,"[""Se agregó el artículo 'el' antes de 'pipeline' y 'la' antes de 'documentación'.""]",False,True,519
+Reunir al equipo del proyecto,2026-02-21T00:00:00,,6,Reunir,"[""Reformulación de 'reunion con el equipo del proyecto' a 'Reunir al equipo del proyecto'""]",False,True,520
+Definir una estrategia para optimizar LinkedIn.,2026-02-21T00:00:00,,10,Definir,[],False,True,521
+Enviar seguimiento por correo.,2026-02-21T00:00:00,,5,Enviar,[],False,True,522
+Actualizar el backlog antes de las 18:00.,2026-02-21T18:00:00,,10,Actualizar,['Se ajustó la hora a formato de 24 horas.'],False,False,523
+Cerrar el proyecto final en Notion,2026-02-21T00:00:00,,7,Cerrar,[],False,True,524
+Cerrar el notebook antes de las 18:00.,2026-02-21T00:00:00,,10,Cerrar,['Se ajustó la hora a formato de 24 horas.'],False,True,525
+Crear un checklist para el repositorio.,2026-02-21T00:00:00,,8,Crear,[],False,True,526
+Revisar y limpiar la presentación final.,2026-02-21T00:00:00,,7,Revisar,[],False,True,527
+Cerrar el itinerario del proyecto en Notion.,2026-02-21T00:00:00,Notion,10,Cerrar,[],False,True,528
+Definir prioridades mensuales.,2026-02-21T00:00:00,,4,Definir,[],False,True,529
+Agendar reunión en Notion para seguimiento,2026-02-21T00:00:00,Notion,8,Agendar,['Reformulación de la frase para mayor claridad y naturalidad'],False,True,530
+Dar seguimiento al plan de acción.,2026-02-21T00:00:00,,7,Dar,[],False,True,531
+Imprimir documentos y validar con el checklist.,2026-02-21T00:00:00,,10,Imprimir,"[""Se agregó 'el' antes de 'checklist' para mayor claridad.""]",False,True,532
+Solicitar plantillas y confirmar la recepción.,2026-02-21T00:00:00,,10,Solicitar,"[""Se agregó 'la' antes de 'recepción' para mayor claridad.""]",False,True,533
+Configurar la seguridad 2FA y registrar la evidencia.,2026-02-21T00:00:00,,10,Configurar,"[""Se agregó 'la' antes de 'evidencia' para mayor claridad.""]",False,True,534
+Optimizar el EDA según el calendario.,2026-02-21T00:00:00,,8,Optimizar,[],False,True,535
+Completar la práctica y registrar el avance.,2026-02-21T00:00:00,,10,Completar,[],False,True,536
+Evaluar opciones para el despliegue.,2026-02-21T00:00:00,,7,Evaluar,"[""Se agregó 'el' antes de 'despliegue' para mayor claridad.""]",False,True,537
+Agendar sesión 1:1 con mi jefe,2026-02-21T00:00:00,,8,Agendar,[],False,True,538
+Explorar opciones de automatización.,2026-02-21T00:00:00,,5,Explorar,[],False,True,539
+Reflexionar sobre procesos de automatización.,2026-02-21T00:00:00,,6,Reflexionar,[],False,True,540
+Depurar el plan de acción usando la checklist.,2026-02-21T00:00:00,,10,Depurar,"[""Se agregó 'el' antes de 'plan de acción' para mayor claridad."", ""Se agregó 'la' antes de 'checklist' para mayor claridad.""]",False,True,541
+Entregar la presentación final.,2026-02-21T00:00:00,,5,Entregar,[],False,True,542
+Resolver dudas sobre el plan de acción.,2026-02-21T00:00:00,,8,Resolver,[],False,True,543
+Realizar una sesión sobre procesos internos,2026-02-21T00:00:00,,7,Realizar,['Reformulación para mayor claridad y naturalidad'],False,True,544
+Anotar ideas de modelado.,2026-02-21T00:00:00,,5,Anotar,[],False,True,545
+Subir la tarea del diplomado.,2026-02-21T00:00:00,,7,Subir,[],False,True,546
+Confirmar la documentación enviada.,2026-02-21T00:00:00,,5,Confirmar,[],False,True,547
+Registrar avances en modelado.,2026-02-21T00:00:00,,5,Registrar,[],False,True,548
+Guardar el PR validado con el checklist.,2026-02-21T00:00:00,,10,Guardar,"[""Se agregó 'el' antes de 'PR' para mayor claridad."", ""Se agregó 'con el' antes de 'checklist' para mayor claridad.""]",False,True,549
+Dar seguimiento al itinerario del proyecto.,2026-02-21T00:00:00,,8,Dar,[],False,True,550
+Definir un sistema personal de productividad.,2026-02-21T00:00:00,,8,Definir,[],False,True,551
+Optimizar el inbox zero,2026-02-21T00:00:00,,4,Optimizar,[],False,True,552
+Agendar reunión técnica sobre notebook,2026-02-21T00:00:00,,7,Agendar,['Reformulación para mayor claridad y naturalidad'],False,True,553
+Configurar el deploy.,2026-02-21T00:00:00,,4,Configurar,"[""Se agregó 'el' antes de 'deploy' para mayor claridad.""]",False,True,554
+Llamar sobre el proyecto final,2026-02-21T00:00:00,,6,Llamar,[],False,True,555
+Configurar ejercicios de Python.,2026-02-21T00:00:00,,5,Configurar,"[""Se eliminó 'hoy' y se ajustó la frase para mayor claridad.""]",False,True,556
+Revisar el avance del plan de acción,2026-02-21T00:00:00,,8,Revisar,[],False,True,557
+Actualizar el repositorio.,2026-02-21T00:00:00,,4,Actualizar,"[""Se eliminó 'hoy' ya que se asumió la fecha por defecto.""]",False,True,558
+Crear un checklist para el roadmap.,2026-02-21T00:00:00,,7,Crear,[],False,True,559
+Revisar el avance en mi portafolio,2026-02-21T00:00:00,,8,Revisar,['Reformulación de la frase para mayor claridad'],False,True,560
+Organizar los archivos en Drive,2026-02-21T00:00:00,Drive,6,Organizar,"[""Se agregó 'los' antes de 'archivos' para mayor claridad.""]",False,True,561
+Registrar actividades completadas y dejar evidencia.,2026-02-21T00:00:00,,8,Registrar,[],False,True,562
+Entregar el resumen ejecutivo.,2026-02-21T00:00:00,,5,Entregar,[],False,True,563
+Registrar la salida con recursos humanos.,2026-02-21T00:00:00,,8,Registrar,"[""Se agregó 'la' antes de 'salida' para mayor claridad."", ""Se especificó 'con recursos humanos' para completar la acción.""]",False,True,564
+Solicitar la práctica y confirmar la recepción.,2026-02-21T00:00:00,,10,Solicitar,['Reformulación para mayor claridad y naturalidad.'],False,True,565
+Anotar las observaciones del proyecto final.,2026-02-21T00:00:00,,8,Anotar,[],False,True,566
+Definir la tarea del diplomado.,2026-02-21T00:00:00,,7,Definir,[],False,True,567
+Llamar para validar el plan de acción.,2026-02-21T00:00:00,,8,Llamar,[],False,True,568
+Explorar la idea de un ticket de soporte.,2026-02-21T00:00:00,,10,Explorar,['Reformulación para mayor claridad'],False,True,569
+Planear la lectura del módulo.,2026-02-21T00:00:00,,7,Planear,['Reformulación para mayor claridad y naturalidad.'],False,True,570
+Configurar EDA.,2026-02-21T00:00:00,,3,Configurar,[],False,True,571
+Llamar al soporte técnico.,2026-02-21T00:00:00,,5,Llamar,[],False,True,572
+Optimizar el itinerario en Notion,2026-02-21T00:00:00,,6,Optimizar,[],False,True,573
+Investigar el seguimiento efectivo por correo.,2026-02-21T00:00:00,,8,Investigar,[],False,True,574
+Actualizar el perfil de LinkedIn.,2026-02-21T00:00:00,,5,Actualizar,['Reformulación para mayor claridad y naturalidad.'],False,True,575
+Solicitar la documentación pendiente.,2026-02-21T00:00:00,,5,Solicitar,[],False,True,576
+Realizar seguimiento técnico de la notebook,2026-02-21T00:00:00,,7,Realizar,['Reformulación para mayor claridad y naturalidad'],False,True,577
+Entregar el plan de acción y dar seguimiento.,2026-02-21T00:00:00,,10,Entregar,['Reformulación para mayor claridad y naturalidad.'],False,True,578
+Revisar la tarea del diplomado.,2026-02-21T00:00:00,,7,Revisar,[],False,True,579
+Reunir para definir las prioridades del mes.,2026-02-21T00:00:00,,10,Reunir,['Reformulación de la frase para mayor claridad.'],False,True,580
+Realizar seguimiento técnico del pipeline,2026-02-21T00:00:00,,7,Realizar,[],False,True,581
+Crear un plan de estudio y archivarlo.,2026-02-21T00:00:00,,10,Crear,[],False,True,582
+Agendar el pipeline y registrar la evidencia.,2026-02-21T00:00:00,,10,Agendar,"[""Se agregó el artículo 'el' antes de 'pipeline' para mayor claridad.""]",False,True,583
+Registrar notas sobre métricas.,2026-02-21T00:00:00,,6,Registrar,[],False,True,584
+Realizar un evento de reporte semanal.,2026-02-21T00:00:00,,30,Realizar,[],False,True,585
+Entregar la validación final.,2026-02-21T00:00:00,,5,Entregar,[],False,True,586
+Reflexionar sobre los avances del proyecto de IA.,2026-02-21T00:00:00,,10,Reflexionar,"[""ajustar 'mi proyecto de ia' a 'el proyecto de IA'""]",False,True,587
+Asistir a una clase para mejorar el portafolio.,2026-02-21T00:00:00,,10,Asistir,['Reformulación para mayor claridad y naturalidad.'],False,True,588
+Revisar notas sobre el PR enviado.,2026-02-21T00:00:00,,30,Revisar,['Se ajustó la frase para que sea clara y ejecutable.'],False,True,589
+Explorar mejoras para lograr inbox zero.,2026-02-21T00:00:00,,8,Explorar,['Reformulación para mayor claridad.'],False,True,590
+Realizar una reunión de validación.,2026-02-21T00:00:00,,7,Realizar,[],False,True,591
+Organizar el inbox para alcanzar cero correos.,2026-02-21T00:00:00,,10,Organizar,['Reformulación para mayor claridad y naturalidad.'],False,True,592
+Agendar reunión sobre automatización,2026-02-21T00:00:00,,6,Agendar,"[""Reformulación de 'reunion sobre automatizacion' a 'Agendar reunión sobre automatización'""]",False,True,593
+Investigar la gestión de tickets de soporte.,2026-02-21T00:00:00,,8,Investigar,"[""Se agregó el artículo 'la' para mayor claridad.""]",False,True,594
+Registrar el dataset pendiente.,2026-02-21T00:00:00,,5,Registrar,[],False,True,595
+Validar la documentación administrativa en el calendario,2026-02-21T00:00:00,,10,Validar,['Reformulación para mayor claridad'],False,True,596
+Confirmar las actividades asignadas.,2026-02-21T00:00:00,,5,Confirmar,[],False,True,597
+Validar la reunión con el equipo,2026-02-21T00:00:00,,7,Validar,[],False,True,598
+Investigar mejoras en el proyecto de IA.,2026-02-21T00:00:00,,8,Investigar,"[""Se agregó el artículo 'el' antes de 'proyecto'"", ""Se capitalizó 'IA'""]",False,True,599
+Crear una presentación y dar seguimiento.,2026-02-21T00:00:00,,10,Crear,['Reformulación para mayor claridad y naturalidad.'],False,True,600
+Revisar documentos pendientes.,2026-02-21T00:00:00,,4,Revisar,"[""Se eliminó la palabra 'recordatorio' para hacer la instrucción más clara.""]",False,True,601
+Confirmar el check-in antes de las 18:00.,2026-02-21T00:00:00,,10,Confirmar,"['ajustar la hora a formato 24 horas', ""agregar artículo 'el' antes de 'check-in'""]",False,True,602
+Respaldar archivos.,2026-02-21T00:00:00,,3,Respaldar,"[""Se eliminó 'esta semana' para mayor claridad.""]",False,True,603
+Llamar para hacer seguimiento al backlog.,2026-02-21T00:00:00,,10,Llamar,['Reformulación para mayor claridad y naturalidad.'],False,True,604
+Realizar una sesión técnica de Python.,2026-02-21T00:00:00,,7,Realizar,['Reformulación para mayor claridad y naturalidad.'],False,True,605
+Revisar el seguimiento por correo,2026-02-21T00:00:00,,6,Revisar,[],False,True,606
+Organizar validación antes de las 18:00.,2026-02-21T00:00:00,,7,Organizar,"['ajuste de hora a formato 24 horas', 'agregado de punto final']",False,True,607
+Confirmar EDA antes de las 18:00.,2026-02-21T00:00:00,,8,Confirmar,['Ajustar la hora a formato de 24 horas.'],False,True,608
+Depurar el backlog y registrar la evidencia.,2026-02-21T00:00:00,,10,Depurar,"[""Se agregó el artículo 'el' antes de 'backlog' para mayor claridad.""]",False,True,609
+Responder el dataset en Notion,2026-02-21T00:00:00,Notion,6,Responder,[],False,True,610
+Armar el reporte semanal y archivarlo.,2026-02-21T00:00:00,,10,Armar,[],False,True,611
+Anotar la tarea del diplomado antes de las 18:00.,2026-02-21T00:00:00,,10,Anotar,['Se ajustó la hora a formato de 24 horas.'],False,True,612
+Configurar la presentación en Notion,2026-02-21T00:00:00,,6,Configurar,[],False,True,613
+Definir prioridades de reunión con el equipo,2026-02-21T00:00:00,,8,Definir,[],False,True,614
+Cancelar el repositorio y confirmar la recepción.,2026-02-21T00:00:00,,10,Cancelar,"[""Se agregó el artículo 'el' antes de 'repositorio' y 'la' antes de 'recepción'.""]",False,True,615
+Respaldar la organización de archivos.,2026-02-21T00:00:00,,7,Respaldar,"[""Se agregó 'la' antes de 'organización' para mayor claridad.""]",False,True,616
+Llamar para hacer seguimiento al backlog.,2026-02-21T00:00:00,,8,Llamar,['Reformulación para mayor claridad y naturalidad.'],False,True,617
+Revisar el avance en mi proyecto de IA,2026-02-21T00:00:00,,10,Revisar,['Reformulación para mayor claridad y naturalidad'],False,True,618
+Asistir a la clase de seguimiento.,2026-02-21T00:00:00,,7,Asistir,"[""Reformulación de 'clase de seguimiento check in' a 'clase de seguimiento'.""]",False,True,619
+Realizar una sesión de ejercicios de Python.,2026-02-21T00:00:00,,8,Realizar,[],False,True,620
+Llamar para revisar los respaldos.,2026-02-21T00:00:00,,7,Llamar,"[""Se agregó el artículo 'los' para mayor claridad.""]",False,True,621
+Resolver dudas sobre documentos.,2026-02-21T00:00:00,,5,Resolver,[],False,True,622
+Resolver dudas sobre mi LinkedIn.,2026-02-21T00:00:00,,7,Resolver,[],False,True,623
+Agendar junta de trabajo en Drive,2026-02-21T00:00:00,Drive,7,Agendar,"['Reformulación para mayor claridad', ""Extracción del lugar 'Drive'""]",False,True,624
+Reflexionar sobre el resumen ejecutivo.,2026-02-21T00:00:00,,6,Reflexionar,[],False,True,625
+Organizar el inbox zero antes de las 18:00.,2026-02-21T18:00:00,,10,Organizar,"['ajustar la hora a formato de 24 horas', ""agregar artículo 'el' antes de 'inbox zero'""]",False,False,626
+Ordenar actividades pendientes y archivar.,2026-02-21T00:00:00,,6,Ordenar,[],False,True,627
+Crear un checklist preliminar de correos.,2026-02-21T00:00:00,,7,Crear,[],False,True,628
+Revisar el seguimiento por correo.,2026-02-21T00:00:00,,7,Revisar,[],False,True,629
+Organizar la papelería,2026-02-21T00:00:00,,4,Organizar,[],False,True,630
+Revisar el roadmap profesional,2026-02-21T00:00:00,,5,Revisar,[],False,True,631
+Organizar la validación antes de las 18:00.,2026-02-21T00:00:00,,10,Organizar,['Se ajustó la frase para mayor claridad y se especificó la hora en formato 24 horas.'],False,True,632
+Crear un checklist preliminar del roadmap.,2026-02-21T00:00:00,,8,Crear,[],False,True,633
+Definir prioridades de modelado,2026-02-21T00:00:00,,5,Definir,[],False,True,634
+Crear un checklist preliminar de documentos.,2026-02-21T00:00:00,,7,Crear,[],False,True,635
+Revisar los archivos en Drive.,2026-02-21T00:00:00,Drive,6,Revisar,"[""Agregado artículo 'los' antes de 'archivos'.""]",False,True,636
+Confirmar EDA antes de las 18:00.,2026-02-21T00:00:00,,8,Confirmar,['Ajustar la hora a formato de 24 horas.'],False,True,637
+Planear la lectura del módulo y archivar las notas.,2026-02-21T00:00:00,,12,Planear,"[""Se agregó 'la' antes de 'lectura' para mayor claridad."", ""Se agregó 'las' antes de 'notas' para mayor claridad.""]",False,True,638
+Depurar el backlog y registrar la evidencia.,2026-02-21T00:00:00,,10,Depurar,['Reformulación para mayor claridad y naturalidad.'],False,True,639
+Responder el dataset en Notion,2026-02-21T00:00:00,Notion,6,Responder,[],False,True,640
+Investigar mejoras para el portafolio.,2026-02-21T00:00:00,,7,Investigar,[],False,True,641
+Definir la decisión pendiente de check-in.,2026-02-21T00:00:00,,8,Definir,[],False,True,642
+Armar el reporte semanal y archivarlo.,2026-02-21T00:00:00,,10,Armar,[],False,True,643
+Etiquetar el repositorio y dejar evidencia.,2026-02-21T00:00:00,,10,Etiquetar,[],False,True,644
+Registrar la tarea del diplomado antes de las 18:00.,2026-02-21T00:00:00,,10,Registrar,"['Ajustar la hora a formato de 24 horas', ""Agregar artículo 'la' para mayor claridad""]",False,True,645
+Revisar la presentación antes de enviarla.,2026-02-21T00:00:00,,10,Revisar,"[""Se agregó 'la' antes de 'presentación' para mayor claridad."", ""Se añadió 'enviarla' para completar la acción.""]",False,True,646
+Crear una lista de seguridad para 2FA.,2026-02-21T00:00:00,,10,Crear,[],False,True,647
+Anotar ideas sobre el check in.,2026-02-21T00:00:00,,8,Anotar,"[""Se eliminó 'brain dump' para mayor claridad.""]",False,True,648
+Configurar la presentación en Notion,2026-02-21T00:00:00,,6,Configurar,[],False,True,649
