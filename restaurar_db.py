@@ -80,7 +80,11 @@ def restaurar_con_datos():
             (31, 1, 2, 'Ahorro', 'Fondo de ahorro', '2026-02-20 07:16:31'),
             (32, 1, 7, 'Apoyo Social', 'eventos y ayuda a la comunidad', '2026-02-20 07:16:31'),
             (33, 1, 5, 'Religion', 'Tareas o eventos de mi religion', '2026-02-20 07:16:31'),
-            (34, 1, 12, 'Sin asignar', 'Actividades que no siempre pertenezcan a un tema', '2026-02-20 07:16:31')
+            (34, 1, 12, 'Sin asignar', 'Actividades que no siempre pertenezcan a un tema', '2026-02-20 07:16:31'),
+            (35, 1, 1, 'Cuidado Personal', 'Apariencia', '2026-02-20 07:16:31'),
+            (36, 1, 1, 'Salud Mental', 'Mi salud mental', '2026-02-20 07:16:31'),
+            (37, 1, 3, 'Desarrollo Profesional', 'Crecimiento en el area laboral', '2026-02-20 07:16:31'),
+            (18, 1, 3, 'Productovidad', 'productividad laboral', '2026-02-20 07:16:31')
         ]
         cursor.executemany("""
             INSERT OR IGNORE INTO tema (idTema, idPerfil, idArea, nombreTema, descripcionTema, fechaCreacion
