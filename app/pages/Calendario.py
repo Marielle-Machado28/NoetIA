@@ -2,12 +2,15 @@ import sys
 import os
 import streamlit as st
 from streamlit_calendar import calendar
+from pathlib import Path
 
 # 1. Configuración de página (Única y primera)
 st.set_page_config(page_title="NoetIA", layout="wide")
 
 # 2. Configuración de paths (para que el sidebar encuentre tus módulos)
-root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+app_path = Path(__file__).resolve().parent
+# 2. Configuración de rutas
+root_path = app_path.parent
 src_path = os.path.join(root_path, 'src')
 if src_path not in sys.path:
     sys.path.insert(0, src_path)
