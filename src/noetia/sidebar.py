@@ -9,12 +9,12 @@ def render_sidebar():
     """
     st.markdown(hide_streamlit_style, unsafe_allow_html=True)
     with st.sidebar:
-        st.image("assets/logo-secondary.png", use_container_width=True)
+        st.image("assets/logo-secondary.png", width='stretch')
         st.divider()
         
         st.markdown("### Navegación")
         
-        # page_link es visualmente más limpio y nativo
+        # Estas rutas asumen que la raíz es donde está Home.py
         st.page_link("Home.py", label="Home", icon="🏠")
         st.page_link("pages/chatbot.py", label="Chatbot", icon="💬")
         st.page_link("pages/calendario.py", label="Calendario", icon="📅")
