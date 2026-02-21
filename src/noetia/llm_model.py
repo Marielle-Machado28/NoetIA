@@ -88,7 +88,13 @@ def procesar_flujo_completo(texto_usuario: str):
     
     datos_para_intencion = {**resultado_tema}
 
-    resultado_final = procesar_y_clasificar_intencion(datos_para_intencion)
+    resultado_intencion = procesar_y_clasificar_intencion(datos_para_intencion)
+
+    registro =  {**resultado_tema, **resultado_intencion}
+
+    registro['fecha_detectada'] = datos.get('fecha_detectada')
+
+    resultado_final =  registro
 
     return {"estado": "listo", "registro": resultado_final}
     

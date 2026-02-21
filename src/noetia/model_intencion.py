@@ -40,12 +40,6 @@ def procesar_y_clasificar_intencion(datos_recibidos: dict) -> dict:
         raise ValueError(f"Tema predicho '{nombre_intencion}' no existe en tabla tema.")
 
     resultado = {
-        'texto_estandar': datos_limpios.get('texto_estandar'),
-        'verbo_principal': datos_limpios.get('verbo_principal'),
-        'es_fecha_default': datos_limpios.get('es_fecha_default'),
-        'tiene_fecha': datos_limpios.get('tiene_fecha'),
-        'tiene_lugar': datos_limpios.get('tiene_lugar'),
-        'intencion': nombre_intencion,
         'idClasificacion': id_predicho,
         'nombreIntención': nombre_intencion
     }
