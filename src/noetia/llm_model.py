@@ -9,7 +9,7 @@ from noetia.model_tema import procesar_y_clasificar_tema
 from noetia.model_intencion import procesar_y_clasificar_intencion
 from noetia.model_prioridad import clasificar_prioridad
 from noetia.model_proyecto import inferir_proyecto
-import datetime
+from datetime import datetime, timedelta
 
 from pathlib import Path
 
@@ -18,37 +18,61 @@ raiz_proyecto = Path(os.getcwd()).parent
 sys.path.append(str(raiz_proyecto / 'src'))
 
 
+def obtener_contexto_temporal():
+    ahora = datetime.now()
+    inicio_semana = ahora - timedelta(days=ahora.weekday()) # Lunes
+    fin_semana = ahora + timedelta(days=(6 - ahora.weekday())) # Domingo
+    proxima_semana_inicio = inicio_semana + timedelta(days=7)
+    proxima_semana_fin = fin_semana + timedelta(days=7)
+
+    return f"""
+    CONTEXTO TEMPORAL (Fecha actual: {ahora.strftime('%Y-%m-%d %A')}):
+    1. HOY: {ahora.strftime('%Y-%m-%d')}
+    2. MAÑANA: {(ahora + timedelta(days=1)).strftime('%Y-%m-%d')}
+    3. PASADO MAÑANA: {(ahora + timedelta(days=2)).strftime('%Y-%m-%d')}
+    4. FIN DE SEMANA ACTUAL: {(ahora + timedelta(days=(5-ahora.weekday()))).strftime('%Y-%m-%d')} al {fin_semana.strftime('%Y-%m-%d')}
+    5. ESTA SEMANA (rango): {inicio_semana.strftime('%Y-%m-%d')} al {fin_semana.strftime('%Y-%m-%d')}
+    6. PRÓXIMA SEMANA (rango): {proxima_semana_inicio.strftime('%Y-%m-%d')} al {proxima_semana_fin.strftime('%Y-%m-%d')}
+    7. MES ACTUAL: {ahora.strftime('%B %Y')}
+    8. AÑO ACTUAL: {ahora.year}
+    
+    INSTRUCCIÓN DE PROCESAMIENTO:
+    - Si el usuario usa términos relativos, mapealos estrictamente a estos valores.
+    - Si el usuario dice "el próximo lunes", identifica la fecha exacta del {proxima_semana_inicio.strftime('%Y-%m-%d')}.
+    - Siempre devuelve un JSON con 'fecha_detectada' en formato YYYY-MM-DD.
+    """
+
+
 def agente_estandarizador(texto_crudo: str) -> dict:
     
-    ahora = datetime.datetime.now()
-    fecha_hoy_str = ahora.strftime('%Y-%m-%d')
-    dia_semana_str = ahora.strftime('%A')
+    contexto_tiempo = obtener_contexto_temporal()
     
     prompt_sistema = f"""
-    Eres un asistente experto de NoetIA. Tu tarea es normalizar tareas y gestionar fechas.
-    Hoy es {fecha_hoy_str} y es {dia_semana_str}. .
+    Eres NoetIA, un asistente de tareas.
+    CONTEXTO: {contexto_tiempo}
     
-    Analiza la entrada:
-    - Si el usuario dice "mañana", calcula { (ahora + datetime.timedelta(days=1)).strftime('%Y-%m-%d') }.
-    - Si el usuario dice un día de la semana (ej: "martes"), calcula la fecha correspondiente a la semana actual.
-    - Si el usuario dice "mañana", calcula la fecha de mañana.
-    - Formato obligatorio: YYYY-MM-DDTHH:MM:SS.
-
-    - Si falta información crítica (fecha o acción clara), 
-      devuelve: {{"necesita_info": true, "mensaje_pregunta": "Tu pregunta corta"}}
-    - Si tienes todo, devuelve exactamente este JSON:
-
-    {{
-        "texto_estandar": "string",
+    TAREA:
+    1. CORRECCIÓN: Toma la entrada del usuario, corrige ortografía/gramática y conviértela en una frase clara, en infinitivo, y en tono profesional. Este será tu "texto_estandar".
+    2. DETECCIÓN: Analiza si la frase resultante tiene:
+       - Una fecha clara (usando el contexto temporal).
+       - Un lugar definido (si aplica).
+       - Una intención clara.
+       
+    RESPUESTA:
+    - Si falta fecha o lugar crítico, devuelve este JSON:
+      {{"necesita_info": true, "mensaje_pregunta": "Entendido. ¿Para qué fecha y en qué lugar tienes contemplada esta tarea?"}}
+      
+    - Si la información está completa, devuelve este JSON:
+      {{
+        "necesita_info": false,
+        "texto_estandar": "Frase profesional y corregida",
         "fecha_detectada": "YYYY-MM-DDTHH:MM:SS",
-        "lugar": "string" | null,
-        "longitud_tokens": integer,
-        "verbo_principal": "string",
-        "cambios": ["lista de ajustes"],
-        "es_ambiguo": boolean,
+        "lugar": "nombre_lugar o null",
+        "verbo_principal": "verbo",
         "es_fecha_default": boolean
-    }}
-    Texto original: <<<{texto_crudo}>>>
+      }}
+
+    Entrada del usuario: {texto_crudo}
     """
 
     response = client.chat.completions.create(
