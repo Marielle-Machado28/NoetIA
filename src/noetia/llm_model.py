@@ -10,6 +10,7 @@ from noetia.model_intencion import procesar_y_clasificar_intencion
 from noetia.model_prioridad import clasificar_prioridad
 from noetia.model_proyecto import inferir_proyecto
 from datetime import datetime, timedelta
+from noetia.arquitectura import guardar_en_db_clasificado
 
 from pathlib import Path
 
@@ -97,12 +98,12 @@ def procesar_flujo_completo(texto_usuario: str):
     return {"estado": "listo", "registro": final}
     
 
-def procesar_flujo_completo(texto_usuario: str):
+def procesar_flujo_completo(texto_usuario: str, id_entrada_cruda: int):
     datos = agente_estandarizador(texto_usuario)
     
     # 1. Protección contra KeyError
     if datos.get("necesita_info", False):
-        return {"estado": "pendiente", "pregunta": datos.get("mensaje_pregunta", "¿Puedes darme más info?")}
+        return {"estado": "pendiente", "pregunta": datos.get("mensaje_pregunta")}
     
     # 2. Construcción explícita del dict que el modelo entiende
     resultado_area = procesar_y_clasificar_areas(datos)
@@ -130,7 +131,9 @@ def procesar_flujo_completo(texto_usuario: str):
 
     resultado_final =  registro
 
-    return {"estado": "listo", "registro": resultado_final}
+    id_item = guardar_en_db_clasificado(resultado_final, id_entrada_cruda)
+
+    return {"estado": "listo", "idItem": id_item, "registro": resultado_final}
     
 
 if __name__ == "__main__":
