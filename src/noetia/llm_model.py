@@ -87,19 +87,11 @@ def agente_estandarizador(texto_crudo: str) -> dict:
     return json.loads(response.choices[0].message.content)
 
 
-def procesar_flujo_completo(texto_usuario: str):
-    datos = agente_estandarizador(texto_usuario)
-    
-    if datos.get("necesita_info"):
-        return {"estado": "pendiente", "pregunta": datos["mensaje_pregunta"]}
-    
-    # Aquí pasamos los datos normalizados a tus modelos
-    final = procesar_y_clasificar_areas(datos)
-    return {"estado": "listo", "registro": final}
     
 
 def procesar_flujo_completo(texto_usuario: str, id_entrada_cruda: int = None):
     datos = agente_estandarizador(texto_usuario)
+    model_name = "gpt-4o-mini"
     
     # 1. Protección contra KeyError y manejo de estado pendiente
     if datos.get("necesita_info", False):
