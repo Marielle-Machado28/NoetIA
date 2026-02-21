@@ -1,10 +1,13 @@
 import sys
 import os
-# Esto le dice a Python que añada la carpeta 'src' al buscador de librerías
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
+# Obtenemos la raíz del proyecto (la carpeta superior a 'app')
+root_dir = Path(__file__).resolve().parent.parent
+# Añadimos la raíz al sys.path
+sys.path.append(str(root_dir))
 
-# Ahora tus imports ya funcionarán
-from noetia.text_processor import procesar_texto_y_registrar
+# Ahora, todos tus imports deben ser relativos a la raíz, por ejemplo:
+from src.noetia.sqlite import get_conn
+from src.noetia.chatbot_render import renderizar_chatbot
 
 import streamlit as st
 import pandas as pd
