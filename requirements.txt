@@ -3,3 +3,5 @@ openai
 python-dotenv
 openai-whisper
 opencv-python
+pandas
+plotly
