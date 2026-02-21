@@ -17,10 +17,10 @@ st.set_page_config(
 )
 
 # 3. Importaciones propias
-from noetia.sidebar import render_sidebar
-from noetia.db_utils import get_db_connection 
-from noetia.streamlit_ui import hero_logo
-from noetia.chatbot_render import renderizar_chatbot
+from src.noetia.sidebar import render_sidebar
+from src.noetia.db_utils import get_db_connection 
+from src.noetia.streamlit_ui import hero_logo
+from src.noetia.chatbot_render import renderizar_chatbot
 
 # --- PALETA MAR ---
 MAR = {
