@@ -7,6 +7,7 @@ from noetia.config import OPENAI_MODEL, OPENAI_API_KEY
 from noetia.model_area import procesar_y_clasificar_areas
 from noetia.model_tema import procesar_y_clasificar_tema
 from noetia.model_intencion import procesar_y_clasificar_intencion
+from noetia.model_prioridad import clasificar_prioridad
 import datetime
 
 from pathlib import Path
@@ -90,7 +91,11 @@ def procesar_flujo_completo(texto_usuario: str):
 
     resultado_intencion = procesar_y_clasificar_intencion(datos_para_intencion)
 
-    registro =  {**resultado_tema, **resultado_intencion}
+    datos_prioridad = {**resultado_tema}
+
+    resultado_prioridad =  clasificar_prioridad(datos_prioridad)
+
+    registro =  {**resultado_tema, **resultado_intencion, **resultado_prioridad}
 
     registro['fecha_detectada'] = datos.get('fecha_detectada')
 
