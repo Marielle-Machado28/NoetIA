@@ -6,6 +6,7 @@ from openai import OpenAI
 from noetia.config import OPENAI_MODEL, OPENAI_API_KEY
 from noetia.model_area import procesar_y_clasificar_areas
 from noetia.model_tema import procesar_y_clasificar_tema
+from noetia.model_intencion import procesar_y_clasificar_intencion
 import datetime
 
 from pathlib import Path
@@ -83,8 +84,12 @@ def procesar_flujo_completo(texto_usuario: str):
     datos_para_tema = {**datos, **resultado_area}
     
     # 4. Clasificar Tema (usando tu nuevo script)
-    resultado_final = procesar_y_clasificar_tema(datos_para_tema)
+    resultado_tema = procesar_y_clasificar_tema(datos_para_tema)
     
+    datos_para_intencion = {**resultado_tema}
+
+    resultado_final = procesar_y_clasificar_intencion(datos_para_intencion)
+
     return {"estado": "listo", "registro": resultado_final}
     
 

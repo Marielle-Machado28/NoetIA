@@ -9,9 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 MODEL_PATH = BASE_DIR / 'src'/'noetia' /'models' / 'modelo_tema.joblib'
 DB_PATH = BASE_DIR / 'sql' / 'noetia.db'
 
-#datos_cargados = joblib.load(MODEL_PATH)
 
-#modelo_cargado = datos_cargados['pipeline']
 
 modelo_cargado = joblib.load(MODEL_PATH)
 
