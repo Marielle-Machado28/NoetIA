@@ -4,6 +4,7 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 import plotly.io as pio
+from pathlib import Path
 
 # 1. Configuración de página (Única y primera)
 st.set_page_config(
@@ -13,8 +14,9 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
+app_path = Path(__file__).resolve().parent
 # 2. Configuración de rutas
-root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+root_path = app_path.parent
 src_path = os.path.join(root_path, 'src')
 if src_path not in sys.path:
     sys.path.insert(0, src_path)
