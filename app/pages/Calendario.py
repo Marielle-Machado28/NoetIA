@@ -5,7 +5,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import streamlit as st
 from streamlit_calendar import calendar
 from pathlib import Path
-import plotly.express as px
+
 
 # 1. Configuración de página (Única y primera)
 st.set_page_config(page_title="NoetIA", layout="wide")
