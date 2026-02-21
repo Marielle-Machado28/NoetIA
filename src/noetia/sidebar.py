@@ -14,8 +14,11 @@ def render_sidebar():
         
         st.markdown("### Navegación")
         
-        # Estas rutas asumen que la raíz es donde está Home.py
+        # Como Home.py está en el mismo nivel que la carpeta 'pages',
+        # la ruta es simplemente el nombre del archivo:
         st.page_link("Home.py", label="Home", icon="🏠")
+        
+        # Como las otras páginas están DENTRO de 'pages/', la ruta es:
         st.page_link("pages/chatbot.py", label="Chatbot", icon="💬")
         st.page_link("pages/Calendario.py", label="Calendario", icon="📅")
         st.page_link("pages/Proyectos.py", label="Proyectos", icon="📂")
