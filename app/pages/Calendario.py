@@ -1,6 +1,7 @@
 import sys
 import os
 import streamlit as st
+from streamlit_calendar import calendar
 
 # 1. Configuración de página (Única y primera)
 st.set_page_config(page_title="NoetIA", layout="wide")
@@ -13,60 +14,82 @@ if src_path not in sys.path:
 
 # 3. Sidebar y resto de lógica
 from noetia.sidebar import render_sidebar
-render_sidebar()
-
 from noetia.config import get_db_path
 from noetia.sqlite import get_conn, fetch_all
+from noetia.google_sync import sync_event_to_google
+render_sidebar()
 
+# --- CARGA DE DATOS ---
+# Asegúrate de que estas variables estén disponibles en tu archivo calendario.py
 db_path = get_db_path()
 conn = get_conn(db_path)
-
-rows = fetch_all(
-    conn,
-    """
-SELECT
-    c.idCita,
-    c.tituloCita,
-    c.descripcionCita,
-    c.fechaInicio,
-    c.fechaFin,
-    c.ubicacion,
-    c.sincronizacionGoogle,
-    p.nombreProyecto,
-    a.nombreArea,
-    te.nombreTema
-FROM cita c
-LEFT JOIN proyecto p ON c.idProyecto = p.idProyecto
-LEFT JOIN area a ON c.idArea = a.idArea
-LEFT JOIN tema te ON c.idTema = te.idTema
-ORDER BY c.fechaInicio ASC
-""",
-)
-
+rows = fetch_all(conn, "SELECT idCita, tituloCita, fechaInicio, fechaFin FROM cita ORDER BY fechaInicio ASC")
 conn.close()
 
-if not rows:
-    st.warning("No hay citas aún. Ejecuta el seed de datos dummy para ver ejemplos.")
-    st.info("💡 Más adelante: vista tipo calendario, filtros por rango de fechas y sincronización con Google Calendar.")
-else:
-    st.metric("Citas", len(rows))
-    data = [dict(r) for r in rows]
-    st.dataframe(
-        data,
-        use_container_width=True,
-        hide_index=True,
-        column_config={
-            "idCita": st.column_config.NumberColumn("ID", width="small"),
-            "tituloCita": st.column_config.TextColumn("Título"),
-            "descripcionCita": st.column_config.TextColumn("Descripción", width="large"),
-            "fechaInicio": st.column_config.DatetimeColumn("Inicio", format="DD/MM/YYYY HH:mm"),
-            "fechaFin": st.column_config.DatetimeColumn("Fin", format="DD/MM/YYYY HH:mm"),
-            "ubicacion": st.column_config.TextColumn("Ubicación"),
-            "sincronizacionGoogle": st.column_config.CheckboxColumn("Sync Google", width="small"),
-            "nombreProyecto": st.column_config.TextColumn("Proyecto"),
-            "nombreArea": st.column_config.TextColumn("Área"),
-            "nombreTema": st.column_config.TextColumn("Tema"),
-        },
-    )
-    with st.expander("💡 Próximamente"):
-        st.markdown("Vista tipo calendario, filtros por rango de fechas y sincronización con Google Calendar.")
+# Aquí defines 'data' convirtiendo el resultado de la base de datos a una lista de diccionarios
+data = [dict(r) for r in rows]
+
+# Ahora sí, el código de los eventos puede usar 'data'
+events = [
+    {
+        "title": row["tituloCita"],
+        "start": row["fechaInicio"],
+        "end": row["fechaFin"],
+        "resourceId": str(row["idCita"]),
+    } for row in data
+]
+
+with st.sidebar:
+    if st.button("🔄 Sincronizar con Google Calendar"):
+        with st.spinner("Sincronizando..."):
+            exitos = 0
+            for cita in data:
+                # Sincroniza cada cita que aún no tiene el flag
+                if not cita.get("sincronizacionGoogle"):
+                    if sync_event_to_google(cita):
+                        exitos += 1
+            
+            if exitos > 0:
+                st.success(f"¡{exitos} citas enviadas al calendario!")
+            else:
+                st.info("Ya están todas sincronizadas.")
+
+st.title("📅 Mi Calendario de Citas")
+
+# 2. Obtención de datos
+db_path = get_db_path()
+conn = get_conn(db_path)
+rows = fetch_all(conn, "SELECT idCita, tituloCita, fechaInicio, fechaFin FROM cita ORDER BY fechaInicio ASC")
+conn.close()
+
+data = [dict(r) for r in rows]
+
+# 3. Transformación a eventos para el calendario
+events = [
+    {
+        "title": row["tituloCita"],
+        "start": row["fechaInicio"],
+        "end": row["fechaFin"],
+        "resourceId": str(row["idCita"]),
+    } for row in data
+]
+
+# 4. Configuración y renderizado
+calendar_options = {
+    "editable": "false",
+    "selectable": "true",
+    "headerToolbar": {
+        "left": "prev,next today",
+        "center": "title",
+        "right": "dayGridMonth,timeGridWeek,timeGridDay",
+    },
+    "initialView": "dayGridMonth",
+    "height": 650,
+}
+
+state = calendar(events=events, options=calendar_options)
+
+# 5. Interacción opcional
+if state.get("eventClick"):
+    clicked_event = state["eventClick"]["event"]
+    st.info(f"Seleccionaste: {clicked_event['title']}")
