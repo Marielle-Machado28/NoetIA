@@ -77,7 +77,7 @@ def agente_estandarizador(texto_crudo: str) -> dict:
     """
 
     response = client.chat.completions.create(
-        model=OPENAI_MODEL,
+        model="gpt-4o-mini",
         messages=[
             {"role": "system", "content": "Responde SOLO en formato JSON."},
             {"role": "user", "content": prompt_sistema}
