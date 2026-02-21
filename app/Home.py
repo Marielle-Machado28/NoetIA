@@ -2,6 +2,9 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+# Ahora ya puedes importar sin problemas
+from src.noetia.sqlite import get_conn
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px
