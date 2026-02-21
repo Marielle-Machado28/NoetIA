@@ -1,5 +1,4 @@
 streamlit
-streamlit
 pandas
 plotly
 openai
@@ -8,3 +7,4 @@ openai-whisper
 streamlit-calendar
 google-api-python-client
 google-auth-httplib2
+google-auth-oauthlib
