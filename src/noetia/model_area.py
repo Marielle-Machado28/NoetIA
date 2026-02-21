@@ -10,7 +10,6 @@ MODEL_PATH = BASE_DIR / 'src'/'noetia' /'models' / 'modelo_area.joblib'
 DB_PATH = BASE_DIR / 'sql' / 'noetia.db'
 
 datos_cargados = joblib.load(MODEL_PATH)
-
 modelo_cargado = datos_cargados['pipeline']
 
 

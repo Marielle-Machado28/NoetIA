@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from openai import OpenAI
 from noetia.config import OPENAI_MODEL, OPENAI_API_KEY
 from noetia.model_area import procesar_y_clasificar_areas
+from noetia.model_tema import procesar_y_clasificar_tema
 import datetime
 
 from pathlib import Path
@@ -77,19 +78,14 @@ def procesar_flujo_completo(texto_usuario: str):
         return {"estado": "pendiente", "pregunta": datos.get("mensaje_pregunta", "¿Puedes darme más info?")}
     
     # 2. Construcción explícita del dict que el modelo entiende
+    resultado_area = procesar_y_clasificar_areas(datos)
     # Esto evita que pasemos cosas raras al modelo
-    datos_para_modelo = {
-        'texto_estandar': datos.get('texto_estandar', 'tarea'),
-        'verbo_principal': datos.get('verbo_principal', 'realizar'),
-        'es_fecha_default': datos.get('es_fecha_default', True),
-        'tiene_fecha': 1 if datos.get('tiene_fecha') else 0,
-        'tiene_lugar': 1 if datos.get('tiene_lugar') else 0
-    }
+    datos_para_tema = {**datos, **resultado_area}
     
-    # 3. Llamada segura
-    final = procesar_y_clasificar_areas(datos_para_modelo)
+    # 4. Clasificar Tema (usando tu nuevo script)
+    resultado_final = procesar_y_clasificar_tema(datos_para_tema)
     
-    return {"estado": "listo", "registro": final}
+    return {"estado": "listo", "registro": resultado_final}
     
 
 if __name__ == "__main__":
