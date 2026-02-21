@@ -13,6 +13,12 @@ from noetia.image_note_render import render_image_note_section
 from noetia.chatbot_render import renderizar_chatbot
 
 st.set_page_config(page_title="NoetIA - Tareas Pro", layout="wide")
+st.set_page_config(
+    page_title="NoetIA - Dashboard",
+    page_icon="assets/logo-minimal.png",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
 render_sidebar()
 
 conn = get_conn(get_db_path())
@@ -54,7 +60,7 @@ st.divider() # Línea divisoria elegante
 st.subheader("🎯 Matriz de Acción")
 
 # Columnas importantes a mostrar
-cols_to_show = ['Completar', 'estadoTarea', 'esImportante', 'esUrgente', 'cuadranteEisenhower', 'fechaVencimiento']
+cols_to_show = ['Completar', 'titulo','estadoTarea', 'esImportante', 'esUrgente', 'cuadranteEisenhower', 'fechaVencimiento']
 
 # --- PREPARACIÓN DEL EDITOR (CORRECCIÓN CRÍTICA) ---
 

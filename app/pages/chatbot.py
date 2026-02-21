@@ -12,6 +12,13 @@ render_sidebar()
 
 st.set_page_config(page_title="NoetIA - Segundo Cerebro", layout="wide")
 
+st.set_page_config(
+    page_title="NoetIA - Dashboard",
+    page_icon="assets/logo-minimal.png",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 

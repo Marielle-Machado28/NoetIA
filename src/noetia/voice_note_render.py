@@ -1,5 +1,6 @@
 import streamlit as st
 import os
+from datetime import datetime
 # Importa tus herramientas (asegúrate de que las rutas sean correctas)
 from noetia.voice_processor import procesar_y_registrar # Función que debes tener
 from noetia.llm_model import procesar_flujo_completo
@@ -21,9 +22,19 @@ def render_voice_note_section():
                 temp_file = "temp_audio.wav"
                 with open(temp_file, "wb") as f:
                     f.write(audio_bytes)
+
+                fecha_hoy = datetime.now().strftime("%Y-%m-%d")
+                hora_predeterminada = "12:00"
                 
                 # 2. Procesar transcripción
                 transcription = procesar_y_registrar(temp_file)
+
+                prompt_mejorado = (
+                    f"CONTEXTO ACTUAL: La fecha de hoy es {fecha_hoy}. "
+                    f"Si el usuario no especifica hora, asume automáticamente las {hora_predeterminada}. "
+                    f"NOTA DEL USUARIO: {transcription}"
+                )
+
                 st.info(f"Transcripción: {transcription}")
                 
                 # 3. Enviar al LMM

@@ -14,6 +14,12 @@ from noetia.image_note_render import render_image_note_section
 from noetia.chatbot_render import renderizar_chatbot
 
 st.set_page_config(page_title="NoetIA - Proyectos", layout="wide")
+st.set_page_config(
+    page_title="NoetIA - Dashboard",
+    page_icon="assets/logo-minimal.png",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
 render_sidebar()
 
 # Conexión

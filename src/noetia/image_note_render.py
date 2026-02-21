@@ -1,8 +1,7 @@
 # noetia/image_note_render.py
 import streamlit as st
 import os
-# Asegúrate de que las rutas a tus módulos sean correctas
-# Asume que image_processor toma la ruta de la imagen y hace OCR/descripción
+from datetime import datetime
 from src.noetia.image_processor import procesar_imagen_y_registrar # Función que debe existir
 from noetia.llm_model import procesar_flujo_completo
 
@@ -26,9 +25,17 @@ def render_image_note_section():
                 # Tu image_processor debería tomar la ruta o los bytes
                 image_analysis_result = procesar_imagen_y_registrar(temp_image_path)
                 st.info(f"Análisis Preliminar: {image_analysis_result}")
+
+                fecha_hoy = datetime.now().strftime("%Y-%m-%d")
+                prompt_enriquecido = (
+                    f"CONTEXTO TEMPORAL: Hoy es {fecha_hoy}. "
+                    "Si la nota en la imagen no indica hora, asigna por defecto las 12:00. "
+                    "No preguntes al usuario por fechas u horas. "
+                    f"INFORMACIÓN EXTRAÍDA: {image_analysis_result}"
+                )
                 
                 # 2. Enviar el análisis al LMM para una respuesta más profunda
-                llm_response = procesar_flujo_completo(f"Analiza esta información de imagen: {image_analysis_result}")
+                llm_response = procesar_flujo_completo(prompt_enriquecido)
                 st.success(f"Respuesta de la IA: {llm_response}")
                 
                 # Limpiar el archivo temporal

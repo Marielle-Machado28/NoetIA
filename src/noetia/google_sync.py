@@ -42,19 +42,15 @@ def sync_event_to_google(event_data):
         service = build('calendar', 'v3', credentials=creds)
         
         # Formato de fecha estricto
-        start_fmt = event_data['fechaInicio'].replace(" ", "T") + ":00Z"
-        end_fmt = event_data['fechaFin'].replace(" ", "T") + ":00Z"
-        
+        start_fmt = event_data['fechaFin'].replace("T","").replace("Z","")
+            
+        end_fmt = event_data['fechaFin'].replace("T","").replace("Z","")
+       
+
         event = {
             'summary': event_data['tituloCita'],
-            'start': {
-                'dateTime': start_fmt,
-                'timeZone': 'UTC',
-            },
-            'end': {
-                'dateTime': end_fmt,
-                'timeZone': 'UTC',
-            },
+            'start': {'dateTime': start_fmt},
+            'end': {'dateTime': end_fmt},
         }
         
         print(f"DEBUG: Enviando payload: {event}")

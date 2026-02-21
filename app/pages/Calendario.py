@@ -9,6 +9,13 @@ from noetia.config import get_db_path
 from noetia.sqlite import get_conn, fetch_all
 from noetia.google_sync import sync_event_to_google, marcar_como_sincronizada
 
+st.set_page_config(
+    page_title="NoetIA - Dashboard",
+    page_icon="assets/logo-minimal.png",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
 st.set_page_config(page_title="NoetIA - Calendario", layout="wide")
 render_sidebar()
 
