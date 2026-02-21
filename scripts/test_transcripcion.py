@@ -1,4 +1,4 @@
-from noetia.voice_processor import transcribir_audio
+from noetia.voice_processor import procesar_y_registrar
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -14,7 +14,7 @@ def ejecutar_test():
         print(f"--- Iniciando prueba con: {ARCHIVO_PATH.name} ---")
         
         # Ejecutamos tu función
-        texto_resultado = transcribir_audio(str(ARCHIVO_PATH))
+        texto_resultado = procesar_y_registrar(str(ARCHIVO_PATH))
         
         print("\n" + "="*50)
         print("EL RESULTADO QUE OBTUVISTE ES:")
