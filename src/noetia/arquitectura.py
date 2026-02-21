@@ -20,7 +20,7 @@ def guardar_en_db_clasificado(resultado, id_entrada_cruda):
 
     try:
 
-        tipo = resultado.get('nombreIntencion', 'nota').lower()
+        tipo = resultado.get('nombreIntención').lower()
         titulo = resultado.get('texto_estandar')
         id_perfil = 1
         
@@ -58,9 +58,9 @@ def guardar_en_db_clasificado(resultado, id_entrada_cruda):
             
         elif tipo == 'cita':
             cursor.execute("""
-                INSERT INTO cita (idClasificacion, idPerfil, idArea, idProyecto, idTema, tituloCita, fechaFin) 
-                VALUES (?, ?, ?, ?, ?, ?, ?)
-            """, (id_clasificacion, id_perfil, resultado.get('idArea'), resultado.get('idProyecto'), resultado.get('idTema'), titulo, resultado.get('fecha_detectada')))
+                INSERT INTO cita (idClasificacion, idPerfil, idArea, idProyecto, idTema, tituloCita, fechaFin, fechaInicio) 
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            """, (id_clasificacion, id_perfil, resultado.get('idArea'), resultado.get('idProyecto'), resultado.get('idTema'), titulo, resultado.get('fecha_detectada'), resultado.get('fecha_detectada')))
             
         elif tipo == 'nota':
             cursor.execute("""
