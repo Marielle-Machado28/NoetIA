@@ -1,5 +1,7 @@
 import sys
 import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -13,13 +15,6 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
-
-app_path = Path(__file__).resolve().parent
-# 2. Configuración de rutas
-root_path = app_path.parent
-src_path = os.path.join(root_path, 'src')
-if src_path not in sys.path:
-    sys.path.insert(0, src_path)
 
 # 3. Importaciones propias
 from noetia.sidebar import render_sidebar
