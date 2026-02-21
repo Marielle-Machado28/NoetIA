@@ -29,5 +29,5 @@ def ejecutar_flujo_completo(input_usuario: str):
 
 if __name__ == "__main__":
     # Prueba con un input real
-    texto = "Tengo una reunión de planeación con el equipo de ventas el próximo lunes a las 10 am en la sala de juntas."
+    texto = "agendar cita con el dermatologo."
     ejecutar_flujo_completo(texto)

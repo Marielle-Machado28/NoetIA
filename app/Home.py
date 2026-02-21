@@ -1,18 +1,6 @@
 import sys
 import os
-
-root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-
-
-src_path = os.path.join(root_path, 'src')
-
-if src_path not in sys.path:
-    sys.path.insert(0, src_path)
-
 import streamlit as st
-from noetia.config import get_db_path
-from noetia.streamlit_ui import hero_logo
-
 
 st.set_page_config(
     page_title="NoetIA",
@@ -21,7 +9,21 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# Header con logo principal grande (ya incluye título dentro del logo)
+# 2. Configuración de rutas (Tu lógica de sys.path)
+root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+src_path = os.path.join(root_path, 'src')
+if src_path not in sys.path:
+    sys.path.insert(0, src_path)
+
+# 3. Importaciones propias
+from noetia.config import get_db_path
+from noetia.streamlit_ui import hero_logo
+from noetia.sidebar import render_sidebar
+
+# 4. Renderizado
+render_sidebar()
+
+# Header con logo principal grande
 hero_logo("assets/logo-main.png")
 
 st.divider()
@@ -63,6 +65,3 @@ with st.expander("📦 Estado y configuración", expanded=False):
     st.caption("Ruta de la base de datos SQLite. Si no hay registros, las vistas se mostrarán vacías.")
     st.info("Cuando ejecutes el seed de datos dummy, aquí verás la misma ruta y las páginas mostrarán contenido.")
 
-# Logo secondary al final del sidebar (simple, sin CSS raro)
-with st.sidebar:
-    st.image("assets/logo-secondary.png", use_container_width=True)
