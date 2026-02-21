@@ -7,6 +7,5 @@ openai-whisper
 streamlit-calendar
 google-api-python-client
 google-auth
-noetia
 google-auth-httplib2
 google-auth-oauthlib
