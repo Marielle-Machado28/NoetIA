@@ -19,7 +19,7 @@ def cargar_mapeo_areas(db_path=DB_PATH):
     df = pd.read_sql("SELECT idArea, nombreArea FROM area", conn)
     conn.close()
 
-    mapeo = {normalizar_texto(nombre): id_area for nombre, id_area in zip(df['idArea'], df['nombreArea'])}
+    mapeo = {normalizar_texto(nombre): id_area for nombre, id_area in zip(df['nombreArea'], df['idArea'])}
     
     return mapeo
 
