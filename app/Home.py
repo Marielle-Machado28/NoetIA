@@ -1,12 +1,17 @@
 import sys
 import os
-# Obtenemos la raíz del proyecto (la carpeta superior a 'app')
-root_dir = Path(__file__).resolve().parent.parent
-# Añadimos la raíz al sys.path
-sys.path.append(str(root_dir))
+# 1. Obtenemos la ruta absoluta de la carpeta raíz del proyecto (/mount/src/noetia)
+# Como Home.py está en /app, subimos un nivel con '..'
+ruta_raiz = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 
-# Ahora, todos tus imports deben ser relativos a la raíz, por ejemplo:
-from src.noetia.sqlite import get_conn
+# 2. Añadimos la raíz al sys.path si no está ya
+if ruta_raiz not in sys.path:
+    sys.path.append(ruta_raiz)
+
+# 3. AHORA, tus imports funcionarán porque Python ya conoce la ruta raíz
+from src.noetia.sidebar import render_sidebar
+from src.noetia.db_utils import get_db_connection 
+from src.noetia.streamlit_ui import hero_logo
 from src.noetia.chatbot_render import renderizar_chatbot
 
 import streamlit as st
@@ -23,11 +28,6 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-# 3. Importaciones propias
-from src.noetia.sidebar import render_sidebar
-from src.noetia.db_utils import get_db_connection 
-from src.noetia.streamlit_ui import hero_logo
-from src.noetia.chatbot_render import renderizar_chatbot
 
 # --- PALETA MAR ---
 MAR = {
