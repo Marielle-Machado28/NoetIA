@@ -1,9 +1,10 @@
 import sys
 import os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+# Esto le dice a Python que añada la carpeta 'src' al buscador de librerías
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src')))
 
-# Ahora ya puedes importar sin problemas
-from src.noetia.sqlite import get_conn
+# Ahora tus imports ya funcionarán
+from noetia.text_processor import procesar_texto_y_registrar
 
 import streamlit as st
 import pandas as pd
