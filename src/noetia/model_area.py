@@ -2,6 +2,7 @@ import sqlite3
 import joblib
 import pandas as pd
 from pathlib import Path
+from noetia.text_correction import normalizar_texto
 
 
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
@@ -12,35 +13,43 @@ datos_cargados = joblib.load(MODEL_PATH)
 
 modelo_cargado = datos_cargados['pipeline']
 
-conn = sqlite3.connect(DB_PATH)
-df_areas_db = pd.read_sql("SELECT idArea, nombreArea FROM area", conn)
-conn.close()
 
-# Crear un diccionario para convertir rápido: {'Amistad': 1, 'Salud': 2...}
-mapeo_nombres_a_ids = dict(zip(df_areas_db['nombreArea'], df_areas_db['idArea']))
+
+def cargar_mapeo_areas(db_path=DB_PATH):
+    conn = sqlite3.connect(DB_PATH)
+    df = pd.read_sql("SELECT idArea, nombreArea FROM area", conn)
+    conn.close()
+
+    mapeo = {normalizar_texto(nombre): id_area for nombre, id_area in zip(df['nombreArea'], df['idArea'])}
+    
+    return mapeo
+
+mapeo_nombres_area_a_id = cargar_mapeo_areas()
+
 
 def procesar_y_clasificar_areas(datos_recibidos: dict):
     # 1. Creamos el DataFrame para el modelo
-
     columnas_modelo = ['texto_estandar', 'verbo_principal', 'es_fecha_default', 'tiene_fecha', 'tiene_lugar']
     datos_limpios = {k: datos_recibidos.get(k) for k in columnas_modelo}
 
     df_input = pd.DataFrame([datos_limpios])
     
-    # 2. Obtenemos el nombre del área desde el modelo
-    nombre_area_predicho = modelo_cargado.predict(df_input)[0]
+    # 2. Obtenemos el ID directamente del modelo
+    # Como el modelo ya predice el ID numérico, no necesitamos mapeo_nombres_area_a_id
+    id_predicho = modelo_cargado.predict(df_input)[0]
+
+    # 3. Validación básica
+    if id_predicho is None:
+        raise ValueError("El modelo devolvió un valor nulo para el área.")
     
-    # 3. Obtenemos el ID desde nuestro diccionario
-    id_final = mapeo_nombres_a_ids.get(nombre_area_predicho)
-    
-    # 4. Construimos el objeto de retorno (tu paquete completo)
+    # 4. Construimos el objeto de retorno con el ID ya obtenido
     resultado = {
         'texto_estandar': datos_limpios['texto_estandar'],
         'verbo_principal': datos_limpios['verbo_principal'],
         'es_fecha_default': datos_limpios['es_fecha_default'],
         'tiene_fecha': datos_limpios['tiene_fecha'],
         'tiene_lugar': datos_limpios['tiene_lugar'],
-        'idArea': id_final  # El ID real de tu SQL
+        'idArea': int(id_predicho)  # Nos aseguramos de que sea un entero nativo de Python
     }
     
     return resultado
