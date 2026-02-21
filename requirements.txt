@@ -1,7 +1,7 @@
 streamlit
+streamlit
+pandas
+plotly
 openai
 python-dotenv
 openai-whisper
-opencv-python
-pandas
-plotly
