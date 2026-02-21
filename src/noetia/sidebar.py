@@ -17,9 +17,9 @@ def render_sidebar():
         # Estas rutas asumen que la raíz es donde está Home.py
         st.page_link("Home.py", label="Home", icon="🏠")
         st.page_link("pages/chatbot.py", label="Chatbot", icon="💬")
-        st.page_link("pages/calendario.py", label="Calendario", icon="📅")
-        st.page_link("pages/proyectos.py", label="Proyectos", icon="📂")
-        st.page_link("pages/tareas.py", label="Tareas", icon="✅")
+        st.page_link("pages/Calendario.py", label="Calendario", icon="📅")
+        st.page_link("pages/Proyectos.py", label="Proyectos", icon="📂")
+        st.page_link("pages/Tareas.py", label="Tareas", icon="✅")
             
         st.divider()
         st.caption("NoetIA v1.0")
