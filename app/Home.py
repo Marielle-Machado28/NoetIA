@@ -1,12 +1,5 @@
 import sys
 import os
-# 1. Obtenemos la ruta absoluta de la carpeta raíz del proyecto (/mount/src/noetia)
-# Como Home.py está en /app, subimos un nivel con '..'
-ruta_raiz = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-
-# 2. Añadimos la raíz al sys.path si no está ya
-if ruta_raiz not in sys.path:
-    sys.path.append(ruta_raiz)
 
 # 3. AHORA, tus imports funcionarán porque Python ya conoce la ruta raíz
 from src.noetia.sidebar import render_sidebar
