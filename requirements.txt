@@ -2,3 +2,5 @@ streamlit
 openai
 python-dotenv
 openai-whisper
+easyocr
+opencv-python
