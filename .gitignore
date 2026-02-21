@@ -26,3 +26,8 @@ Thumbs.db
 
 #streamlit 
 .streamlit/
+
+.env
+credentials.json
+__pycache__/
+*.db
