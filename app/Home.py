@@ -102,7 +102,25 @@ with col1:
     st.markdown("**Bienvenida:** NoetIA estructura tu caos en acciones claras. \n\nEste demo refleja el estado actual de tu base de datos en tiempo real.")
 with col2:
     with st.container(border=True):
-        st.subheader(f"👤 Hola: **{datos_db['nombrePerfil']}**")
+
+        if st.session_state.get('editando_perfil', False):
+            nuevo_nombre = st.text_input("Editar nombre:", value=datos_db['nombrePerfil'])
+            col_b1, col_b2 = st.columns(2)
+            if col_b1.button("💾 Guardar"):
+                # AQUÍ LLAMAS A TU FUNCIÓN DE ACTUALIZACIÓN EN DB
+                # Ejemplo: conn.execute("UPDATE perfil SET nombrePerfil = ?", (nuevo_nombre,))
+                st.session_state.editando_perfil = False
+                st.rerun()
+            if col_b2.button("❌ Cancelar"):
+                st.session_state.editando_perfil = False
+                st.rerun()
+            
+        # --- MODO VISTA ---
+        else:
+            st.subheader(f"👤 Hola: **{datos_db['nombrePerfil']}**")
+            st.write(f"ID: **{datos_db['idPerfil']}**")
+            if st.button("✏️ Editar Perfil"):
+                st.session_state.editando_perfil = True
         if st.button("🛠 Modificar Entorno", type="primary"):
             # Alterna el modo de edición
             st.session_state.edit_mode = not st.session_state.get('edit_mode', False)
@@ -142,28 +160,52 @@ else:
 
 # --- SECCIÓN: MODIFICAR ENTORNO ---
 # Esto solo aparece si le dan clic al botón
+# --- SECCIÓN: MODIFICAR ENTORNO ---
 if st.session_state.get('edit_mode', False):
     st.divider()
     st.markdown("### 🛠 Administrador de Entorno")
-    st.caption("Modifica tus catálogos. (En esta demo, los cambios son solo visuales en la sesión).")
+    st.caption("Modifica tus catálogos y guarda los cambios en la base de datos.")
     
-    # Creamos pestañas para que se vea súper ordenado
     tab_area, tab_tema, tab_proy = st.tabs(["🗂 Áreas", "🏷 Temas", "🚀 Proyectos"])
     
+    # --- Pestaña Áreas ---
     with tab_area:
-        if not df_area.empty:
-            st.data_editor(df_area, use_container_width=True, num_rows="dynamic")
-        else:
-            st.warning("No hay tabla de Áreas.")
-            
+        df_area_editado = st.data_editor(df_area, use_container_width=True, num_rows="dynamic", key="editor_area")
+        if st.button("Guardar cambios en Áreas"):
+            conn = get_db_connection()
+            try:
+                df_area_editado.to_sql('area', conn, if_exists='replace', index=False)
+                st.success("¡Áreas actualizadas!")
+                st.rerun()
+            except Exception as e:
+                st.error(f"Error: {e}")
+            finally:
+                conn.close()
+
+    # --- Pestaña Temas ---
     with tab_tema:
-        if not df_tema.empty:
-            st.data_editor(df_tema, use_container_width=True, num_rows="dynamic")
-        else:
-            st.warning("No hay tabla de Temas.")
-            
+        df_tema_editado = st.data_editor(df_tema, use_container_width=True, num_rows="dynamic", key="editor_tema")
+        if st.button("Guardar cambios en Temas"):
+            conn = get_db_connection()
+            try:
+                df_tema_editado.to_sql('tema', conn, if_exists='replace', index=False)
+                st.success("¡Temas actualizados!")
+                st.rerun()
+            except Exception as e:
+                st.error(f"Error: {e}")
+            finally:
+                conn.close()
+
+    # --- Pestaña Proyectos ---
     with tab_proy:
-        if not df_proyecto.empty:
-            st.data_editor(df_proyecto, use_container_width=True, num_rows="dynamic")
-        else:
-            st.warning("No hay tabla de Proyectos.")
+        df_proy_editado = st.data_editor(df_proyecto, use_container_width=True, num_rows="dynamic", key="editor_proy")
+        if st.button("Guardar cambios en Proyectos"):
+            conn = get_db_connection()
+            try:
+                df_proy_editado.to_sql('proyecto', conn, if_exists='replace', index=False)
+                st.success("¡Proyectos actualizados!")
+                st.rerun()
+            except Exception as e:
+                st.error(f"Error: {e}")
+            finally:
+                conn.close()
