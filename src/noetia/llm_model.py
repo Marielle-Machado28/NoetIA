@@ -98,42 +98,41 @@ def procesar_flujo_completo(texto_usuario: str):
     return {"estado": "listo", "registro": final}
     
 
-def procesar_flujo_completo(texto_usuario: str, id_entrada_cruda: int):
+def procesar_flujo_completo(texto_usuario: str, id_entrada_cruda: int = None):
     datos = agente_estandarizador(texto_usuario)
     
-    # 1. Protección contra KeyError
+    # 1. Protección contra KeyError y manejo de estado pendiente
     if datos.get("necesita_info", False):
         return {"estado": "pendiente", "pregunta": datos.get("mensaje_pregunta")}
     
-    # 2. Construcción explícita del dict que el modelo entiende
+    # 2. Pipeline de clasificación
     resultado_area = procesar_y_clasificar_areas(datos)
-    # Esto evita que pasemos cosas raras al modelo
     datos_para_tema = {**datos, **resultado_area}
     
-    # 4. Clasificar Tema (usando tu nuevo script)
     resultado_tema = procesar_y_clasificar_tema(datos_para_tema)
+    resultado_intencion = procesar_y_clasificar_intencion({**resultado_tema})
+    resultado_prioridad = clasificar_prioridad({**resultado_tema})
     
-    datos_para_intencion = {**resultado_tema}
-
-    resultado_intencion = procesar_y_clasificar_intencion(datos_para_intencion)
-
-    datos_prioridad = {**resultado_tema}
-
-    resultado_prioridad =  clasificar_prioridad(datos_prioridad)
-
     id_proj = inferir_proyecto(resultado_tema)
+    
+    # 3. Construcción del registro
+    registro = {
+        **resultado_tema, 
+        **resultado_intencion, 
+        **resultado_prioridad, 
+        'idProyecto': id_proj,
+        'fecha_detectada': datos.get('fecha_detectada')
+    }
 
-    resultado_proyecto =  {'idProyecto': id_proj}
+    # 4. Inserción condicional
+    id_item = None
+    if id_entrada_cruda:
+        try:
+            id_item = guardar_en_db_clasificado(registro, id_entrada_cruda)
+        except Exception as e:
+            print(f"Error al guardar en DB: {e}")
 
-    registro =  {**resultado_tema, **resultado_intencion, **resultado_prioridad, **resultado_proyecto}
-
-    registro['fecha_detectada'] = datos.get('fecha_detectada')
-
-    resultado_final =  registro
-
-    id_item = guardar_en_db_clasificado(resultado_final, id_entrada_cruda)
-
-    return {"estado": "listo", "idItem": id_item, "registro": resultado_final}
+    return {"estado": "listo", "idItem": id_item, "registro": registro}
     
 
 if __name__ == "__main__":

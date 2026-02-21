@@ -19,7 +19,7 @@ def cargar_mapeo_areas(db_path=DB_PATH):
     df = pd.read_sql("SELECT idArea, nombreArea FROM area", conn)
     conn.close()
 
-    mapeo = {normalizar_texto(nombre): id_area for nombre, id_area in zip(df['nombreArea'], df['idArea'])}
+    mapeo = {normalizar_texto(nombre): id_area for nombre, id_area in zip(df['idArea'], df['nombreArea'])}
     
     return mapeo
 
@@ -37,6 +37,11 @@ def procesar_y_clasificar_areas(datos_recibidos: dict):
     # Como el modelo ya predice el ID numérico, no necesitamos mapeo_nombres_area_a_id
     id_predicho = modelo_cargado.predict(df_input)[0]
 
+    if id_predicho not in mapeo_nombres_area_a_id:
+        nombre_area = "Desconocido"
+    else:
+        nombre_area = mapeo_nombres_area_a_id[id_predicho]
+
     # 3. Validación básica
     if id_predicho is None:
         raise ValueError("El modelo devolvió un valor nulo para el área.")
@@ -48,7 +53,8 @@ def procesar_y_clasificar_areas(datos_recibidos: dict):
         'es_fecha_default': datos_limpios['es_fecha_default'],
         'tiene_fecha': datos_limpios['tiene_fecha'],
         'tiene_lugar': datos_limpios['tiene_lugar'],
-        'idArea': int(id_predicho)  # Nos aseguramos de que sea un entero nativo de Python
+        'idArea': int(id_predicho),
+        'nombreArea': nombre_area
     }
     
     return resultado

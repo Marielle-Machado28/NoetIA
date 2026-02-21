@@ -29,7 +29,7 @@ mapeo_nombres_tema_a_id = cargar_mapeo_temas()
 
 def procesar_y_clasificar_tema(datos_recibidos: dict):
     # 1. Creamos el DataFrame para el modelo
-    columnas_modelo = ['texto_estandar', 'verbo_principal', 'es_fecha_default', 'tiene_fecha', 'tiene_lugar', 'idArea']
+    columnas_modelo = ['texto_estandar', 'verbo_principal', 'es_fecha_default', 'tiene_fecha', 'tiene_lugar', 'idArea', 'nombreArea']
     datos_limpios = {k: datos_recibidos.get(k) for k in columnas_modelo}
 
     df_input = pd.DataFrame([datos_limpios])
@@ -48,6 +48,7 @@ def procesar_y_clasificar_tema(datos_recibidos: dict):
         'tiene_fecha': datos_limpios['tiene_fecha'],
         'tiene_lugar': datos_limpios['tiene_lugar'],
         'idArea': datos_limpios['idArea'], 
+        'nombreArea':datos_limpios['nombreArea'],
         'idTema': id_tema_final,
         'nombreTema': nombre_tema_predicho
     }

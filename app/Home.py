@@ -23,6 +23,7 @@ if src_path not in sys.path:
 from noetia.sidebar import render_sidebar
 from noetia.db_utils import get_db_connection 
 from noetia.streamlit_ui import hero_logo
+from noetia.chatbot_render import renderizar_chatbot
 
 # --- PALETA MAR ---
 MAR = {
@@ -209,3 +210,5 @@ if st.session_state.get('edit_mode', False):
                 st.error(f"Error: {e}")
             finally:
                 conn.close()
+
+renderizar_chatbot()
