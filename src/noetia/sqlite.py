@@ -54,3 +54,8 @@ def fetch_one(query_or_conn, query_text=None, params=()):
         return cursor.fetchone()
     finally:
         db.close()
+
+def update_query (conn, query, params):
+    cursor = conn.cursor()
+    cursor.execute(query, params)
+    conn.commit()

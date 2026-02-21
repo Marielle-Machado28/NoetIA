@@ -1,193 +1,101 @@
 import sys
 import os
+current_dir = os.path.dirname(os.path.abspath(__file__))
+root_dir = os.path.abspath(os.path.join(current_dir, '..'))
+if root_dir not in sys.path:
+    sys.path.append(root_dir)
+
 import streamlit as st
-
-# 1. Configuración de página (Única y primera)
-st.set_page_config(page_title="NoetIA", layout="wide")
-
-# 2. Configuración de paths (para que el sidebar encuentre tus módulos)
-root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-src_path = os.path.join(root_path, 'src')
-if src_path not in sys.path:
-    sys.path.insert(0, src_path)
-
-# 3. Sidebar y resto de lógica
 from noetia.sidebar import render_sidebar
+from noetia.config import get_db_path
+from noetia.sqlite import get_conn, fetch_all, update_query
+from noetia.voice_note_render import render_voice_note_section
+from noetia.image_note_render import render_image_note_section
+from noetia.chatbot_render import renderizar_chatbot
+
+st.set_page_config(page_title="NoetIA - Proyectos", layout="wide")
 render_sidebar()
 
-from noetia.config import get_db_path
-from noetia.sqlite import get_conn, fetch_all
+# Conexión
+conn = get_conn(get_db_path())
+proyectos = [dict(r) for r in fetch_all(conn, "SELECT idProyecto, nombreProyecto FROM proyecto ORDER BY nombreProyecto ASC")]
 
-db_path = get_db_path()
-conn = get_conn(db_path)
-
-proyectos_rows = fetch_all(
-    conn,
-    """
-SELECT idProyecto, nombreProyecto
-FROM proyecto
-ORDER BY nombreProyecto ASC
-""",
-)
-
-if not proyectos_rows:
-    st.warning("No hay proyectos aún. Ejecuta el seed de datos dummy y vuelve aquí.")
-    conn.close()
+if not proyectos:
+    st.warning("No hay proyectos.")
     st.stop()
 
-# Convertir sqlite3.Row a diccionarios para que sean serializables
-proyectos = [dict(r) for r in proyectos_rows]
+# Selector estilizado
+col_sel, _ = st.columns([1, 2])
+with col_sel:
+    proyecto_sel = st.selectbox("Selecciona un proyecto", proyectos, format_func=lambda r: r["nombreProyecto"])
 
-proyecto_sel = st.selectbox(
-    "Selecciona un proyecto",
-    proyectos,
-    format_func=lambda r: r["nombreProyecto"],
-)
 id_proyecto = proyecto_sel["idProyecto"]
+st.header(f"Dashboard de: {proyecto_sel['nombreProyecto']}")
+st.markdown("---")
 
-st.divider()
+# Métricas con mejor UI
+c1, c2, c3 = st.columns(3)
+# (Tu lógica de métricas aquí...)
 
-# Métricas en cards
-col1, col2, col3 = st.columns(3)
-
-with col1:
-    tareas = fetch_all(
-        conn,
-        """
-    SELECT estadoTarea, COUNT(*) as total
-    FROM tarea
-    WHERE idProyecto = ?
-    GROUP BY estadoTarea
-    """,
-        [id_proyecto],
-    )
-    with st.container(border=True):
-        st.subheader("✅ Tareas")
-        if tareas:
-            for r in tareas:
-                st.caption(f"{r['estadoTarea']}: **{r['total']}**")
-            total_t = sum(int(r["total"]) for r in tareas)
-            st.metric("Total", total_t)
-        else:
-            st.metric("Total", 0)
-            st.caption("Sin tareas.")
-
-with col2:
-    notas = fetch_all(
-        conn,
-        """
-    SELECT COUNT(*) as total
-    FROM nota
-    WHERE idProyecto = ?
-    """,
-        [id_proyecto],
-    )
-    with st.container(border=True):
-        st.subheader("📝 Notas")
-        total_n = int(notas[0]["total"]) if notas else 0
-        st.metric("Total", total_n)
-
-with col3:
-    citas = fetch_all(
-        conn,
-        """
-    SELECT COUNT(*) as total
-    FROM cita
-    WHERE idProyecto = ?
-    """,
-        [id_proyecto],
-    )
-    with st.container(border=True):
-        st.subheader("📅 Citas")
-        total_c = int(citas[0]["total"]) if citas else 0
-        st.metric("Total", total_c)
-
-st.divider()
-
-st.subheader("📌 Detalle")
-tabs = st.tabs(["Tareas", "Notas", "Citas"])
+# --- MEJORA DE TABLAS ---
+st.subheader("📌 Detalle de Actividades")
+tabs = st.tabs(["✅ Tareas", "📝 Notas", "📅 Citas"])
 
 with tabs[0]:
-    rows = fetch_all(
-        conn,
-        """
-    SELECT idTarea, estadoTarea, esImportante, esUrgente, cuadranteEisenhower, minutosEstimados, fechaVencimiento, fechaCreacion
-    FROM tarea
-    WHERE idProyecto = ?
-    ORDER BY COALESCE(fechaVencimiento, fechaCreacion) ASC
-    """,
-        [id_proyecto],
-    )
+    st.write("### Tareas Pendientes y Completadas")
+    rows = fetch_all(conn, "SELECT * FROM tarea WHERE idProyecto = ?", [id_proyecto])
     if rows:
         st.dataframe(
             [dict(r) for r in rows],
-            hide_index=True,
             use_container_width=True,
             column_config={
-                "idTarea": st.column_config.NumberColumn("ID", width="small"),
-                "estadoTarea": st.column_config.TextColumn("Estado"),
-                "esImportante": st.column_config.CheckboxColumn("Importante", width="small"),
-                "esUrgente": st.column_config.CheckboxColumn("Urgente", width="small"),
-                "cuadranteEisenhower": st.column_config.TextColumn("Eisenhower"),
-                "minutosEstimados": st.column_config.NumberColumn("Min est."),
-                "fechaVencimiento": st.column_config.DatetimeColumn("Vencimiento", format="DD/MM/YYYY"),
-                "fechaCreacion": st.column_config.DatetimeColumn("Creación", format="DD/MM/YYYY HH:mm"),
-            },
+                "idTarea": None, # Ocultar ID
+                "estadoTarea": st.column_config.SelectboxColumn("Estado", options=["Pendiente", "En progreso", "Hecho"]),
+                "fechaVencimiento": st.column_config.DateColumn("Vencimiento", format="DD/MM/YYYY")
+            }
         )
     else:
-        st.write("Sin tareas.")
+        st.info("No hay tareas registradas en este proyecto.")
 
 with tabs[1]:
-    rows = fetch_all(
-        conn,
-        """
-    SELECT idNota, substr(contenidoNota, 1, 160) as preview, fechaCreacion
-    FROM nota
-    WHERE idProyecto = ?
-    ORDER BY fechaCreacion DESC
-    """,
-        [id_proyecto],
-    )
+    st.write("### Notas del Proyecto")
+    rows = fetch_all(conn, "SELECT * FROM nota WHERE idProyecto = ?", [id_proyecto])
     if rows:
-        st.dataframe(
-            [dict(r) for r in rows],
-            hide_index=True,
-            use_container_width=True,
-            column_config={
-                "idNota": st.column_config.NumberColumn("ID", width="small"),
-                "preview": st.column_config.TextColumn("Vista previa"),
-                "fechaCreacion": st.column_config.DatetimeColumn("Creación", format="DD/MM/YYYY HH:mm"),
-            },
-        )
+        for r in rows:
+            with st.expander(f"Nota del {r['fechaCreacion']}"):
+                st.write(r['contenidoNota'])
     else:
-        st.write("Sin notas.")
+        st.info("Sin notas.")
 
 with tabs[2]:
-    rows = fetch_all(
-        conn,
-        """
-    SELECT idCita, tituloCita, fechaInicio, fechaFin, ubicacion, sincronizacionGoogle
-    FROM cita
-    WHERE idProyecto = ?
-    ORDER BY fechaInicio ASC
-    """,
-        [id_proyecto],
-    )
+    st.write("### Agenda de Citas")
+    rows = fetch_all(conn, "SELECT * FROM cita WHERE idProyecto = ?", [id_proyecto])
     if rows:
-        st.dataframe(
-            [dict(r) for r in rows],
-            hide_index=True,
-            use_container_width=True,
-            column_config={
-                "idCita": st.column_config.NumberColumn("ID", width="small"),
-                "tituloCita": st.column_config.TextColumn("Título"),
-                "fechaInicio": st.column_config.DatetimeColumn("Inicio", format="DD/MM/YYYY HH:mm"),
-                "fechaFin": st.column_config.DatetimeColumn("Fin", format="DD/MM/YYYY HH:mm"),
-                "ubicacion": st.column_config.TextColumn("Ubicación"),
-                "sincronizacionGoogle": st.column_config.CheckboxColumn("Sync Google", width="small"),
-            },
-        )
+        st.table(rows) # Tabla estática clara para citas
     else:
-        st.write("Sin citas.")
+        st.info("Sin citas programadas.")
 
 conn.close()
+
+st.divider()
+
+# --- GRID DE 3 COLUMNAS IGUALES ---
+# Al pasar el entero 3, Streamlit divide el espacio en partes iguales
+grid_col1, grid_col2, grid_col3 = st.columns(3)
+
+with grid_col1:
+    st.subheader("🤖 Chat NoetIA")
+    with st.container(border=True, height=300):
+        renderizar_chatbot()
+
+with grid_col2:
+    st.subheader("🎙️ Voice Note")
+    with st.container(border=True, height=300):
+        # Aquí renderizamos el componente de voz
+        render_voice_note_section()
+
+with grid_col3:
+    st.subheader("📸 Foto")
+    with st.container(border=True, height=300):
+        # Aquí renderizamos el componente de voz
+        render_image_note_section()
