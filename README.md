@@ -3,53 +3,53 @@
 </p>
 
 <p align="center">
-  <em>Multimodal AI framework for organizing unstructured information</em>
+  <em>Intelligent Engine for Unstructured Information Organization</em>
 </p>
 
 ---
 
 ## ¿Qué es NoetIA?
 
-**NoetIA** es un proyecto de ciencia de datos enfocado en la **organización inteligente de información no estructurada**, como ideas, tareas, notas y pensamientos escritos en texto libre.
-
-Su objetivo es transformar entradas caóticas (brain dumps, listas desordenadas, notas rápidas) en una **estructura clara, lógica y accionable**, apoyándose en técnicas de *Natural Language Processing (NLP)* y modelos de lenguaje.
+**NoetIA** es un framework de Inteligencia Artificial diseñado para organizar información no estructurada (ideas, tareas, notas y pensamientos). El sistema transforma entradas de texto libre en estructuras lógicas y accionables mediante pipelines de inferencia basados en Machine Learning.
 
 ---
 
-## Idea central
+## 🧠 Núcleo de Inferencia (Modelos)
 
-NoetIA parte de una premisa simple:
+El corazón de NoetIA reside en sus pipelines de procesamiento, diseñados para realizar inferencias rápidas y precisas sobre texto bruto:
 
-> El caos mental muchas veces no es falta de ideas, sino falta de estructura.
+### 1. Clasificador de Intención
+Este modelo determina la naturaleza de la entrada (Nota, Tarea o Cita).
+* **Técnica:** `Pipeline` de `scikit-learn` con `LinearSVC`.
+* **Procesamiento:** Utiliza `TfidfVectorizer` (n-gramas 1-2) para capturar la relevancia semántica y `OneHotEncoder` para integrar metadatos temporales y contextuales.
+* **Estado:** Optimizado mediante balanceo de clases (`class_weight='balanced'`) para garantizar equidad entre categorías.
 
-A partir de texto libre, el sistema busca clasificar la información dentro de una jerarquía conceptual como:
-
-**Área → Tema → Proyecto → Tarea / Nota / Cita**
-
-El proyecto está diseñado como un **framework modular**, enfocado en claridad, explicabilidad y buenas prácticas de ingeniería.
+### 2. Modelo de Priorización (Urgencia)
+Determina la importancia de la actividad en una escala del 1 al 4.
+* **Técnica:** `RandomForestClassifier`.
+* **Procesamiento:** Evalúa relaciones no lineales entre la fecha, la existencia de lugares y el verbo principal de la acción.
+* **Ventaja:** Al ser un modelo de ensamble de árboles, es excelente detectando contextos complejos (ej: "Fecha próxima" + "Verbo imperativo" = Prioridad alta).
 
 ---
 
 ## Modelo de Datos
 
-Vista general del modelo entidad–relación de NoetIA:
+La estructura se apoya en una jerarquía relacional escalable:
 
-![ER Diagram](assets/screenshots/NoetIA-ERD.png)
-
-> Diagrama completo en versión interactiva:  
-> [Ver ERD en HTML](assets/NoetIA-ERD.html)
+**Área → Tema → Proyecto → Actividad (con Intención y Prioridad)**
 
 
-(assets/screenshots/noetia_erd.html)
+
+> [Ver ERD Interactivo](assets/NoetIA-ERD.html)
 
 ---
 
 ## Estructura del proyecto
 
 ```text
-src/noetia/     → lógica principal del sistema
-scripts/        → scripts ejecutables (sin notebooks)
-app/            → demo en Streamlit
-sql/            → esquemas y queries SQL
-assets/         → identidad visual y recursos
-data/           → datos locales (ignorado por Git)
+src/noetia/
+├── models/         # Pipelines de ML serializados (.joblib)
+├── nlp/            # Lógica de preprocesamiento y limpieza
+├── engine/         # Orquestadores de inferencia
+├── app/            # Demo en Streamlit
+└── sql/            # Esquemas y queries SQLite
