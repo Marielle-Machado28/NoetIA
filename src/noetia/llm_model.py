@@ -8,6 +8,7 @@ from noetia.model_area import procesar_y_clasificar_areas
 from noetia.model_tema import procesar_y_clasificar_tema
 from noetia.model_intencion import procesar_y_clasificar_intencion
 from noetia.model_prioridad import clasificar_prioridad
+from noetia.model_proyecto import inferir_proyecto
 import datetime
 
 from pathlib import Path
@@ -95,7 +96,11 @@ def procesar_flujo_completo(texto_usuario: str):
 
     resultado_prioridad =  clasificar_prioridad(datos_prioridad)
 
-    registro =  {**resultado_tema, **resultado_intencion, **resultado_prioridad}
+    id_proj = inferir_proyecto(resultado_tema)
+
+    resultado_proyecto =  {'idProyecto': id_proj}
+
+    registro =  {**resultado_tema, **resultado_intencion, **resultado_prioridad, **resultado_proyecto}
 
     registro['fecha_detectada'] = datos.get('fecha_detectada')
 
